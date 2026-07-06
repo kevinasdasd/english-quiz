@@ -33,7 +33,15 @@ const UNIT_PALETTE = [
 
 // ── Types ─────────────────────────────────────────────────────────
 type Page = "home" | "study" | "results" | "mistakes";
-type Mode = "en-zh" | "zh-en" | "mistakes";
+type StudyMode = "en-zh" | "zh-en";
+type Mode = StudyMode | "mistakes";
+
+const MODE_LABEL: Record<StudyMode, string> = {
+  "en-zh": "英文 → 中文",
+  "zh-en": "中文 → 英文",
+};
+
+const MISTAKE_STORAGE_KEY = "wordflash.mistakeIdsByMode.v1";
 
 // ── Data ──────────────────────────────────────────────────────────
 const TEXTBOOKS = [...BOOKS];
@@ -62,12 +70,54 @@ function getUnitPalette(unit: string) {
   return UNIT_PALETTE[Math.max(idx, 0) % UNIT_PALETTE.length];
 }
 
+function emptyMistakeIdsByMode(): Record<StudyMode, Set<number>> {
+  return {
+    "en-zh": new Set(),
+    "zh-en": new Set(),
+  };
+}
+
+function readMistakeIdsByMode(): Record<StudyMode, Set<number>> {
+  if (typeof window === "undefined") return emptyMistakeIdsByMode();
+
+  try {
+    const raw = window.localStorage.getItem(MISTAKE_STORAGE_KEY);
+    if (!raw) return emptyMistakeIdsByMode();
+
+    const parsed = JSON.parse(raw) as Partial<Record<StudyMode, unknown>>;
+    return {
+      "en-zh": new Set(Array.isArray(parsed["en-zh"]) ? parsed["en-zh"].filter(Number.isFinite) : []),
+      "zh-en": new Set(Array.isArray(parsed["zh-en"]) ? parsed["zh-en"].filter(Number.isFinite) : []),
+    };
+  } catch {
+    return emptyMistakeIdsByMode();
+  }
+}
+
+function saveMistakeIdsByMode(mistakes: Record<StudyMode, Set<number>>) {
+  if (typeof window === "undefined") return;
+
+  try {
+    window.localStorage.setItem(
+      MISTAKE_STORAGE_KEY,
+      JSON.stringify({
+        "en-zh": [...mistakes["en-zh"]],
+        "zh-en": [...mistakes["zh-en"]],
+      }),
+    );
+  } catch {
+    // Storage can fail in private browsing; studying should still work in memory.
+  }
+}
+
 // ── App ───────────────────────────────────────────────────────────
 export default function App() {
   const [page, setPage] = useState<Page>("home");
   const [textbook, setTextbook] = useState(0);
   const [selectedUnits, setSelectedUnits] = useState<Set<string>>(new Set());
   const [mode, setMode] = useState<Mode>("en-zh");
+  const [sessionMode, setSessionMode] = useState<StudyMode>("en-zh");
+  const [mistakeReviewMode, setMistakeReviewMode] = useState<StudyMode>("en-zh");
 
   const [sessionWords, setSessionWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -75,22 +125,30 @@ export default function App() {
   const [knownIds, setKnownIds] = useState<Set<number>>(new Set());
   const [unknownIds, setUnknownIds] = useState<Set<number>>(new Set());
   const [bookmarkedIds, setBookmarkedIds] = useState<Set<number>>(new Set());
-  const [mistakeIds, setMistakeIds] = useState<Set<number>>(new Set());
+  const [mistakeIdsByMode, setMistakeIdsByMode] = useState<Record<StudyMode, Set<number>>>(
+    readMistakeIdsByMode,
+  );
 
   const currentWord = sessionWords[currentIndex];
   const total = sessionWords.length;
 
   useEffect(() => {
-    if (page === "study" && mode !== "zh-en" && currentWord) {
+    if (page === "study" && sessionMode !== "zh-en" && currentWord) {
       speak(currentWord.word);
     }
-  }, [page, mode, currentWord?.id]);
+  }, [page, sessionMode, currentWord?.id]);
 
-  function startSession(targetMode?: Mode) {
+  useEffect(() => {
+    saveMistakeIdsByMode(mistakeIdsByMode);
+  }, [mistakeIdsByMode]);
+
+  function startSession(targetMode?: Mode, targetStudyMode?: StudyMode) {
     const m = targetMode ?? mode;
+    const studyMode: StudyMode =
+      m === "mistakes" ? targetStudyMode ?? mistakeReviewMode : m;
     let words: Word[];
     if (m === "mistakes") {
-      words = WORD_DATA.filter((w) => mistakeIds.has(w.id));
+      words = WORD_DATA.filter((w) => mistakeIdsByMode[studyMode].has(w.id));
     } else {
       words = WORD_DATA.filter((w) => selectedUnits.has(w.unit));
     }
@@ -101,17 +159,30 @@ export default function App() {
     setKnownIds(new Set());
     setUnknownIds(new Set());
     setMode(m);
+    setSessionMode(studyMode);
+    setMistakeReviewMode(studyMode);
     setPage("study");
   }
 
   function handleKnow() {
-    setKnownIds((prev) => new Set([...prev, currentWord.id]));
+    setKnownIds((prev) => {
+      if (unknownIds.has(currentWord.id)) return prev;
+      return new Set([...prev, currentWord.id]);
+    });
     goNext();
   }
 
   function handleDontKnow() {
     setUnknownIds((prev) => new Set([...prev, currentWord.id]));
-    setMistakeIds((prev) => new Set([...prev, currentWord.id]));
+    setKnownIds((prev) => {
+      const next = new Set(prev);
+      next.delete(currentWord.id);
+      return next;
+    });
+    setMistakeIdsByMode((prev) => ({
+      ...prev,
+      [sessionMode]: new Set([...prev[sessionMode], currentWord.id]),
+    }));
     setIsFlipped(true);
   }
 
@@ -143,20 +214,24 @@ export default function App() {
   }
 
   function removeMistake(id: number) {
-    setMistakeIds((prev) => {
-      const next = new Set(prev);
-      next.delete(id);
-      return next;
+    setMistakeIdsByMode((prev) => {
+      const nextForMode = new Set(prev[mistakeReviewMode]);
+      nextForMode.delete(id);
+      return { ...prev, [mistakeReviewMode]: nextForMode };
     });
   }
 
   // ── HOME ──────────────────────────────────────────────────────────
   if (page === "home") {
-    const hasMistakes = mistakeIds.size > 0;
+    const enZhMistakeCount = mistakeIdsByMode["en-zh"].size;
+    const zhEnMistakeCount = mistakeIdsByMode["zh-en"].size;
+    const mistakeCount = enZhMistakeCount + zhEnMistakeCount;
+    const activeMistakeCount = mistakeIdsByMode[mistakeReviewMode].size;
+    const hasMistakes = mistakeCount > 0;
     const wordCount = WORD_DATA.filter((w) => selectedUnits.has(w.unit)).length;
     const canStart =
       (mode !== "mistakes" && selectedUnits.size > 0) ||
-      (mode === "mistakes" && hasMistakes);
+      (mode === "mistakes" && activeMistakeCount > 0);
 
     return (
       <div className="min-h-screen bg-white">
@@ -184,7 +259,7 @@ export default function App() {
               style={{ background: C.yellowLight, color: C.yellowText }}
             >
               <BookMarked size={14} />
-              错题集{hasMistakes ? ` (${mistakeIds.size})` : ""}
+              错题集{hasMistakes ? ` (${mistakeCount})` : ""}
             </button>
           </div>
         </header>
@@ -295,7 +370,9 @@ export default function App() {
                   {
                     value: "mistakes" as Mode,
                     label: "错题复习",
-                    desc: hasMistakes ? `共 ${mistakeIds.size} 个错题` : "暂无错题",
+                    desc: hasMistakes
+                      ? `英→中 ${enZhMistakeCount} · 中→英 ${zhEnMistakeCount}`
+                      : "暂无错题",
                     icon: "📌",
                     pal: { bg: C.pink, light: C.pinkLight, text: C.pinkText },
                   },
@@ -306,7 +383,13 @@ export default function App() {
                 return (
                   <button
                     key={m.value}
-                    onClick={() => !disabled && setMode(m.value)}
+                    onClick={() => {
+                      if (disabled) return;
+                      setMode(m.value);
+                      if (m.value === "en-zh" || m.value === "zh-en") {
+                        setMistakeReviewMode(m.value);
+                      }
+                    }}
                     disabled={disabled}
                     className="p-4 rounded-2xl border text-left transition-all hover:shadow-md disabled:opacity-40 disabled:cursor-not-allowed"
                     style={{
@@ -327,6 +410,29 @@ export default function App() {
                 );
               })}
             </div>
+            {mode === "mistakes" && hasMistakes && (
+              <div className="flex flex-wrap gap-2 mt-3">
+                {(["en-zh", "zh-en"] as StudyMode[]).map((value) => {
+                  const active = mistakeReviewMode === value;
+                  const count = mistakeIdsByMode[value].size;
+                  return (
+                    <button
+                      key={value}
+                      onClick={() => setMistakeReviewMode(value)}
+                      disabled={count === 0}
+                      className="px-3.5 py-2 rounded-xl text-xs font-bold border transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                      style={{
+                        background: active ? C.primary : "white",
+                        color: active ? "white" : C.navy,
+                        borderColor: active ? C.primary : "rgba(171,215,250,0.65)",
+                      }}
+                    >
+                      {MODE_LABEL[value]}错题 · {count}词
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </section>
 
           {/* CTA */}
@@ -430,7 +536,7 @@ export default function App() {
                   <span className="text-xs text-gray-300 select-none">点击翻转</span>
                 </div>
                 <div className="flex-1 flex flex-col items-center justify-center gap-3 px-8 pb-4">
-                  {mode === "zh-en" ? (
+                  {sessionMode === "zh-en" ? (
                     <div
                       className="text-3xl sm:text-4xl font-bold text-center leading-snug"
                       style={{ color: C.navy }}
@@ -494,7 +600,7 @@ export default function App() {
                   </span>
                 </div>
                 <div className="flex-1 flex flex-col items-center justify-center gap-4 px-8 pb-4">
-                  {mode === "zh-en" ? (
+                  {sessionMode === "zh-en" ? (
                     <>
                       <div
                         className="text-4xl sm:text-6xl font-extrabold tracking-tight text-center"
@@ -579,8 +685,8 @@ export default function App() {
   if (page === "results") {
     const knownCount = knownIds.size;
     const unknownCount = unknownIds.size;
-    const skippedCount = total - knownCount - unknownCount;
-    const pct = Math.round((knownCount / total) * 100);
+    const skippedCount = Math.max(total - knownCount - unknownCount, 0);
+    const pct = total > 0 ? Math.round((knownCount / total) * 100) : 0;
 
     return (
       <div
@@ -629,12 +735,12 @@ export default function App() {
           <div className="space-y-3">
             {unknownCount > 0 && (
               <button
-                onClick={() => startSession("mistakes")}
+                onClick={() => startSession("mistakes", sessionMode)}
                 className="w-full py-3.5 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 transition-all hover:opacity-90"
                 style={{ background: C.pink, color: C.pinkText }}
               >
                 <RefreshCw size={15} />
-                复习错题（{unknownCount} 词）
+                复习{MODE_LABEL[sessionMode]}错题（{unknownCount} 词）
               </button>
             )}
             <button
@@ -667,7 +773,8 @@ export default function App() {
 
   // ── MISTAKES ──────────────────────────────────────────────────────
   if (page === "mistakes") {
-    const mistakeWords = WORD_DATA.filter((w) => mistakeIds.has(w.id));
+    const activeMistakeIds = mistakeIdsByMode[mistakeReviewMode];
+    const mistakeWords = WORD_DATA.filter((w) => activeMistakeIds.has(w.id));
     const byUnit = UNITS.map((u) => ({
       unit: u,
       words: mistakeWords.filter((w) => w.unit === u),
@@ -690,18 +797,38 @@ export default function App() {
               错题集
             </h1>
             <span className="ml-auto text-sm text-gray-400 tabular-nums">
-              {mistakeIds.size} 词
+              {mistakeWords.length} 词
             </span>
           </div>
         </header>
 
         <main className="max-w-2xl mx-auto px-5 sm:px-8 py-6">
+          <div className="grid grid-cols-2 gap-2 mb-6">
+            {(["en-zh", "zh-en"] as StudyMode[]).map((value) => {
+              const active = mistakeReviewMode === value;
+              const count = mistakeIdsByMode[value].size;
+              return (
+                <button
+                  key={value}
+                  onClick={() => setMistakeReviewMode(value)}
+                  className="py-2.5 rounded-xl text-sm font-bold border transition-all"
+                  style={{
+                    background: active ? C.primary : "white",
+                    color: active ? "white" : C.navy,
+                    borderColor: active ? C.primary : "rgba(171,215,250,0.65)",
+                  }}
+                >
+                  {MODE_LABEL[value]} · {count}词
+                </button>
+              );
+            })}
+          </div>
           {mistakeWords.length === 0 ? (
             <div className="text-center py-24">
               <div className="text-4xl mb-3">✨</div>
-              <p className="font-semibold text-gray-600">暂无错题</p>
+              <p className="font-semibold text-gray-600">暂无{MODE_LABEL[mistakeReviewMode]}错题</p>
               <p className="text-sm text-gray-400 mt-1.5">
-                学习时点"不会"的单词会出现在这里
+                对应模式里点"不会"的单词会出现在这里
               </p>
               <button
                 onClick={() => setPage("home")}
@@ -764,19 +891,24 @@ export default function App() {
 
               <div className="pt-4 pb-10 space-y-3">
                 <button
-                  onClick={() => startSession("mistakes")}
+                  onClick={() => startSession("mistakes", mistakeReviewMode)}
                   className="w-full py-3.5 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 transition-all hover:opacity-90"
                   style={{ background: C.primary, color: "white" }}
                 >
                   <BookOpen size={16} />
-                  开始复习错题（{mistakeWords.length} 词）
+                  开始复习{MODE_LABEL[mistakeReviewMode]}错题（{mistakeWords.length} 词）
                 </button>
                 <button
-                  onClick={() => setMistakeIds(new Set())}
+                  onClick={() =>
+                    setMistakeIdsByMode((prev) => ({
+                      ...prev,
+                      [mistakeReviewMode]: new Set(),
+                    }))
+                  }
                   className="w-full py-3 rounded-2xl font-semibold text-sm flex items-center justify-center gap-2 transition-all hover:bg-red-50 hover:text-red-500 text-gray-400 border border-gray-200"
                 >
                   <Trash2 size={14} />
-                  清空全部错题
+                  清空当前方向错题
                 </button>
               </div>
             </>
