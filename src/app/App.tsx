@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BOOKS, UNITS as DATA_UNITS, words as WORD_DATA, type Word } from "../data/words";
 import {
   Volume2, Star, ArrowLeft, Home, RefreshCw, Trash2,
@@ -35,6 +35,28 @@ const UNIT_PALETTE = [
 type Page = "home" | "study" | "results" | "mistakes";
 type StudyMode = "en-zh" | "zh-en";
 type Mode = StudyMode | "mistakes";
+type RewardKind = "correct" | "streak3" | "streak5" | "streak7" | "streak10" | "perfect";
+
+type RewardStar = {
+  id: number;
+  left: number;
+  delay: number;
+  duration: number;
+  size: number;
+  drift: number;
+  rotate: number;
+  color: string;
+};
+
+type RewardState = {
+  id: number;
+  kind: RewardKind;
+  streak: number;
+  title: string;
+  subtitle: string;
+  duration: number;
+  stars: RewardStar[];
+};
 
 const MODE_LABEL: Record<StudyMode, string> = {
   "en-zh": "英文 → 中文",
@@ -42,6 +64,9 @@ const MODE_LABEL: Record<StudyMode, string> = {
 };
 
 const MISTAKE_STORAGE_KEY = "wordflash.mistakeIdsByMode.v1";
+const STAR_COLORS = ["#FFEA6F", "#FFC9EF", "#C9F100", "#ABD7FA", "#FFE08A"];
+const VICTORY_SOUND_URL = "/sounds/victory.mp3";
+let audioContext: AudioContext | null = null;
 
 // ── Data ──────────────────────────────────────────────────────────
 const TEXTBOOKS = [...BOOKS];
@@ -63,6 +88,143 @@ function speak(text: string) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = "en-US";
   window.speechSynthesis.speak(u);
+}
+
+function getAudioContext() {
+  if (typeof window === "undefined") return null;
+  const AudioContextCtor = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+  if (!AudioContextCtor) return null;
+  audioContext ??= new AudioContextCtor();
+  void audioContext.resume();
+  return audioContext;
+}
+
+function playTone(ctx: AudioContext, start: number, frequency: number, duration: number, gain = 0.05) {
+  const oscillator = ctx.createOscillator();
+  const volume = ctx.createGain();
+  oscillator.type = "sine";
+  oscillator.frequency.setValueAtTime(frequency, start);
+  volume.gain.setValueAtTime(0.0001, start);
+  volume.gain.exponentialRampToValueAtTime(gain, start + 0.015);
+  volume.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+  oscillator.connect(volume);
+  volume.connect(ctx.destination);
+  oscillator.start(start);
+  oscillator.stop(start + duration + 0.02);
+}
+
+function playRewardSound(kind: RewardKind | "skip" | "miss") {
+  const ctx = getAudioContext();
+  if (!ctx) return;
+  const now = ctx.currentTime;
+  const notes: Record<typeof kind, Array<[number, number, number, number?]>> = {
+    correct: [[0, 660, 0.08, 0.035], [0.08, 880, 0.1, 0.04]],
+    streak3: [[0, 660, 0.08], [0.08, 880, 0.1], [0.18, 1108, 0.12]],
+    streak5: [[0, 740, 0.07], [0.07, 932, 0.08], [0.15, 1174, 0.12], [0.27, 1480, 0.14]],
+    streak7: [[0, 587, 0.08], [0.08, 784, 0.1], [0.18, 988, 0.12], [0.3, 1318, 0.18, 0.06]],
+    streak10: [[0, 660, 0.07], [0.07, 880, 0.08], [0.15, 1108, 0.09], [0.24, 1320, 0.12], [0.38, 1760, 0.18, 0.06]],
+    perfect: [[0, 523, 0.09], [0.08, 659, 0.09], [0.16, 784, 0.1], [0.26, 1046, 0.12], [0.42, 1318, 0.22, 0.065]],
+    skip: [[0, 420, 0.05, 0.025]],
+    miss: [[0, 260, 0.08, 0.02]],
+  };
+  notes[kind].forEach(([offset, frequency, duration, gain]) => {
+    playTone(ctx, now + offset, frequency, duration, gain);
+  });
+}
+
+function playVictorySound() {
+  if (typeof window === "undefined") return;
+  const audio = new Audio(VICTORY_SOUND_URL);
+  audio.volume = 0.72;
+  void audio.play().catch(() => {
+    playRewardSound("perfect");
+  });
+}
+
+function makeStars(count: number): RewardStar[] {
+  const isMega = count >= 180;
+  const isLarge = count >= 80;
+  return Array.from({ length: count }, (_, id) => ({
+    id,
+    left: Math.random() * 100,
+    delay: Math.random() * (isMega ? 2600 : isLarge ? 1500 : 900),
+    duration: (isMega ? 3000 : isLarge ? 2400 : 1900) + Math.random() * (isMega ? 2300 : 1300),
+    size: 14 + Math.random() * (isMega ? 34 : 24),
+    drift: (isMega ? -180 : -110) + Math.random() * (isMega ? 360 : 220),
+    rotate: -180 + Math.random() * 360,
+    color: STAR_COLORS[id % STAR_COLORS.length],
+  }));
+}
+
+function createReward(streak: number): RewardState | null {
+  if (streak === 1) {
+    return {
+      id: Date.now(),
+      kind: "correct",
+      streak,
+      title: "答对",
+      subtitle: "继续",
+      duration: 950,
+      stars: makeStars(0),
+    };
+  }
+  if (streak === 3) {
+    return {
+      id: Date.now(),
+      kind: "streak3",
+      streak,
+      title: "连对 3 题",
+      subtitle: "手感来了",
+      duration: 1600,
+      stars: makeStars(14),
+    };
+  }
+  if (streak === 5) {
+    return {
+      id: Date.now(),
+      kind: "streak5",
+      streak,
+      title: "连对 5 题",
+      subtitle: "星星掉落",
+      duration: 2200,
+      stars: makeStars(34),
+    };
+  }
+  if (streak === 7) {
+    return {
+      id: Date.now(),
+      kind: "streak7",
+      streak,
+      title: "状态不错",
+      subtitle: `已经连对 ${streak} 题`,
+      duration: 2600,
+      stars: makeStars(42),
+    };
+  }
+  if (streak > 0 && streak % 10 === 0) {
+    return {
+      id: Date.now(),
+      kind: "streak10",
+      streak,
+      title: `连对 ${streak} 题`,
+      subtitle: "一大波星星来了",
+      duration: 3200,
+      stars: makeStars(92),
+    };
+  }
+  return null;
+}
+
+function createPerfectReward(): RewardState {
+  return {
+    id: Date.now(),
+    kind: "perfect",
+    streak: 0,
+    title: "全对通关！",
+    subtitle: "这一轮彻底拿下",
+    duration: 6200,
+    stars: makeStars(220),
+  };
 }
 
 function getUnitPalette(unit: string) {
@@ -122,6 +284,10 @@ export default function App() {
   const [sessionWords, setSessionWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [showExampleTranslation, setShowExampleTranslation] = useState(false);
+  const [correctStreak, setCorrectStreak] = useState(0);
+  const [reward, setReward] = useState<RewardState | null>(null);
+  const [isRewarding, setIsRewarding] = useState(false);
   const [knownIds, setKnownIds] = useState<Set<number>>(new Set());
   const [unknownIds, setUnknownIds] = useState<Set<number>>(new Set());
   const [bookmarkedIds, setBookmarkedIds] = useState<Set<number>>(new Set());
@@ -131,6 +297,9 @@ export default function App() {
 
   const currentWord = sessionWords[currentIndex];
   const total = sessionWords.length;
+  const isPerfectSession =
+    page === "results" && total > 0 && knownIds.size === total && unknownIds.size === 0;
+  const rewardTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (page === "study" && sessionMode !== "zh-en" && currentWord) {
@@ -139,10 +308,44 @@ export default function App() {
   }, [page, sessionMode, currentWord?.id]);
 
   useEffect(() => {
+    setShowExampleTranslation(false);
+  }, [currentWord?.id, page]);
+
+  useEffect(() => {
     saveMistakeIdsByMode(mistakeIdsByMode);
   }, [mistakeIdsByMode]);
 
+  useEffect(() => {
+    if (page !== "results") return;
+    playVictorySound();
+    if (!isPerfectSession) return;
+    const perfectReward = createPerfectReward();
+    setReward(perfectReward);
+    const timer = window.setTimeout(() => setReward(null), perfectReward.duration);
+    return () => window.clearTimeout(timer);
+  }, [page, isPerfectSession]);
+
+  useEffect(() => {
+    return () => {
+      if (rewardTimerRef.current) window.clearTimeout(rewardTimerRef.current);
+    };
+  }, []);
+
+  function clearRewardTimer() {
+    if (rewardTimerRef.current) {
+      window.clearTimeout(rewardTimerRef.current);
+      rewardTimerRef.current = null;
+    }
+  }
+
+  function resetRewardState() {
+    clearRewardTimer();
+    setReward(null);
+    setIsRewarding(false);
+  }
+
   function startSession(targetMode?: Mode, targetStudyMode?: StudyMode) {
+    resetRewardState();
     const m = targetMode ?? mode;
     const studyMode: StudyMode =
       m === "mistakes" ? targetStudyMode ?? mistakeReviewMode : m;
@@ -156,6 +359,8 @@ export default function App() {
     setSessionWords(shuffle(words));
     setCurrentIndex(0);
     setIsFlipped(false);
+    setShowExampleTranslation(false);
+    setCorrectStreak(0);
     setKnownIds(new Set());
     setUnknownIds(new Set());
     setMode(m);
@@ -165,14 +370,52 @@ export default function App() {
   }
 
   function handleKnow() {
+    if (isRewarding) return;
+    if (!currentWord || unknownIds.has(currentWord.id)) {
+      goNext();
+      return;
+    }
+    const nextStreak = correctStreak + 1;
+    const isLastWord = currentIndex + 1 >= total;
+    const willBePerfect = isLastWord && unknownIds.size === 0 && knownIds.size + 1 === total;
+    const nextReward = createReward(nextStreak);
+    setCorrectStreak(nextStreak);
     setKnownIds((prev) => {
-      if (unknownIds.has(currentWord.id)) return prev;
       return new Set([...prev, currentWord.id]);
     });
-    goNext();
+    if (willBePerfect) {
+      setIsRewarding(true);
+      clearRewardTimer();
+      rewardTimerRef.current = window.setTimeout(() => {
+        setIsRewarding(false);
+        goNext();
+      }, 180);
+      return;
+    }
+    playRewardSound(nextReward?.kind ?? "correct");
+    if (!nextReward) {
+      clearRewardTimer();
+      setIsRewarding(true);
+      rewardTimerRef.current = window.setTimeout(() => {
+        setIsRewarding(false);
+        goNext();
+      }, 120);
+      return;
+    }
+    setReward(nextReward);
+    setIsRewarding(true);
+    clearRewardTimer();
+    rewardTimerRef.current = window.setTimeout(() => {
+      setReward(null);
+      setIsRewarding(false);
+      goNext();
+    }, nextReward.duration);
   }
 
   function handleDontKnow() {
+    if (isRewarding) return;
+    setCorrectStreak(0);
+    playRewardSound("miss");
     setUnknownIds((prev) => new Set([...prev, currentWord.id]));
     setKnownIds((prev) => {
       const next = new Set(prev);
@@ -187,12 +430,21 @@ export default function App() {
   }
 
   function goNext() {
+    resetRewardState();
     if (currentIndex + 1 >= total) {
       setPage("results");
     } else {
       setCurrentIndex((i) => i + 1);
       setIsFlipped(false);
+      setShowExampleTranslation(false);
     }
+  }
+
+  function handleSkip() {
+    if (isRewarding) return;
+    setCorrectStreak(0);
+    playRewardSound("skip");
+    goNext();
   }
 
   function toggleUnit(unit: string) {
@@ -330,7 +582,7 @@ export default function App() {
                         color: selected ? pal.text : "#9ca3af",
                       }}
                     >
-                      {count}词
+                      {count}项
                     </span>
                   </button>
                 );
@@ -342,7 +594,7 @@ export default function App() {
                 <span className="font-semibold" style={{ color: C.primary }}>
                   {wordCount}
                 </span>{" "}
-                个单词
+                项内容
               </p>
             )}
           </section>
@@ -427,7 +679,7 @@ export default function App() {
                         borderColor: active ? C.primary : "rgba(171,215,250,0.65)",
                       }}
                     >
-                      {MODE_LABEL[value]}错题 · {count}词
+                      {MODE_LABEL[value]}错题 · {count}项
                     </button>
                   );
                 })}
@@ -446,7 +698,7 @@ export default function App() {
               <BookOpen size={18} />
               开始学习
               {mode !== "mistakes" && wordCount > 0 && (
-                <span className="font-normal opacity-75 text-sm">· {wordCount} 个单词</span>
+                <span className="font-normal opacity-75 text-sm">· {wordCount} 项内容</span>
               )}
             </button>
           </div>
@@ -458,15 +710,21 @@ export default function App() {
   // ── STUDY ─────────────────────────────────────────────────────────
   if (page === "study" && currentWord) {
     const pal = getUnitPalette(currentWord.unit);
-    const progress = (currentIndex / total) * 100;
     const isBookmarked = bookmarkedIds.has(currentWord.id);
+    const isCurrentMarkedWrong = unknownIds.has(currentWord.id);
+    const shouldShowNextAction = isCurrentMarkedWrong && isFlipped;
+    const exampleTranslation = currentWord.exampleTranslation || currentWord.translation;
 
     return (
-      <div className="min-h-screen bg-white flex flex-col">
+      <div className="min-h-screen bg-white flex flex-col relative overflow-hidden">
+        {reward && <RewardOverlay reward={reward} />}
         {/* Top bar */}
         <div className="px-4 sm:px-8 pt-5 pb-3 flex items-center gap-3 sm:gap-4">
           <button
-            onClick={() => setPage("home")}
+            onClick={() => {
+              resetRewardState();
+              setPage("home");
+            }}
             className="p-2 rounded-xl hover:bg-gray-100 transition-colors text-gray-400 flex-shrink-0"
           >
             <ArrowLeft size={20} />
@@ -527,22 +785,40 @@ export default function App() {
                 }}
               >
                 <div className="flex items-center justify-between px-6 pt-5 pb-2">
-                  <span
-                    className="text-xs font-bold px-3 py-1 rounded-full"
-                    style={{ background: pal.bg, color: pal.text }}
-                  >
-                    {currentWord.unit}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="text-xs font-bold px-3 py-1 rounded-full"
+                      style={{ background: pal.bg, color: pal.text }}
+                    >
+                      {currentWord.unit}
+                    </span>
+                    {sessionMode === "en-zh" && (
+                      <span
+                        className="text-xs font-semibold text-gray-400"
+                        style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                      >
+                        {currentWord.partOfSpeech}
+                      </span>
+                    )}
+                  </div>
                   <span className="text-xs text-gray-300 select-none">点击翻转</span>
                 </div>
                 <div className="flex-1 flex flex-col items-center justify-center gap-3 px-8 pb-4">
                   {sessionMode === "zh-en" ? (
-                    <div
-                      className="text-3xl sm:text-4xl font-bold text-center leading-snug"
-                      style={{ color: C.navy }}
-                    >
-                      {currentWord.translation}
-                    </div>
+                    <>
+                      <div
+                        className="text-3xl sm:text-4xl font-bold text-center leading-snug"
+                        style={{ color: C.navy }}
+                      >
+                        {currentWord.translation}
+                      </div>
+                      <span
+                        className="text-sm font-bold px-3 py-1 rounded-full"
+                        style={{ background: C.greenLight, color: C.greenText }}
+                      >
+                        {currentWord.partOfSpeech}
+                      </span>
+                    </>
                   ) : (
                     <>
                       <div
@@ -634,9 +910,26 @@ export default function App() {
                       {currentWord.translation}
                     </div>
                   )}
-                  <p className="text-sm text-gray-500 text-center italic leading-relaxed max-w-sm">
-                    {currentWord.example}
-                  </p>
+                  {currentWord.example && (
+                    <div className="flex flex-col items-center gap-2 max-w-md">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setShowExampleTranslation(true);
+                          speak(currentWord.example);
+                        }}
+                        className="flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm text-gray-500 italic leading-relaxed transition-colors hover:bg-white/60"
+                      >
+                        <Volume2 size={14} className="not-italic flex-shrink-0" />
+                        <span>{currentWord.example}</span>
+                      </button>
+                      {showExampleTranslation && exampleTranslation && (
+                        <p className="text-sm text-center leading-relaxed px-4 py-2 rounded-xl bg-white/60 text-gray-500">
+                          {exampleTranslation}
+                        </p>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -646,7 +939,8 @@ export default function App() {
           <div className="flex items-center gap-3 w-full max-w-md">
             <button
               onClick={handleDontKnow}
-              className="flex-1 py-3.5 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 transition-all hover:opacity-90 active:scale-[0.97]"
+              disabled={isRewarding}
+              className="flex-1 py-3.5 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 transition-all hover:opacity-90 active:scale-[0.97] disabled:opacity-45 disabled:cursor-not-allowed"
               style={{
                 background: C.pinkLight,
                 color: C.pinkText,
@@ -657,23 +951,25 @@ export default function App() {
               不会
             </button>
             <button
-              onClick={goNext}
-              className="px-4 py-3.5 rounded-2xl font-semibold text-sm flex items-center justify-center gap-1 transition-all hover:bg-gray-100 text-gray-400 border border-gray-200"
+              onClick={handleSkip}
+              disabled={isRewarding}
+              className="px-4 py-3.5 rounded-2xl font-semibold text-sm flex items-center justify-center gap-1 transition-all hover:bg-gray-100 text-gray-400 border border-gray-200 disabled:opacity-45 disabled:cursor-not-allowed"
             >
               <ChevronRight size={16} />
               跳过
             </button>
             <button
-              onClick={handleKnow}
-              className="flex-1 py-3.5 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 transition-all hover:opacity-90 active:scale-[0.97]"
+              onClick={shouldShowNextAction ? goNext : handleKnow}
+              disabled={isRewarding}
+              className="flex-1 py-3.5 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 transition-all hover:opacity-90 active:scale-[0.97] disabled:opacity-45 disabled:cursor-not-allowed"
               style={{
                 background: C.greenLight,
                 color: C.greenText,
                 border: `2px solid ${C.green}`,
               }}
             >
-              <Check size={16} />
-              会了
+              {shouldShowNextAction ? <ChevronRight size={16} /> : <Check size={16} />}
+              {shouldShowNextAction ? "下一个" : "会了"}
             </button>
           </div>
         </div>
@@ -690,22 +986,23 @@ export default function App() {
 
     return (
       <div
-        className="min-h-screen flex flex-col items-center justify-center px-6 py-12"
+        className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative overflow-hidden"
         style={{ background: "white" }}
       >
+        {reward && <RewardOverlay reward={reward} />}
         <div className="w-full max-w-sm">
           <div className="text-center mb-8">
             <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "💪" : "📖"}</div>
             <h1 className="text-2xl font-extrabold mb-1" style={{ color: C.navy }}>
               本轮完成！
             </h1>
-            <p className="text-gray-400 text-sm">共学习了 {total} 个单词</p>
+            <p className="text-gray-400 text-sm">共学习了 {total} 项内容</p>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-2 gap-3 mb-8">
             {[
-              { label: "总词数",   value: total,        bg: C.blueLight,  text: C.blueText  },
+              { label: "总项数",   value: total,        bg: C.blueLight,  text: C.blueText  },
               { label: "已掌握",   value: knownCount,   bg: C.greenLight, text: C.greenText },
               { label: "需复习",   value: unknownCount, bg: C.pinkLight,  text: C.pinkText  },
               { label: "跳过",     value: skippedCount, bg: C.yellowLight,text: C.yellowText},
@@ -740,14 +1037,16 @@ export default function App() {
                 style={{ background: C.pink, color: C.pinkText }}
               >
                 <RefreshCw size={15} />
-                复习{MODE_LABEL[sessionMode]}错题（{unknownCount} 词）
+                复习{MODE_LABEL[sessionMode]}错题（{unknownCount} 项）
               </button>
             )}
             <button
               onClick={() => {
+                resetRewardState();
                 setSessionWords(shuffle(sessionWords));
                 setCurrentIndex(0);
                 setIsFlipped(false);
+                setCorrectStreak(0);
                 setKnownIds(new Set());
                 setUnknownIds(new Set());
                 setPage("study");
@@ -759,7 +1058,10 @@ export default function App() {
               重新开始
             </button>
             <button
-              onClick={() => setPage("home")}
+              onClick={() => {
+                resetRewardState();
+                setPage("home");
+              }}
               className="w-full py-3.5 rounded-2xl font-semibold text-sm flex items-center justify-center gap-2 transition-all hover:bg-gray-50 text-gray-500 border border-gray-200"
             >
               <Home size={15} />
@@ -797,7 +1099,7 @@ export default function App() {
               错题集
             </h1>
             <span className="ml-auto text-sm text-gray-400 tabular-nums">
-              {mistakeWords.length} 词
+              {mistakeWords.length} 项
             </span>
           </div>
         </header>
@@ -818,7 +1120,7 @@ export default function App() {
                     borderColor: active ? C.primary : "rgba(171,215,250,0.65)",
                   }}
                 >
-                  {MODE_LABEL[value]} · {count}词
+                  {MODE_LABEL[value]} · {count}项
                 </button>
               );
             })}
@@ -828,7 +1130,7 @@ export default function App() {
               <div className="text-4xl mb-3">✨</div>
               <p className="font-semibold text-gray-600">暂无{MODE_LABEL[mistakeReviewMode]}错题</p>
               <p className="text-sm text-gray-400 mt-1.5">
-                对应模式里点"不会"的单词会出现在这里
+                对应模式里点"不会"的内容会出现在这里
               </p>
               <button
                 onClick={() => setPage("home")}
@@ -851,7 +1153,7 @@ export default function App() {
                       >
                         {group.unit}
                       </span>
-                      <span className="text-xs text-gray-400">{group.words.length} 词</span>
+                      <span className="text-xs text-gray-400">{group.words.length} 项</span>
                     </div>
                     <div className="space-y-2">
                       {group.words.map((w) => (
@@ -896,7 +1198,7 @@ export default function App() {
                   style={{ background: C.primary, color: "white" }}
                 >
                   <BookOpen size={16} />
-                  开始复习{MODE_LABEL[mistakeReviewMode]}错题（{mistakeWords.length} 词）
+                  开始复习{MODE_LABEL[mistakeReviewMode]}错题（{mistakeWords.length} 项）
                 </button>
                 <button
                   onClick={() =>
@@ -924,5 +1226,35 @@ export default function App() {
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <p className="text-xs font-bold uppercase tracking-widest text-gray-400">{children}</p>
+  );
+}
+
+function RewardOverlay({ reward }: { reward: RewardState }) {
+  return (
+    <div className={`wf-reward-overlay wf-reward-${reward.kind}`} aria-hidden="true">
+      {reward.stars.map((star) => (
+        <span
+          key={`${reward.id}-${star.id}`}
+          className="wf-reward-star"
+          style={
+            {
+              "--left": `${star.left}%`,
+              "--delay": `${star.delay}ms`,
+              "--duration": `${star.duration}ms`,
+              "--size": `${star.size}px`,
+              "--drift": `${star.drift}px`,
+              "--rotate": `${star.rotate}deg`,
+              color: star.color,
+            } as React.CSSProperties
+          }
+        >
+          ★
+        </span>
+      ))}
+      <div className="wf-reward-copy">
+        <div className="wf-reward-title">{reward.title}</div>
+        <div className="wf-reward-subtitle">{reward.subtitle}</div>
+      </div>
+    </div>
   );
 }

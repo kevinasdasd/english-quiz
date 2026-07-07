@@ -1,3 +1,234 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+.wf-reward-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.wf-reward-copy {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: -26vh;
+  transform-origin: center;
+  animation: wf-reward-pop 520ms cubic-bezier(0.2, 1.35, 0.35, 1) both;
+}
+
+.wf-reward-title {
+  color: #1a2535;
+  font-size: clamp(2.3rem, 7vw, 6.2rem);
+  font-weight: 950;
+  line-height: 0.95;
+  letter-spacing: 0;
+  text-shadow: 0 8px 28px rgba(22, 104, 160, 0.16);
+}
+
+.wf-reward-subtitle {
+  margin-top: 0.75rem;
+  color: #1668a0;
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  font-weight: 850;
+}
+
+.wf-reward-correct .wf-reward-title {
+  font-size: clamp(1.8rem, 5vw, 3.4rem);
+  color: #2b3e00;
+}
+
+.wf-reward-correct .wf-reward-copy {
+  animation-duration: 950ms;
+}
+
+.wf-reward-streak3 .wf-reward-title {
+  font-size: clamp(2rem, 5.5vw, 4.2rem);
+  color: #003d5c;
+}
+
+.wf-reward-streak3 .wf-reward-copy {
+  animation-duration: 1600ms;
+}
+
+.wf-reward-streak5 .wf-reward-title {
+  color: #68003f;
+}
+
+.wf-reward-streak5 .wf-reward-copy {
+  margin-top: -32vh;
+  animation-duration: 2200ms;
+}
+
+.wf-reward-streak7 .wf-reward-copy {
+  margin-top: -39vh;
+  animation: wf-reward-big-pop 2600ms cubic-bezier(0.18, 1.5, 0.28, 1) both;
+}
+
+.wf-reward-streak7 .wf-reward-title {
+  color: #1668a0;
+  font-size: clamp(4rem, 13vw, 10rem);
+}
+
+.wf-reward-streak10 .wf-reward-title,
+.wf-reward-perfect .wf-reward-title {
+  color: #4a3800;
+  font-size: clamp(3.4rem, 10vw, 8rem);
+}
+
+.wf-reward-streak10 .wf-reward-copy {
+  margin-top: -39vh;
+  animation-duration: 3200ms;
+}
+
+.wf-reward-perfect .wf-reward-copy {
+  margin-top: 0;
+  animation: wf-perfect-title 6200ms cubic-bezier(0.16, 1.2, 0.25, 1) both;
+}
+
+.wf-reward-perfect .wf-reward-title {
+  font-size: clamp(4.4rem, 13vw, 11rem);
+  text-shadow:
+    0 10px 36px rgba(255, 234, 111, 0.4),
+    0 18px 54px rgba(22, 104, 160, 0.18);
+}
+
+.wf-reward-perfect::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(255, 234, 111, 0.36), transparent 32%),
+    radial-gradient(circle at 36% 58%, rgba(171, 215, 250, 0.28), transparent 30%),
+    radial-gradient(circle at 65% 58%, rgba(255, 201, 239, 0.28), transparent 30%);
+  animation: wf-perfect-glow 6200ms ease-out both;
+}
+
+.wf-reward-star {
+  --left: 50%;
+  --delay: 0ms;
+  --duration: 1200ms;
+  --size: 22px;
+  --drift: 0px;
+  --rotate: 90deg;
+  position: absolute;
+  top: -12vh;
+  left: var(--left);
+  z-index: 1;
+  font-size: var(--size);
+  line-height: 1;
+  filter: drop-shadow(0 8px 12px rgba(22, 104, 160, 0.14));
+  animation: wf-star-fall var(--duration) ease-in var(--delay) both;
+}
+
+@keyframes wf-reward-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.86);
+  }
+  32% {
+    opacity: 1;
+    transform: translateY(0) scale(1.05);
+  }
+  78% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+}
+
+@keyframes wf-reward-big-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.62) rotate(-2deg);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1.08) rotate(1deg);
+  }
+  74% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.96) translateY(-14px);
+  }
+}
+
+@keyframes wf-perfect-title {
+  0% {
+    opacity: 0;
+    transform: scale(0.52) rotate(-4deg);
+    filter: blur(4px);
+  }
+  14% {
+    opacity: 1;
+    transform: scale(1.16) rotate(1deg);
+    filter: blur(0);
+  }
+  32% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  78% {
+    opacity: 1;
+    transform: scale(1.04) rotate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.18) translateY(-24px);
+  }
+}
+
+@keyframes wf-star-fall {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -6vh, 0) rotate(0deg) scale(0.7);
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--drift), 116vh, 0) rotate(var(--rotate)) scale(1.08);
+  }
+}
+
+@keyframes wf-perfect-glow {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+}
+
+@media (max-width: 640px) {
+  .wf-reward-copy {
+    margin-top: -22vh;
+  }
+
+  .wf-reward-streak5 .wf-reward-copy,
+  .wf-reward-streak7 .wf-reward-copy,
+  .wf-reward-streak10 .wf-reward-copy {
+    margin-top: -32vh;
+  }
+
+  .wf-reward-perfect .wf-reward-copy {
+    margin-top: 0;
+  }
+}
