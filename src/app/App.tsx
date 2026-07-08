@@ -1,8 +1,13 @@
 import { useEffect, useRef, useState } from "react";
-import { BOOKS, UNITS as DATA_UNITS, words as WORD_DATA, type Word } from "../data/words";
+import { BOOKS, words as WORD_DATA, type Word } from "../data/words";
+import { previewCourses } from "../data/previewCourses";
+import { previewWords } from "../data/previewWords";
+import type { PreviewWord } from "../data/previewTypes";
 import {
   Volume2, Star, ArrowLeft, Home, RefreshCw, Trash2,
   BookOpen, Check, X, ChevronRight, BookMarked,
+  Lightbulb, GraduationCap, Layers,
+  MessageSquare, Zap,
 } from "lucide-react";
 
 // ── Brand palette ─────────────────────────────────────────────────
@@ -32,10 +37,12 @@ const UNIT_PALETTE = [
 ];
 
 // ── Types ─────────────────────────────────────────────────────────
-type Page = "home" | "study" | "results" | "mistakes";
+type Page = "home" | "study" | "results" | "mistakes" | "preview-list" | "preview-card";
+type HomeTab = "flash" | "preview";
 type StudyMode = "en-zh" | "zh-en";
 type Mode = StudyMode | "mistakes";
 type RewardKind = "correct" | "streak3" | "streak5" | "streak7" | "streak10" | "perfect";
+type PreviewWordStatus = "learning" | "mastered";
 
 type RewardStar = {
   id: number;
@@ -64,13 +71,26 @@ const MODE_LABEL: Record<StudyMode, string> = {
 };
 
 const MISTAKE_STORAGE_KEY = "wordflash.mistakeIdsByMode.v1";
+const PREVIEW_STATUS_STORAGE_KEY = "wordflash.previewStatuses.v1";
+const PREVIEW_MISTAKE_STORAGE_KEY = "wordflash.previewMistakeIds.v1";
 const STAR_COLORS = ["#FFEA6F", "#FFC9EF", "#C9F100", "#ABD7FA", "#FFE08A"];
 const VICTORY_SOUND_URL = "/sounds/victory.mp3";
 let audioContext: AudioContext | null = null;
 
+const PREVIEW_STATUS_LABEL: Record<PreviewWordStatus, string> = {
+  learning: "收藏",
+  mastered: "已掌握",
+};
+
+const PREVIEW_STATUS_STYLE: Record<PreviewWordStatus, { bg: string; text: string }> = {
+  learning: { bg: C.yellowLight, text: C.yellowText },
+  mastered: { bg: C.greenLight, text: C.greenText },
+};
+
+const PREVIEW_FAVORITE_BADGE = { label: "收藏", bg: C.yellowLight, text: C.yellowText };
+
 // ── Data ──────────────────────────────────────────────────────────
 const TEXTBOOKS = [...BOOKS];
-const UNITS = [...DATA_UNITS];
 
 // ── Utils ─────────────────────────────────────────────────────────
 function shuffle<T>(arr: T[]): T[] {
@@ -88,6 +108,22 @@ function speak(text: string) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = "en-US";
   window.speechSynthesis.speak(u);
+}
+
+function speakableWord(text: string) {
+  return text.replace(/\s*\([^)]*\)/g, "").trim() || text;
+}
+
+function displayPreviewWord(text: string) {
+  return speakableWord(text);
+}
+
+function cleanPreviewCopy(text: string, rawWord: string) {
+  const displayWord = displayPreviewWord(rawWord);
+  return text
+    .replaceAll(rawWord, displayWord)
+    .replaceAll(`“${rawWord}”`, `“${displayWord}”`)
+    .replaceAll(`"${rawWord}"`, `"${displayWord}"`);
 }
 
 function getAudioContext() {
@@ -228,8 +264,20 @@ function createPerfectReward(): RewardState {
 }
 
 function getUnitPalette(unit: string) {
-  const idx = UNITS.indexOf(unit);
+  const match = unit.match(/\d+/);
+  const baseIndex = match ? Number(match[0]) - 1 : 0;
+  const idx = unit.includes("句型") ? baseIndex + 1 : baseIndex;
   return UNIT_PALETTE[Math.max(idx, 0) % UNIT_PALETTE.length];
+}
+
+function getPreviewUnitPalette(unitIdOrLabel: string) {
+  const match = unitIdOrLabel.match(/\d+/);
+  const idx = match ? Number(match[0]) - 1 : 0;
+  return UNIT_PALETTE[Math.max(idx, 0) % UNIT_PALETTE.length];
+}
+
+function padNum(n: number) {
+  return String(n).padStart(2, "0");
 }
 
 function emptyMistakeIdsByMode(): Record<StudyMode, Set<number>> {
@@ -272,9 +320,61 @@ function saveMistakeIdsByMode(mistakes: Record<StudyMode, Set<number>>) {
   }
 }
 
+function readPreviewStatuses(): Record<string, PreviewWordStatus> {
+  if (typeof window === "undefined") return {};
+
+  try {
+    const raw = window.localStorage.getItem(PREVIEW_STATUS_STORAGE_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw) as Record<string, unknown>;
+    return Object.fromEntries(
+      Object.entries(parsed).filter(
+        (entry): entry is [string, PreviewWordStatus] =>
+          entry[1] === "learning" || entry[1] === "mastered",
+      ),
+    );
+  } catch {
+    return {};
+  }
+}
+
+function savePreviewStatuses(statuses: Record<string, PreviewWordStatus>) {
+  if (typeof window === "undefined") return;
+
+  try {
+    window.localStorage.setItem(PREVIEW_STATUS_STORAGE_KEY, JSON.stringify(statuses));
+  } catch {
+    // Keep the preview flow usable even if localStorage is unavailable.
+  }
+}
+
+function readPreviewMistakeIds(): Set<string> {
+  if (typeof window === "undefined") return new Set();
+
+  try {
+    const raw = window.localStorage.getItem(PREVIEW_MISTAKE_STORAGE_KEY);
+    if (!raw) return new Set();
+    const parsed = JSON.parse(raw);
+    return new Set(Array.isArray(parsed) ? parsed.filter((id) => typeof id === "string") : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function savePreviewMistakeIds(ids: Set<string>) {
+  if (typeof window === "undefined") return;
+
+  try {
+    window.localStorage.setItem(PREVIEW_MISTAKE_STORAGE_KEY, JSON.stringify([...ids]));
+  } catch {
+    // Keep the preview flow usable even if localStorage is unavailable.
+  }
+}
+
 // ── App ───────────────────────────────────────────────────────────
 export default function App() {
   const [page, setPage] = useState<Page>("home");
+  const [homeTab, setHomeTab] = useState<HomeTab>("flash");
   const [textbook, setTextbook] = useState(0);
   const [selectedUnits, setSelectedUnits] = useState<Set<string>>(new Set());
   const [mode, setMode] = useState<Mode>("en-zh");
@@ -294,16 +394,38 @@ export default function App() {
   const [mistakeIdsByMode, setMistakeIdsByMode] = useState<Record<StudyMode, Set<number>>>(
     readMistakeIdsByMode,
   );
+  const [previewCourseId, setPreviewCourseId] = useState(previewCourses[0]?.id ?? "");
+  const [previewUnitId, setPreviewUnitId] = useState(previewCourses[0]?.units[0]?.id ?? "");
+  const [previewWordIndex, setPreviewWordIndex] = useState(0);
+  const [previewListMode, setPreviewListMode] = useState<"all" | "mistakes">("all");
+  const [previewStatuses, setPreviewStatuses] = useState<Record<string, PreviewWordStatus>>(
+    readPreviewStatuses,
+  );
+  const [previewMistakeIds, setPreviewMistakeIds] = useState<Set<string>>(readPreviewMistakeIds);
 
   const currentWord = sessionWords[currentIndex];
   const total = sessionWords.length;
+  const selectedBook = TEXTBOOKS[textbook] ?? TEXTBOOKS[0];
+  const flashUnits = Array.from(
+    new Set(WORD_DATA.filter((word) => word.book === selectedBook).map((word) => word.unit)),
+  );
+  const previewCourse = previewCourses.find((course) => course.id === previewCourseId) ?? previewCourses[0];
+  const previewUnit = previewCourse?.units.find((unit) => unit.id === previewUnitId) ?? previewCourse?.units[0];
+  const previewUnitWords = previewWords
+    .filter((word) => word.courseId === previewCourse?.id && word.unitId === previewUnit?.id)
+    .sort((a, b) => a.order - b.order);
+  const currentPreviewWord = previewUnitWords[previewWordIndex];
+  const previewMasteredInUnit = previewUnitWords.filter(
+    (word) => previewStatuses[word.id] === "mastered",
+  ).length;
   const isPerfectSession =
     page === "results" && total > 0 && knownIds.size === total && unknownIds.size === 0;
   const rewardTimerRef = useRef<number | null>(null);
+  const previewScrollRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (page === "study" && sessionMode !== "zh-en" && currentWord) {
-      speak(currentWord.word);
+      speak(speakableWord(currentWord.word));
     }
   }, [page, sessionMode, currentWord?.id]);
 
@@ -314,6 +436,20 @@ export default function App() {
   useEffect(() => {
     saveMistakeIdsByMode(mistakeIdsByMode);
   }, [mistakeIdsByMode]);
+
+  useEffect(() => {
+    savePreviewStatuses(previewStatuses);
+  }, [previewStatuses]);
+
+  useEffect(() => {
+    savePreviewMistakeIds(previewMistakeIds);
+  }, [previewMistakeIds]);
+
+  useEffect(() => {
+    if (page === "preview-card") {
+      previewScrollRef.current?.scrollTo({ top: 0, behavior: "auto" });
+    }
+  }, [currentPreviewWord?.id, page]);
 
   useEffect(() => {
     if (page !== "results") return;
@@ -353,7 +489,7 @@ export default function App() {
     if (m === "mistakes") {
       words = WORD_DATA.filter((w) => mistakeIdsByMode[studyMode].has(w.id));
     } else {
-      words = WORD_DATA.filter((w) => selectedUnits.has(w.unit));
+      words = WORD_DATA.filter((w) => w.book === selectedBook && selectedUnits.has(w.unit));
     }
     if (words.length === 0) return;
     setSessionWords(shuffle(words));
@@ -473,6 +609,69 @@ export default function App() {
     });
   }
 
+  function openPreviewUnit(unitId: string) {
+    const unit = previewCourse?.units.find((item) => item.id === unitId);
+    if (!unit || unit.status !== "available") return;
+    setPreviewUnitId(unitId);
+    setPreviewWordIndex(0);
+    setPreviewListMode("all");
+    setPage("preview-list");
+  }
+
+  function openPreviewCard(index: number) {
+    setPreviewWordIndex(index);
+    setPage("preview-card");
+  }
+
+  function openPreviewWord(word: PreviewWord) {
+    const wordsInUnit = previewWords
+      .filter((item) => item.courseId === word.courseId && item.unitId === word.unitId)
+      .sort((a, b) => a.order - b.order);
+    const index = wordsInUnit.findIndex((item) => item.id === word.id);
+    setPreviewCourseId(word.courseId);
+    setPreviewUnitId(word.unitId);
+    setPreviewWordIndex(Math.max(index, 0));
+    setPage("preview-card");
+  }
+
+  function togglePreviewMastered(id: string) {
+    setPreviewStatuses((prev) => {
+      const next = { ...prev };
+      if (next[id] === "mastered") delete next[id];
+      else next[id] = "mastered";
+      return next;
+    });
+  }
+
+  function scrollPreviewToTop() {
+    previewScrollRef.current?.scrollTo({ top: 0, behavior: "auto" });
+  }
+
+  function previewGoNext() {
+    scrollPreviewToTop();
+    if (previewWordIndex + 1 < previewUnitWords.length) {
+      setPreviewWordIndex((index) => index + 1);
+    } else {
+      setPage("preview-list");
+    }
+  }
+
+  function previewGoPrev() {
+    scrollPreviewToTop();
+    if (previewWordIndex > 0) {
+      setPreviewWordIndex((index) => index - 1);
+    }
+  }
+
+  function togglePreviewMistake(id: string) {
+    setPreviewMistakeIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
   // ── HOME ──────────────────────────────────────────────────────────
   if (page === "home") {
     const enZhMistakeCount = mistakeIdsByMode["en-zh"].size;
@@ -480,7 +679,7 @@ export default function App() {
     const mistakeCount = enZhMistakeCount + zhEnMistakeCount;
     const activeMistakeCount = mistakeIdsByMode[mistakeReviewMode].size;
     const hasMistakes = mistakeCount > 0;
-    const wordCount = WORD_DATA.filter((w) => selectedUnits.has(w.unit)).length;
+    const wordCount = WORD_DATA.filter((w) => w.book === selectedBook && selectedUnits.has(w.unit)).length;
     const canStart =
       (mode !== "mistakes" && selectedUnits.size > 0) ||
       (mode === "mistakes" && activeMistakeCount > 0);
@@ -516,6 +715,30 @@ export default function App() {
           </div>
         </header>
 
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 pt-6">
+          <div className="flex gap-1 p-1 rounded-2xl" style={{ background: "#f3f4f6" }}>
+            {[
+              { id: "flash" as HomeTab, label: "闪卡练习", icon: <Zap size={15} /> },
+              { id: "preview" as HomeTab, label: "预习讲解", icon: <GraduationCap size={15} /> },
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setHomeTab(tab.id)}
+                className="flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-sm font-bold transition-all"
+                style={{
+                  background: homeTab === tab.id ? "white" : "transparent",
+                  color: homeTab === tab.id ? C.primary : "#9ca3af",
+                  boxShadow: homeTab === tab.id ? "0 1px 4px rgba(0,0,0,0.10)" : "none",
+                }}
+              >
+                {tab.icon}
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {homeTab === "flash" ? (
         <main className="max-w-3xl mx-auto px-5 sm:px-8 py-8 space-y-9">
           {/* Textbook */}
           <section>
@@ -524,7 +747,10 @@ export default function App() {
               {TEXTBOOKS.map((tb, i) => (
                 <button
                   key={tb}
-                  onClick={() => setTextbook(i)}
+                  onClick={() => {
+                    setTextbook(i);
+                    setSelectedUnits(new Set());
+                  }}
                   className="px-4 py-2 rounded-xl text-sm font-semibold border transition-all hover:shadow-sm"
                   style={{
                     background: textbook === i ? C.primary : "white",
@@ -544,7 +770,7 @@ export default function App() {
               <SectionLabel>选择单元</SectionLabel>
               <div className="flex gap-1.5">
                 <button
-                  onClick={() => setSelectedUnits(new Set(UNITS))}
+                  onClick={() => setSelectedUnits(new Set(flashUnits))}
                   className="text-xs px-2.5 py-1 rounded-lg font-medium transition-colors"
                   style={{ background: C.blueLight, color: C.primary }}
                 >
@@ -559,10 +785,10 @@ export default function App() {
               </div>
             </div>
             <div className="flex flex-wrap gap-2 mt-3">
-              {UNITS.map((unit) => {
+              {flashUnits.map((unit) => {
                 const pal = getUnitPalette(unit);
                 const selected = selectedUnits.has(unit);
-                const count = WORD_DATA.filter((w) => w.unit === unit).length;
+                const count = WORD_DATA.filter((w) => w.book === selectedBook && w.unit === unit).length;
                 return (
                   <button
                     key={unit}
@@ -703,6 +929,516 @@ export default function App() {
             </button>
           </div>
         </main>
+        ) : (
+          <main className="max-w-3xl mx-auto px-5 sm:px-8 py-8">
+            <div className="mb-6">
+              <SectionLabel>选择预习项目</SectionLabel>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {previewCourses.map((course) => {
+                  const active = course.id === previewCourseId;
+                  return (
+                    <button
+                      key={course.id}
+                      onClick={() => {
+                        setPreviewCourseId(course.id);
+                        setPreviewUnitId(course.units[0]?.id ?? "");
+                      }}
+                      className="px-4 py-2 rounded-xl text-sm font-semibold border transition-all hover:shadow-sm"
+                      style={{
+                        background: active ? C.primary : "white",
+                        color: active ? "white" : C.navy,
+                        borderColor: active ? C.primary : "rgba(171,215,250,0.6)",
+                      }}
+                    >
+                      {course.book}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="mb-5">
+              <SectionLabel>选择单元开始预习</SectionLabel>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {previewCourse?.units.map((unit) => {
+                const pal = getPreviewUnitPalette(unit.id);
+                const unitWords = previewWords.filter(
+                  (word) => word.courseId === previewCourse.id && word.unitId === unit.id,
+                );
+                const mastered = unitWords.filter((word) => previewStatuses[word.id] === "mastered").length;
+                const hasData = unit.status === "available" && unitWords.length > 0;
+                return (
+                  <button
+                    key={unit.id}
+                    onClick={() => openPreviewUnit(unit.id)}
+                    disabled={!hasData}
+                    className="relative p-4 rounded-2xl text-left transition-all hover:shadow-md disabled:cursor-not-allowed"
+                    style={{
+                      background: hasData ? pal.light : "#f9fafb",
+                      border: `1.5px solid ${hasData ? pal.bg : "#e5e7eb"}`,
+                      opacity: hasData ? 1 : 0.62,
+                    }}
+                  >
+                    <div className="font-extrabold text-base mb-1" style={{ color: hasData ? pal.text : "#9ca3af" }}>
+                      {unit.label}
+                    </div>
+                    {hasData ? (
+                      <>
+                        <div className="text-xs text-gray-500">{unitWords.length} 个单词</div>
+                        <div className="mt-2 h-1.5 rounded-full overflow-hidden" style={{ background: "rgba(0,0,0,0.08)" }}>
+                          <div
+                            className="h-full rounded-full transition-all"
+                            style={{
+                              width: `${unitWords.length ? (mastered / unitWords.length) * 100 : 0}%`,
+                              background: pal.bg,
+                            }}
+                          />
+                        </div>
+                        <div className="text-xs mt-1" style={{ color: pal.text, opacity: 0.75 }}>
+                          {mastered}/{unitWords.length} 已掌握
+                        </div>
+                      </>
+                    ) : (
+                      <div className="text-xs text-gray-400 mt-1">即将上线</div>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </main>
+        )}
+      </div>
+    );
+  }
+
+  // ── PREVIEW LIST ───────────────────────────────────────────────────
+  if (page === "preview-list") {
+    const pal = getPreviewUnitPalette(previewUnit?.id ?? "");
+    const previewFavoriteWords = previewWords
+      .filter((word) => word.courseId === previewCourse?.id && previewMistakeIds.has(word.id))
+      .sort((a, b) => {
+        const unitA = Number(a.unitId.match(/\d+/)?.[0] ?? 0);
+        const unitB = Number(b.unitId.match(/\d+/)?.[0] ?? 0);
+        return unitA === unitB ? a.order - b.order : unitA - unitB;
+      });
+    const previewListWords =
+      previewListMode === "mistakes"
+        ? previewFavoriteWords
+        : previewUnitWords;
+
+    return (
+      <div className="min-h-screen bg-white">
+        <header
+          className="sticky top-0 z-20 bg-white border-b"
+          style={{ borderColor: "rgba(171,215,250,0.45)" }}
+        >
+          <div className="max-w-2xl mx-auto px-5 py-4">
+            <div className="flex items-center gap-3 mb-3">
+              <button
+                onClick={() => setPage("home")}
+                className="p-2 rounded-xl hover:bg-gray-100 transition-colors text-gray-400"
+              >
+                <ArrowLeft size={20} />
+              </button>
+              <div>
+                <div className="font-extrabold text-lg" style={{ color: C.navy }}>
+                  {previewListMode === "mistakes" ? "收藏" : previewUnit?.label ?? "Unit"}
+                </div>
+                <div className="text-xs text-gray-400">
+                  {previewListMode === "mistakes"
+                    ? `${previewFavoriteWords.length} 个收藏`
+                    : `${previewMasteredInUnit} / ${previewUnitWords.length} 词已掌握`}
+                </div>
+              </div>
+              <div className="ml-auto w-24 h-1.5 rounded-full overflow-hidden" style={{ background: "#e5e7eb" }}>
+                <div
+                  className="h-full rounded-full transition-all"
+                  style={{
+                    width: `${previewUnitWords.length ? (previewMasteredInUnit / previewUnitWords.length) * 100 : 0}%`,
+                    background: pal.bg,
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-1 p-1 rounded-xl" style={{ background: "#f3f4f6" }}>
+              <button
+                onClick={() => setPreviewListMode("all")}
+                className="flex-1 py-2 rounded-lg text-xs font-bold transition-all"
+                style={{
+                  background: previewListMode === "all" ? "white" : "transparent",
+                  color: previewListMode === "all" ? C.primary : "#9ca3af",
+                  boxShadow: previewListMode === "all" ? "0 1px 3px rgba(0,0,0,0.08)" : "none",
+                }}
+              >
+                预习讲解
+              </button>
+              <button
+                onClick={() => {
+                  setHomeTab("flash");
+                  setPage("home");
+                }}
+                className="flex-1 py-2 rounded-lg text-xs font-bold transition-all text-gray-400 hover:text-gray-500"
+              >
+                闪卡练习
+              </button>
+              <button
+                onClick={() => setPreviewListMode("mistakes")}
+                className="flex-1 py-2 rounded-lg text-xs font-bold transition-all"
+                style={{
+                  background: previewListMode === "mistakes" ? "white" : "transparent",
+                  color: previewListMode === "mistakes" ? C.primary : "#9ca3af",
+                  boxShadow: previewListMode === "mistakes" ? "0 1px 3px rgba(0,0,0,0.08)" : "none",
+                }}
+              >
+                收藏 {previewMistakeIds.size > 0 ? `(${previewMistakeIds.size})` : ""}
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <main className="max-w-2xl mx-auto px-5 py-5 pb-10">
+          {previewListWords.length === 0 ? (
+            <div className="text-center py-24">
+              <div className="text-4xl mb-3">✨</div>
+              <p className="font-semibold text-gray-600">
+                {previewListMode === "mistakes" ? "这个单元暂无收藏" : "这个单元还没有内容"}
+              </p>
+              <p className="text-sm text-gray-400 mt-1.5">
+                {previewListMode === "mistakes" ? "在讲解页点“收藏”的内容会出现在这里" : "后续导入数据后会显示在这里"}
+              </p>
+            </div>
+          ) : (
+          <div className="space-y-2.5">
+            {previewListWords.map((word) => {
+              const status = previewStatuses[word.id];
+              const isFavorite = previewMistakeIds.has(word.id);
+              const statusBadge =
+                status === "mastered"
+                  ? { label: PREVIEW_STATUS_LABEL.mastered, ...PREVIEW_STATUS_STYLE.mastered }
+                  : isFavorite
+                    ? PREVIEW_FAVORITE_BADGE
+                    : status
+                      ? { label: PREVIEW_STATUS_LABEL[status], ...PREVIEW_STATUS_STYLE[status] }
+                      : null;
+              return (
+	                <button
+	                  key={word.id}
+	                  onClick={() => openPreviewWord(word)}
+                  className="w-full flex items-center gap-4 px-4 py-4 rounded-2xl border text-left transition-all hover:shadow-md hover:border-blue-200 group"
+                  style={{ background: "white", borderColor: "rgba(0,0,0,0.07)" }}
+                >
+                  <div
+                    className="flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-xs font-bold"
+                    style={{ background: pal.light, color: pal.text }}
+                  >
+                    {padNum(word.order)}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-baseline gap-2 flex-wrap">
+                      <span className="font-bold text-base" style={{ color: C.navy }}>
+                        {displayPreviewWord(word.word)}
+                      </span>
+                      <span
+                        className="text-xs text-gray-400"
+                        style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                      >
+                        {word.phonetic}
+                      </span>
+                    </div>
+                    <div className="text-xs text-gray-500 mt-0.5">
+                      <span className="text-gray-400 mr-1">{word.partOfSpeech}</span>
+                      {word.translation}
+                    </div>
+                  </div>
+                  {statusBadge && (
+                    <div
+                      className="flex-shrink-0 px-2.5 py-1 rounded-lg text-xs font-semibold"
+                      style={{ background: statusBadge.bg, color: statusBadge.text }}
+                    >
+                      {statusBadge.label}
+                    </div>
+                  )}
+                  <ChevronRight size={16} className="flex-shrink-0 text-gray-300 group-hover:text-gray-400 transition-colors" />
+                </button>
+              );
+            })}
+          </div>
+          )}
+        </main>
+      </div>
+    );
+  }
+
+  // ── PREVIEW CARD ───────────────────────────────────────────────────
+  if (page === "preview-card" && currentPreviewWord) {
+    const word = currentPreviewWord;
+    const displayWord = displayPreviewWord(word.word);
+    const pal = getPreviewUnitPalette(word.unitId);
+    const status = previewStatuses[word.id];
+    const isPreviewMastered = status === "mastered";
+    const inPreviewMistakes = previewMistakeIds.has(word.id);
+    const statusBadge =
+      status === "mastered"
+        ? { label: PREVIEW_STATUS_LABEL.mastered, ...PREVIEW_STATUS_STYLE.mastered }
+        : inPreviewMistakes
+          ? PREVIEW_FAVORITE_BADGE
+          : status
+            ? { label: PREVIEW_STATUS_LABEL[status], ...PREVIEW_STATUS_STYLE[status] }
+            : null;
+
+    return (
+      <div className="flex flex-col h-screen bg-white overflow-hidden">
+        <div
+          className="flex-shrink-0 px-4 sm:px-6 pt-4 pb-3 border-b flex items-center gap-3"
+          style={{ borderColor: "rgba(171,215,250,0.45)" }}
+        >
+          <button
+            onClick={() => setPage("preview-list")}
+            className="p-2 rounded-xl hover:bg-gray-100 transition-colors text-gray-400 flex-shrink-0"
+          >
+            <ArrowLeft size={20} />
+          </button>
+          <div className="flex-1 flex items-center justify-center gap-1.5 overflow-hidden">
+            {previewUnitWords.map((item, index) => {
+	              const dotStatus = previewStatuses[item.id];
+	              const isDotFavorite = previewMistakeIds.has(item.id);
+	              return (
+                <button
+	                  key={item.id}
+	                  onClick={() => {
+	                    setPreviewWordIndex(index);
+	                  }}
+                  className="rounded-full transition-all flex-shrink-0"
+                  style={{
+                    width: index === previewWordIndex ? 20 : 8,
+                    height: 8,
+                    background:
+                      index === previewWordIndex
+	                        ? C.primary
+	                        : dotStatus === "mastered"
+	                          ? C.green
+	                          : dotStatus === "learning" || isDotFavorite
+	                            ? C.yellow
+	                            : "#e5e7eb",
+                  }}
+                  aria-label={`打开第 ${index + 1} 个词`}
+                />
+              );
+            })}
+          </div>
+          <span className="text-xs font-bold text-gray-400 flex-shrink-0 tabular-nums">
+            {previewWordIndex + 1}/{previewUnitWords.length}
+          </span>
+        </div>
+
+        <div ref={previewScrollRef} className="flex-1 overflow-y-auto pb-28">
+          <div className="max-w-2xl mx-auto px-4 sm:px-6">
+            <div className="mt-5 rounded-2xl overflow-hidden border" style={{ borderColor: pal.bg }}>
+              <div className="px-5 sm:px-7 pt-5 pb-5" style={{ background: pal.light }}>
+                <div className="flex items-center justify-between mb-4 gap-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ background: pal.bg, color: pal.text }}>
+                      {word.unit}
+                    </span>
+                    <span
+                      className="text-xs font-bold text-gray-400"
+                      style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                    >
+                      No. {padNum(word.order)}
+                    </span>
+                  </div>
+                  {statusBadge && (
+                    <span
+                      className="text-xs font-semibold px-2.5 py-1 rounded-lg"
+                      style={{ background: statusBadge.bg, color: statusBadge.text }}
+                    >
+                      {statusBadge.label}
+                    </span>
+                  )}
+                </div>
+
+                <div className="mb-4">
+                  <div
+                    className="font-extrabold mb-1 leading-none break-words"
+                    style={{ color: C.navy, fontSize: "clamp(48px, 8vw, 72px)" }}
+                  >
+                    {displayWord}
+                  </div>
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <span className="text-base text-gray-500" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                      {word.phonetic}
+                    </span>
+                    <button
+                      onClick={() => speak(displayWord)}
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-colors hover:opacity-80"
+                      style={{ background: "white", color: C.primary, border: `1.5px solid ${pal.bg}` }}
+                    >
+                      <Volume2 size={13} />
+                      朗读
+                    </button>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span
+                    className="text-xs font-bold px-2 py-0.5 rounded-md text-gray-500 bg-white/70"
+                    style={{ fontFamily: "'JetBrains Mono', monospace" }}
+                  >
+                    {word.partOfSpeech}
+                  </span>
+                  <span className="text-lg font-bold" style={{ color: pal.text }}>
+                    {word.translation}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <PreviewSection icon={<BookOpen size={14} />} label="核心释义" color={C.primary}>
+              <div className="space-y-3">
+                <div className="px-4 py-3.5 rounded-2xl text-sm leading-relaxed text-gray-700" style={{ background: C.blueLight }}>
+                  {cleanPreviewCopy(word.coreMeaning, word.word)}
+                </div>
+                <div className="px-4 py-3.5 rounded-2xl text-sm leading-relaxed" style={{ background: "#fafafa", color: "#374151" }}>
+                  {cleanPreviewCopy(word.explanation, word.word)}
+                </div>
+              </div>
+            </PreviewSection>
+
+            {word.nearSynonyms.length > 0 && (
+              <PreviewSection icon={<Layers size={14} />} label="近义辨析" color={C.blueText}>
+                <div className="space-y-2">
+                  {word.nearSynonyms.map((item) => (
+                    <div key={item.word} className="px-4 py-3 rounded-2xl border text-sm" style={{ borderColor: C.blue, background: C.blueLight }}>
+                      <div className="font-bold mb-1" style={{ color: C.blueText }}>
+                        {item.word} · {item.translation}
+                      </div>
+                      <div className="text-gray-600 leading-relaxed">{item.difference}</div>
+                    </div>
+                  ))}
+                </div>
+              </PreviewSection>
+            )}
+
+            {word.corePoints.length > 0 && (
+              <PreviewSection icon={<Layers size={14} />} label="核心考点" color={C.blueText}>
+                <div className="flex flex-wrap gap-2">
+                  {word.corePoints.map((point) => (
+                    <CorePointChip key={`${point.phrase}-${point.translation}`} point={point} />
+                  ))}
+                </div>
+              </PreviewSection>
+            )}
+
+            {word.examples.length > 0 && (
+              <PreviewSection icon={<MessageSquare size={14} />} label="例句" color={C.greenText}>
+                <div className="space-y-3">
+                  {word.examples.map((example) => (
+                    <div
+                      key={example.sentence}
+                      className="w-full px-4 py-4 rounded-2xl border"
+                      style={{ background: C.greenLight, borderColor: C.green }}
+                    >
+                      <div className="flex items-start justify-between gap-3 mb-2">
+                        <p className="text-base leading-relaxed font-medium flex-1" style={{ color: C.navy }}>
+                          <HighlightedSentence sentence={example.sentence} word={displayWord.split(" ")[0]} />
+                        </p>
+                        <button
+                          onClick={() => speak(example.sentence)}
+                          className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-colors hover:opacity-80"
+                          style={{ background: "white", color: C.greenText, border: `1.5px solid ${C.green}` }}
+                        >
+                          <Volume2 size={13} />
+                          朗读
+                        </button>
+                      </div>
+                      <p className="text-sm text-gray-500 leading-relaxed">{example.translation}</p>
+                    </div>
+                  ))}
+                </div>
+              </PreviewSection>
+            )}
+
+            {word.usageTip && (
+              <PreviewSection icon={<Lightbulb size={14} />} label="用法提示" color={C.yellowText}>
+                <div
+                  className="px-4 py-4 rounded-2xl border text-sm leading-relaxed"
+                  style={{ background: C.yellowLight, borderColor: C.yellow, color: C.navy }}
+                >
+                  {word.usageTip}
+                </div>
+              </PreviewSection>
+            )}
+
+            <div className="h-6" />
+          </div>
+        </div>
+
+        <div
+          className="fixed bottom-0 left-0 right-0 bg-white border-t py-3 px-4 sm:px-6"
+          style={{ borderColor: "rgba(171,215,250,0.45)" }}
+        >
+          <div className="max-w-2xl mx-auto">
+            <div className="grid grid-cols-4 gap-2">
+              <button
+                onClick={() => togglePreviewMastered(word.id)}
+                aria-pressed={isPreviewMastered}
+                className="flex flex-col items-center gap-1 py-2 rounded-xl text-xs font-bold transition-all hover:opacity-90"
+                style={{
+                  background: isPreviewMastered ? C.greenLight : "#f3f4f6",
+                  color: isPreviewMastered ? C.greenText : "#9ca3af",
+                  border: isPreviewMastered ? `1.5px solid ${C.green}` : "1.5px solid transparent",
+                }}
+              >
+                <Check
+                  size={16}
+                  strokeWidth={isPreviewMastered ? 2.8 : 2}
+                />
+                {isPreviewMastered ? "已掌握" : "掌握"}
+              </button>
+              <button
+                onClick={() => togglePreviewMistake(word.id)}
+                aria-pressed={inPreviewMistakes}
+                className="flex flex-col items-center gap-1 py-2 rounded-xl text-xs font-bold transition-all hover:opacity-90"
+                style={{
+                  background: inPreviewMistakes ? C.yellowLight : "#f3f4f6",
+                  color: inPreviewMistakes ? C.yellowText : "#9ca3af",
+                  border: inPreviewMistakes ? `1.5px solid ${C.yellow}` : "1.5px solid transparent",
+                }}
+              >
+                <Star
+                  size={16}
+                  fill={inPreviewMistakes ? "#f5b800" : "none"}
+                  stroke={inPreviewMistakes ? "#b7791f" : "#9ca3af"}
+                  strokeWidth={inPreviewMistakes ? 2.4 : 2}
+                />
+                {inPreviewMistakes ? "已收藏" : "收藏"}
+              </button>
+              <button
+                onClick={previewGoPrev}
+                disabled={previewWordIndex === 0}
+                className="flex flex-col items-center gap-1 py-2 rounded-xl text-xs font-bold transition-all hover:opacity-90 disabled:opacity-35 disabled:cursor-not-allowed"
+                style={{
+                  background: "#f3f4f6",
+                  color: "#6b7280",
+                }}
+              >
+                <ArrowLeft size={16} />
+                上一个
+              </button>
+              <button
+                onClick={previewGoNext}
+                className="flex flex-col items-center gap-1 py-2 rounded-xl text-xs font-bold transition-all hover:opacity-90"
+                style={{ background: C.primary, color: "white" }}
+              >
+                <ChevronRight size={16} />
+                下一个
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -836,7 +1572,7 @@ export default function App() {
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
-                          speak(currentWord.word);
+                          speak(speakableWord(currentWord.word));
                         }}
                         className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-sm font-semibold transition-colors hover:opacity-80 mt-1"
                         style={{ background: C.blueLight, color: C.primary }}
@@ -893,7 +1629,7 @@ export default function App() {
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
-                          speak(currentWord.word);
+                          speak(speakableWord(currentWord.word));
                         }}
                         className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-sm font-semibold transition-colors hover:opacity-80"
                         style={{ background: pal.bg + "99", color: pal.text }}
@@ -1077,10 +1813,16 @@ export default function App() {
   if (page === "mistakes") {
     const activeMistakeIds = mistakeIdsByMode[mistakeReviewMode];
     const mistakeWords = WORD_DATA.filter((w) => activeMistakeIds.has(w.id));
-    const byUnit = UNITS.map((u) => ({
-      unit: u,
-      words: mistakeWords.filter((w) => w.unit === u),
-    })).filter((g) => g.words.length > 0);
+    const byUnit = TEXTBOOKS.flatMap((book) => {
+      const units = Array.from(
+        new Set(WORD_DATA.filter((word) => word.book === book).map((word) => word.unit)),
+      );
+      return units.map((unit) => ({
+        book,
+        unit,
+        words: mistakeWords.filter((word) => word.book === book && word.unit === unit),
+      }));
+    }).filter((group) => group.words.length > 0);
 
     return (
       <div className="min-h-screen bg-white">
@@ -1145,7 +1887,7 @@ export default function App() {
               {byUnit.map((group) => {
                 const pal = getUnitPalette(group.unit);
                 return (
-                  <div key={group.unit} className="mb-7">
+                  <div key={`${group.book}-${group.unit}`} className="mb-7">
                     <div className="flex items-center gap-2 mb-3">
                       <span
                         className="text-xs font-bold px-3 py-1 rounded-full"
@@ -1153,6 +1895,7 @@ export default function App() {
                       >
                         {group.unit}
                       </span>
+                      <span className="text-xs text-gray-400">{group.book}</span>
                       <span className="text-xs text-gray-400">{group.words.length} 项</span>
                     </div>
                     <div className="space-y-2">
@@ -1226,6 +1969,67 @@ export default function App() {
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <p className="text-xs font-bold uppercase tracking-widest text-gray-400">{children}</p>
+  );
+}
+
+function PreviewSection({
+  icon,
+  label,
+  color = C.primary,
+  children,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  color?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="mt-6">
+      <div className="flex items-center gap-2 mb-3">
+        <span style={{ color }}>{icon}</span>
+        <span className="text-xs font-bold uppercase tracking-wider" style={{ color }}>
+          {label}
+        </span>
+        <div className="flex-1 h-px bg-gray-100" />
+      </div>
+      {children}
+    </section>
+  );
+}
+
+function CorePointChip({ point }: { point: PreviewWord["corePoints"][number] }) {
+  return (
+    <div
+      className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-sm border"
+      style={{ background: C.blueLight, borderColor: C.blue, color: C.blueText }}
+    >
+      <span className="font-semibold">{point.phrase}</span>
+      <span className="text-gray-300">·</span>
+      <span className="text-sm opacity-85">{point.translation}</span>
+      {point.note && (
+        <>
+          <span className="text-gray-300">·</span>
+          <span className="text-xs text-gray-500">{point.note}</span>
+        </>
+      )}
+    </div>
+  );
+}
+
+function HighlightedSentence({ sentence, word }: { sentence: string; word: string }) {
+  const lower = sentence.toLowerCase();
+  const needle = word.toLowerCase();
+  const idx = needle ? lower.indexOf(needle) : -1;
+  if (idx === -1) return <span>{sentence}</span>;
+
+  return (
+    <>
+      <span>{sentence.slice(0, idx)}</span>
+      <strong style={{ color: C.primary, fontWeight: 800 }}>
+        {sentence.slice(idx, idx + word.length)}
+      </strong>
+      <span>{sentence.slice(idx + word.length)}</span>
+    </>
   );
 }
 
