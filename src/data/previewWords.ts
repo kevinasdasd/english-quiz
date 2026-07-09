@@ -2149,8 +2149,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'dɪdʒɪtl/",
     "partOfSpeech": "adj.",
     "translation": "数码的；数字式的",
-    "coreMeaning": "digital means “数码的；数字式的”.",
-    "explanation": "“digital”表示“数码的；数字式的”。预习时重点看它和“digital camera”这类表达的搭配方式。",
+    "coreMeaning": "Digital describes information, pictures, or devices that use computer technology and numbers instead of older mechanical methods.",
+    "explanation": "课堂上可以先用“digital camera”理解基本用法，再用“digital product”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "electronic",
@@ -2196,8 +2196,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/sə'pɔ:t/",
     "partOfSpeech": "n.",
     "translation": "技术支持；支持；帮助",
-    "coreMeaning": "support means “技术支持；支持；帮助”.",
-    "explanation": "“support”表示“技术支持；支持；帮助”。预习时重点看它和“get support from”这类表达的搭配方式。",
+    "coreMeaning": "Support is help that lets a person, system, or device keep working or solve a problem.",
+    "explanation": "课堂上可以先用“get support from”理解基本用法，再用“technical support”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "help",
@@ -2243,8 +2243,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'læptɒp/",
     "partOfSpeech": "n.",
     "translation": "便携式电脑；笔记本电脑",
-    "coreMeaning": "laptop means “便携式电脑；笔记本电脑”.",
-    "explanation": "“laptop”表示“便携式电脑；笔记本电脑”。预习时重点看它和“use a laptop”这类表达的搭配方式。",
+    "coreMeaning": "A laptop is a small computer that you can carry and use in different places.",
+    "explanation": "课堂上可以先用“use a laptop”理解基本用法，再用“a new laptop”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "computer",
@@ -2290,8 +2290,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'ki:bɔ:d/",
     "partOfSpeech": "n.",
     "translation": "（计算机或打字机的）键盘",
-    "coreMeaning": "keyboard means “（计算机或打字机的）键盘”.",
-    "explanation": "“keyboard”表示“（计算机或打字机的）键盘”。预习时重点看它和“computer keyboard”这类表达的搭配方式。",
+    "coreMeaning": "A keyboard is the set of keys you press to type letters, numbers, and commands into a computer.",
+    "explanation": "课堂上可以先用“computer keyboard”理解基本用法，再用“type on the keyboard”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "mouse",
@@ -2337,8 +2337,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'blu:tu:θ/",
     "partOfSpeech": "n.",
     "translation": "蓝牙（短距离无线连接技术）",
-    "coreMeaning": "bluetooth means “蓝牙（短距离无线连接技术）”.",
-    "explanation": "“bluetooth”表示“蓝牙（短距离无线连接技术）”。预习时重点看它和“connect via bluetooth”这类表达的搭配方式。",
+    "coreMeaning": "Bluetooth is a short-distance wireless technology that connects devices such as phones, speakers, and headsets.",
+    "explanation": "课堂上可以先用“connect via bluetooth”理解基本用法，再用“bluetooth speaker”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "Wi-Fi",
@@ -2384,8 +2384,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'smɑ:tfəʊn/",
     "partOfSpeech": "n.",
     "translation": "智能手机",
-    "coreMeaning": "smartphone means “智能手机”.",
-    "explanation": "“smartphone”表示“智能手机”。预习时重点看它和“use a smartphone”这类表达的搭配方式。",
+    "coreMeaning": "A smartphone is a mobile phone that can use apps, connect to the Internet, and do many computer-like tasks.",
+    "explanation": "课堂上可以先用“use a smartphone”理解基本用法，再用“smartphone apps”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "mobile phone",
@@ -2431,8 +2431,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'hedset/",
     "partOfSpeech": "n.",
     "translation": "（带麦克风的）头戴式耳机",
-    "coreMeaning": "headset means “（带麦克风的）头戴式耳机”.",
-    "explanation": "“headset”表示“（带麦克风的）头戴式耳机”。预习时重点看它和“wear a headset”这类表达的搭配方式。",
+    "coreMeaning": "A headset is a pair of headphones, usually with a microphone, that lets you listen and speak.",
+    "explanation": "课堂上可以先用“wear a headset”理解基本用法，再用“headset with microphone”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "earphones",
@@ -2478,8 +2478,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/lɑ:dʒ/",
     "partOfSpeech": "adj.",
     "translation": "大的；大规模的",
-    "coreMeaning": "large means “大的；大规模的”.",
-    "explanation": "“large”表示“大的；大规模的”。预习时重点看它和“a large number of”这类表达的搭配方式。",
+    "coreMeaning": "Large describes something big in size, number, or amount.",
+    "explanation": "课堂上可以先用“a large number of”理解基本用法，再用“large size”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "big",
@@ -2525,8 +2525,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/klɪə(r)/",
     "partOfSpeech": "adj.",
     "translation": "清楚的 v. 清除",
-    "coreMeaning": "clear means “清楚的 v. 清除”.",
-    "explanation": "“clear”表示“清楚的 v. 清除”。预习时重点看它和“adj. clear voice”这类表达的搭配方式。",
+    "coreMeaning": "Clear describes something easy to see, hear, or understand; as a verb, it can mean to remove things from a place.",
+    "explanation": "课堂上可以先用“clear voice”理解基本用法，再用“be clear about”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "obvious",
@@ -2577,8 +2577,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'praɪvət/",
     "partOfSpeech": "adj.",
     "translation": "私人的；个人的",
-    "coreMeaning": "private means “私人的；个人的”.",
-    "explanation": "“private”表示“私人的；个人的”。预习时重点看它和“private life”这类表达的搭配方式。",
+    "coreMeaning": "Private describes something that belongs to one person or should not be shared with everyone.",
+    "explanation": "课堂上可以先用“private life”理解基本用法，再用“private information”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "personal",
@@ -2624,8 +2624,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/tʌtʃ/",
     "partOfSpeech": "n.",
     "translation": "触摸 v. 触摸",
-    "coreMeaning": "touch means “触摸 v. 触摸”.",
-    "explanation": "“touch”表示“触摸 v. 触摸”。预习时重点看它和“n. keep in touch”这类表达的搭配方式。",
+    "coreMeaning": "Touch is the action or feeling of putting your hand or another part of the body on something.",
+    "explanation": "课堂上可以先用“keep in touch”理解基本用法，再用“a light touch”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "feel",
@@ -2676,8 +2676,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'tʌtʃ skri:n/",
     "partOfSpeech": "n.",
     "translation": "（计算机）触摸屏",
-    "coreMeaning": "touch screen means “（计算机）触摸屏”.",
-    "explanation": "“touch screen”表示“（计算机）触摸屏”。预习时重点看它和“use the touch screen”这类表达的搭配方式。",
+    "coreMeaning": "A touch screen is a screen that you control by touching it with your finger.",
+    "explanation": "课堂上可以先用“use the touch screen”理解基本用法，再用“touch screen phone”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "screen",
@@ -2723,8 +2723,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/əd'vɑ:ntɪdʒ/",
     "partOfSpeech": "n.",
     "translation": "优点；优势",
-    "coreMeaning": "advantage means “优点；优势”.",
-    "explanation": "“advantage”表示“优点；优势”。预习时重点看它和“have an advantage over”这类表达的搭配方式。",
+    "coreMeaning": "An advantage is a good point or condition that helps someone or something do better.",
+    "explanation": "课堂上可以先用“have an advantage over”理解基本用法，再用“the advantage of”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "benefit",
@@ -2770,8 +2770,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/tʃɪp/",
     "partOfSpeech": "n.",
     "translation": "芯片",
-    "coreMeaning": "chip means “芯片”.",
-    "explanation": "“chip”表示“芯片”。预习时重点看它和“computer chip”这类表达的搭配方式。",
+    "coreMeaning": "A chip is a very small electronic part inside a computer or device that stores or processes information.",
+    "explanation": "课堂上可以先用“computer chip”理解基本用法，再用“microchip”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "microchip",
@@ -2817,8 +2817,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'laɪtnɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "闪电般的 n. 闪电",
-    "coreMeaning": "lightning means “闪电般的 n. 闪电”.",
-    "explanation": "“lightning”表示“闪电般的 n. 闪电”。预习时重点看它和“adj. lightning speed”这类表达的搭配方式。",
+    "coreMeaning": "Lightning is a bright flash of electricity in the sky; as an adjective, it describes something extremely fast.",
+    "explanation": "课堂上可以先用“lightning speed”理解基本用法，再用“during lightning”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "flash",
@@ -2864,8 +2864,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'pɜ:pl/",
     "partOfSpeech": "adj.",
     "translation": "紫色的",
-    "coreMeaning": "purple means “紫色的”.",
-    "explanation": "“purple”表示“紫色的”。预习时重点看它和“purple flowers”这类表达的搭配方式。",
+    "coreMeaning": "Purple is the colour made by mixing red and blue.",
+    "explanation": "课堂上可以先用“purple flowers”理解基本用法，再用“wear purple”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "violet",
@@ -2911,8 +2911,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "abbr.",
     "translation": "(= artificial intelligence) 人工智能",
-    "coreMeaning": "AI means “(= artificial intelligence) 人工智能”.",
-    "explanation": "“AI”表示“(= artificial intelligence) 人工智能”。预习时重点看它和“AI technology”这类表达的搭配方式。",
+    "coreMeaning": "AI is computer technology that can do tasks that usually need human thinking, such as learning or making decisions.",
+    "explanation": "课堂上可以先用“AI technology”理解基本用法，再用“use AI”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "robot",
@@ -2958,8 +2958,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "照看；留神；留意",
-    "coreMeaning": "keep an eye on means “照看；留神；留意”.",
-    "explanation": "“keep an eye on”表示“照看；留神；留意”。预习时重点看它和“keep an eye on sb./sth.”这类表达的搭配方式。",
+    "coreMeaning": "To keep an eye on someone or something is to watch carefully so that they stay safe or nothing goes wrong.",
+    "explanation": "这个词的重点搭配是“keep an eye on sb./sth.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "look after",
@@ -3000,8 +3000,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/helθ/",
     "partOfSpeech": "n.",
     "translation": "健康（身体或精神状况）",
-    "coreMeaning": "health means “健康（身体或精神状况）”.",
-    "explanation": "“health”表示“健康（身体或精神状况）”。预习时重点看它和“good health”这类表达的搭配方式。",
+    "coreMeaning": "Health is the condition of your body and mind, especially whether you are well or ill.",
+    "explanation": "课堂上可以先用“good health”理解基本用法，再用“be bad for health”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "fitness",
@@ -3047,8 +3047,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kəm'pleɪnt/",
     "partOfSpeech": "n.",
     "translation": "投诉；抱怨",
-    "coreMeaning": "complaint means “投诉；抱怨”.",
-    "explanation": "“complaint”表示“投诉；抱怨”。预习时重点看它和“make a complaint”这类表达的搭配方式。",
+    "coreMeaning": "A complaint is a statement that something is wrong or not good enough.",
+    "explanation": "课堂上可以先用“make a complaint”理解基本用法，再用“complaint about”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "complain",
@@ -3094,8 +3094,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/pres/",
     "partOfSpeech": "v.",
     "translation": "按，压（启动）",
-    "coreMeaning": "press means “按，压（启动）”.",
-    "explanation": "“press”表示“按，压（启动）”。预习时重点看它和“press the button”这类表达的搭配方式。",
+    "coreMeaning": "To press something is to push it firmly, especially a button or key, to make a machine work.",
+    "explanation": "课堂上可以先用“press the button”理解基本用法，再用“press down”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "push",
@@ -3141,8 +3141,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌɪnkən'vi:niəns/",
     "partOfSpeech": "n.",
     "translation": "不便；麻烦",
-    "coreMeaning": "inconvenience means “不便；麻烦”.",
-    "explanation": "“inconvenience”表示“不便；麻烦”。预习时重点看它和“cause inconvenience”这类表达的搭配方式。",
+    "coreMeaning": "Inconvenience is trouble or difficulty that makes a situation less easy or comfortable.",
+    "explanation": "课堂上可以先用“cause inconvenience”理解基本用法，再用“sorry for the inconvenience”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "trouble",
@@ -3188,8 +3188,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/rɪ'pi:t/",
     "partOfSpeech": "v.",
     "translation": "重复；重做",
-    "coreMeaning": "repeat means “重复；重做”.",
-    "explanation": "“repeat”表示“重复；重做”。预习时重点看它和“repeat sth.”这类表达的搭配方式。",
+    "coreMeaning": "To repeat something is to say or do it again.",
+    "explanation": "课堂上可以先用“repeat sth.”理解基本用法，再用“repeat after sb.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "say again",
@@ -3235,8 +3235,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'kʌpl/",
     "partOfSpeech": "n.",
     "translation": "几个人；几件事物",
-    "coreMeaning": "couple means “几个人；几件事物”.",
-    "explanation": "“couple”表示“几个人；几件事物”。预习时重点看它和“a couple of”这类表达的搭配方式。",
+    "coreMeaning": "A couple is two or a small number of people or things.",
+    "explanation": "这个词的重点搭配是“a couple of”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "few",
@@ -3277,8 +3277,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/fri:z/",
     "partOfSpeech": "v.",
     "translation": "（屏幕）冻结",
-    "coreMeaning": "freeze means “（屏幕）冻结”.",
-    "explanation": "“freeze”表示“（屏幕）冻结”。预习时重点看它和“freeze up”这类表达的搭配方式。",
+    "coreMeaning": "To freeze on a screen is to get stuck or stop working; in a cold place, liquid can also become ice.",
+    "explanation": "课堂上可以先用“freeze up”理解基本用法，再用“be frozen”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "stop",
@@ -3324,8 +3324,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'sɒftweə(r)/",
     "partOfSpeech": "n.",
     "translation": "软件",
-    "coreMeaning": "software means “软件”.",
-    "explanation": "“software”表示“软件”。预习时重点看它和“computer software”这类表达的搭配方式。",
+    "coreMeaning": "Software is the programs and instructions that make a computer or device work.",
+    "explanation": "课堂上可以先用“computer software”理解基本用法，再用“install software”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "program",
@@ -3371,8 +3371,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/æp/",
     "partOfSpeech": "n.",
     "translation": "(= application) 应用程序",
-    "coreMeaning": "app means “(= application) 应用程序”.",
-    "explanation": "“app”表示“(= application) 应用程序”。预习时重点看它和“mobile app”这类表达的搭配方式。",
+    "coreMeaning": "An app is a program on a phone, tablet, or computer that helps you do a particular task.",
+    "explanation": "课堂上可以先用“mobile app”理解基本用法，再用“use an app”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "application",
@@ -3418,8 +3418,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'netwɜ:k/",
     "partOfSpeech": "n.",
     "translation": "（互联）网络",
-    "coreMeaning": "network means “（互联）网络”.",
-    "explanation": "“network”表示“（互联）网络”。预习时重点看它和“computer network”这类表达的搭配方式。",
+    "coreMeaning": "A network is a system of connected computers, devices, or people that can share information.",
+    "explanation": "课堂上可以先用“computer network”理解基本用法，再用“network connection”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "Internet",
@@ -3465,8 +3465,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/dɪs'eɪbld/",
     "partOfSpeech": "adj.",
     "translation": "有残疾的",
-    "coreMeaning": "disabled means “有残疾的”.",
-    "explanation": "“disabled”表示“有残疾的”。预习时重点看它和“help disabled people”这类表达的搭配方式。",
+    "coreMeaning": "Disabled describes a person who has a physical or mental condition that makes some activities difficult.",
+    "explanation": "课堂上可以先用“help disabled people”理解基本用法，再用“disabled access”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "unable",
@@ -3512,8 +3512,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/taɪp/",
     "partOfSpeech": "n.",
     "translation": "类型；种类",
-    "coreMeaning": "type means “类型；种类”.",
-    "explanation": "“type”表示“类型；种类”。预习时重点看它和“n. type of”这类表达的搭配方式。",
+    "coreMeaning": "A type is a group of things or people with the same features; as a verb, to type is to write using a keyboard.",
+    "explanation": "课堂上可以先用“type of”理解基本用法，再用“different types”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "kind",
@@ -3564,8 +3564,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/blaɪnd/",
     "partOfSpeech": "adj.",
     "translation": "瞎的；失明的",
-    "coreMeaning": "blind means “瞎的；失明的”.",
-    "explanation": "“blind”表示“瞎的；失明的”。预习时重点看它和“the blind”这类表达的搭配方式。",
+    "coreMeaning": "Blind describes someone who cannot see or cannot see well.",
+    "explanation": "课堂上可以先用“the blind”理解基本用法，再用“be blind to”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "unable to see",
@@ -3611,8 +3611,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/dɪ'tekt/",
     "partOfSpeech": "v.",
     "translation": "发现；查明",
-    "coreMeaning": "detect means “发现；查明”.",
-    "explanation": "“detect”表示“发现；查明”。预习时重点看它和“detect errors”这类表达的搭配方式。",
+    "coreMeaning": "To detect something is to notice or discover it when it is not easy to see or find.",
+    "explanation": "课堂上可以先用“detect errors”理解基本用法，再用“detect a problem”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "find",
@@ -3658,8 +3658,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'ɒbdʒɪkt/",
     "partOfSpeech": "n.",
     "translation": "物体；东西",
-    "coreMeaning": "object means “物体；东西”.",
-    "explanation": "“object”表示“物体；东西”。预习时重点看它和“solid object”这类表达的搭配方式。",
+    "coreMeaning": "An object is a thing that you can see or touch.",
+    "explanation": "课堂上可以先用“solid object”理解基本用法，再用“strange object”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "thing",
@@ -3705,8 +3705,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "一……就……",
-    "coreMeaning": "as soon as means “一……就……”.",
-    "explanation": "“as soon as”表示“一……就……”。预习时重点看它和“as soon as 引导时间状语从句”这类表达的搭配方式。",
+    "coreMeaning": "As soon as is a time expression used for something that happens immediately after another action.",
+    "explanation": "它强调“一……就……”，常考时间状语从句；主句说将来，从句通常用一般现在时。",
     "nearSynonyms": [
       {
         "word": "when",
@@ -3747,8 +3747,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/wɔ:n/",
     "partOfSpeech": "v.",
     "translation": "提醒；使警惕",
-    "coreMeaning": "warn means “提醒；使警惕”.",
-    "explanation": "“warn”表示“提醒；使警惕”。预习时重点看它和“warn sb. of sth.”这类表达的搭配方式。",
+    "coreMeaning": "To warn someone is to tell them about possible danger or a problem before it happens.",
+    "explanation": "课堂上可以先用“warn sb. of sth.”理解基本用法，再用“warn sb. not to do sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "remind",
@@ -3794,8 +3794,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/də'rekʃn; daɪ'rekʃn/",
     "partOfSpeech": "n.",
     "translation": "方向；用法说明",
-    "coreMeaning": "direction means “方向；用法说明”.",
-    "explanation": "“direction”表示“方向；用法说明”。预习时重点看它和“in the direction of”这类表达的搭配方式。",
+    "coreMeaning": "Direction can mean the way something points or moves, and directions can mean instructions to follow.",
+    "explanation": "课堂上可以先用“in the direction of”理解基本用法，再用“follow the directions”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "instruction",
@@ -3841,8 +3841,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ɪn'fɔ:m/",
     "partOfSpeech": "v.",
     "translation": "知会；通知",
-    "coreMeaning": "inform means “知会；通知”.",
-    "explanation": "“inform”表示“知会；通知”。预习时重点看它和“inform sb. of sth.”这类表达的搭配方式。",
+    "coreMeaning": "To inform someone is to give them facts or news in a clear and often official way.",
+    "explanation": "课堂上可以先用“inform sb. of sth.”理解基本用法，再用“inform sb. that...”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "tell",
@@ -3888,8 +3888,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/rɪ'pɔ:t/",
     "partOfSpeech": "n.",
     "translation": "调查报告；报告",
-    "coreMeaning": "report means “调查报告；报告”.",
-    "explanation": "“report”表示“调查报告；报告”。预习时重点看它和“n. write a report”这类表达的搭配方式。",
+    "coreMeaning": "A report is a spoken or written account that gives information about something.",
+    "explanation": "课堂上可以先用“write a report”理解基本用法，再用“research report”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "article",
@@ -3940,8 +3940,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌpɒpju'leɪʃn/",
     "partOfSpeech": "n.",
     "translation": "（地区、国家的）人口",
-    "coreMeaning": "population means “（地区、国家的）人口”.",
-    "explanation": "“population”表示“（地区、国家的）人口”。预习时重点看它和“the population of”这类表达的搭配方式。",
+    "coreMeaning": "Population is the number of people living in a particular place.",
+    "explanation": "这个词讲“人口数量”，句子里常看 the population of... 和 have a large population；不要直接说 many population。",
     "nearSynonyms": [
       {
         "word": "people",
@@ -3987,8 +3987,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'rʊərəl/",
     "partOfSpeech": "adj.",
     "translation": "乡村的；农村的",
-    "coreMeaning": "rural means “乡村的；农村的”.",
-    "explanation": "“rural”表示“乡村的；农村的”。预习时重点看它和“rural areas”这类表达的搭配方式。",
+    "coreMeaning": "Rural describes places, life, or people connected with the countryside rather than the city.",
+    "explanation": "课堂上可以先用“rural areas”理解基本用法，再用“rural life”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "country",
@@ -4034,8 +4034,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kə'nekʃn/",
     "partOfSpeech": "n.",
     "translation": "连接",
-    "coreMeaning": "connection means “连接”.",
-    "explanation": "“connection”表示“连接”。预习时重点看它和“network connection”这类表达的搭配方式。",
+    "coreMeaning": "A connection is a link between people, things, ideas, or devices.",
+    "explanation": "课堂上可以先用“network connection”理解基本用法，再用“connection between A and B”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "link",
@@ -4081,8 +4081,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'faɪəfaɪtɪŋ/",
     "partOfSpeech": "n.",
     "translation": "灭火；消防",
-    "coreMeaning": "firefighting means “灭火；消防”.",
-    "explanation": "“firefighting”表示“灭火；消防”。预习时重点看它和“firefighting work”这类表达的搭配方式。",
+    "coreMeaning": "Firefighting is the work of putting out fires and protecting people from fire.",
+    "explanation": "课堂上可以先用“firefighting work”理解基本用法，再用“firefighting equipment”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "fire prevention",
@@ -4128,8 +4128,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/send/",
     "partOfSpeech": "v.",
     "translation": "发送",
-    "coreMeaning": "send means “发送”.",
-    "explanation": "“send”表示“发送”。预习时重点看它和“send sth. to sb.”这类表达的搭配方式。",
+    "coreMeaning": "To send something is to make a message, object, or person go from one place to another.",
+    "explanation": "课堂上可以先用“send sth. to sb.”理解基本用法，再用“send an email”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "give",
@@ -4175,8 +4175,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'ju:nɪt/",
     "partOfSpeech": "n.",
     "translation": "装置；机件",
-    "coreMeaning": "unit means “装置；机件”.",
-    "explanation": "“unit”表示“装置；机件”。预习时重点看它和“machine unit”这类表达的搭配方式。",
+    "coreMeaning": "A unit is one separate part of a machine, system, lesson, or measurement.",
+    "explanation": "课堂上可以先用“machine unit”理解基本用法，再用“a unit of measurement”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "part",
@@ -4222,8 +4222,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ə'pɪnjən/",
     "partOfSpeech": "n.",
     "translation": "意见；看法",
-    "coreMeaning": "opinion means “意见；看法”.",
-    "explanation": "“opinion”表示“意见；看法”。预习时重点看它和“in one’s opinion”这类表达的搭配方式。",
+    "coreMeaning": "An opinion is what someone thinks or believes about a person, thing, or situation.",
+    "explanation": "课堂上可以先用“in one’s opinion”理解基本用法，再用“give one’s opinion”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "idea",
@@ -4269,8 +4269,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "依我看",
-    "coreMeaning": "in my opinion means “依我看”.",
-    "explanation": "“in my opinion”表示“依我看”。预习时重点看它和“in my opinion 置于句首或句中”这类表达的搭配方式。",
+    "coreMeaning": "In my opinion is a phrase used before giving your own view.",
+    "explanation": "写作里可放句首，用逗号隔开，再接自己的观点；比 I think 更正式一点。",
     "nearSynonyms": [
       {
         "word": "I think",
@@ -4311,8 +4311,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ə'weə(r)/",
     "partOfSpeech": "adj.",
     "translation": "意识到；明白",
-    "coreMeaning": "aware means “意识到；明白”.",
-    "explanation": "“aware”表示“意识到；明白”。预习时重点看它和“be aware of”这类表达的搭配方式。",
+    "coreMeaning": "Aware describes someone who knows about a fact, problem, or situation.",
+    "explanation": "常见结构是 be aware of + 名词/动名词，或者 be aware that + 句子，重点是“意识到某事的重要性或风险”。",
     "nearSynonyms": [
       {
         "word": "conscious",
@@ -4358,8 +4358,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "知道；意识到；明白",
-    "coreMeaning": "be aware of means “知道；意识到；明白”.",
-    "explanation": "“be aware of”表示“知道；意识到；明白”。预习时重点看它和“be aware of + 名词/代词/动名词”这类表达的搭配方式。",
+    "coreMeaning": "To be aware of something is to know that it exists or understand that it is important.",
+    "explanation": "这个短语后面接名词、代词或动名词；如果后面是一整句话，换成 be aware that...。",
     "nearSynonyms": [
       {
         "word": "know",
@@ -4400,8 +4400,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌdɪsəd'vɑ:ntɪdʒ/",
     "partOfSpeech": "n.",
     "translation": "不利因素",
-    "coreMeaning": "disadvantage means “不利因素”.",
-    "explanation": "“disadvantage”表示“不利因素”。预习时重点看它和“the disadvantage of”这类表达的搭配方式。",
+    "coreMeaning": "A disadvantage is a problem or weak point that makes something less good or less useful.",
+    "explanation": "课堂上可以先用“the disadvantage of”理解基本用法，再用“have a disadvantage”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "weakness",
@@ -4447,8 +4447,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/haɪd/",
     "partOfSpeech": "v.",
     "translation": "藏；隐蔽",
-    "coreMeaning": "hide means “藏；隐蔽”.",
-    "explanation": "“hide”表示“藏；隐蔽”。预习时重点看它和“hide sth. from sb.”这类表达的搭配方式。",
+    "coreMeaning": "To hide something is to put it where people cannot see or find it.",
+    "explanation": "课堂上可以先用“hide sth. from sb.”理解基本用法，再用“hide away”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "cover",
@@ -4494,8 +4494,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'hɪdn/",
     "partOfSpeech": "adj.",
     "translation": "隐藏的",
-    "coreMeaning": "hidden means “隐藏的”.",
-    "explanation": "“hidden”表示“隐藏的”。预习时重点看它和“hidden treasure”这类表达的搭配方式。",
+    "coreMeaning": "Hidden describes something that is not easy to see or has been put out of sight.",
+    "explanation": "课堂上可以先用“hidden treasure”理解基本用法，再用“be hidden in”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "secret",
@@ -4541,8 +4541,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'vaɪrəs/",
     "partOfSpeech": "n.",
     "translation": "病毒",
-    "coreMeaning": "virus means “病毒”.",
-    "explanation": "“virus”表示“病毒”。预习时重点看它和“computer virus”这类表达的搭配方式。",
+    "coreMeaning": "A virus is a tiny thing that can cause disease, or a harmful program that can damage a computer.",
+    "explanation": "课堂上可以先用“computer virus”理解基本用法，再用“catch a virus”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "disease",
@@ -4588,8 +4588,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kən'klu:ʒn/",
     "partOfSpeech": "n.",
     "translation": "结束；结论",
-    "coreMeaning": "conclusion means “结束；结论”.",
-    "explanation": "“conclusion”表示“结束；结论”。预习时重点看它和“draw a conclusion”这类表达的搭配方式。",
+    "coreMeaning": "A conclusion is the final idea, decision, or ending reached after thinking or discussing.",
+    "explanation": "课堂上可以先用“draw a conclusion”理解基本用法，再用“in conclusion”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "ending",
@@ -4635,8 +4635,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "最后",
-    "coreMeaning": "in conclusion means “最后”.",
-    "explanation": "“in conclusion”表示“最后”。预习时重点看它和“in conclusion 置于句首”这类表达的搭配方式。",
+    "coreMeaning": "In conclusion is a phrase used to introduce the final point or summary.",
+    "explanation": "写作文总结段时很好用，通常放在句首，后面接总结性的观点。",
     "nearSynonyms": [
       {
         "word": "finally",
@@ -4677,8 +4677,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'benɪfɪt/",
     "partOfSpeech": "n.",
     "translation": "优势；益处",
-    "coreMeaning": "benefit means “优势；益处”.",
-    "explanation": "“benefit”表示“优势；益处”。预习时重点看它和“the benefit of”这类表达的搭配方式。",
+    "coreMeaning": "A benefit is a good result or helpful effect that comes from something.",
+    "explanation": "课堂上可以先用“the benefit of”理解基本用法，再用“get benefits from”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "advantage",
@@ -4724,8 +4724,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌɪn'bɔ:n/",
     "partOfSpeech": "adj.",
     "translation": "天生的",
-    "coreMeaning": "inborn means “天生的”.",
-    "explanation": "“inborn”表示“天生的”。预习时注意它的词性、含义和例句用法。",
+    "coreMeaning": "Inborn describes a quality or ability that someone has naturally from birth.",
+    "explanation": "这个词作形容词，预习时重点看它修饰什么名词，或者放在 be 动词后描述状态。",
     "nearSynonyms": [
       {
         "word": "natural",
@@ -4760,8 +4760,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌʌnfə'mɪliə(r)/",
     "partOfSpeech": "adj.",
     "translation": "陌生的；不熟悉的",
-    "coreMeaning": "unfamiliar means “陌生的；不熟悉的”.",
-    "explanation": "“unfamiliar”表示“陌生的；不熟悉的”。预习时重点看它和“be unfamiliar with sth.”这类表达的搭配方式。",
+    "coreMeaning": "Unfamiliar describes something you do not know or have not seen before.",
+    "explanation": "课堂上可以先用“be unfamiliar with sth.”理解基本用法，再用“be unfamiliar to sb.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "strange",
@@ -4807,8 +4807,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌgrəʊn 'ʌp/",
     "partOfSpeech": "n.",
     "translation": "（尤指用于对儿童说话时）大人",
-    "coreMeaning": "grown-up means “（尤指用于对儿童说话时）大人”.",
-    "explanation": "“grown-up”表示“（尤指用于对儿童说话时）大人”。预习时注意它的词性、含义和例句用法。",
+    "coreMeaning": "A grown-up is an adult, especially when children are talking about adults.",
+    "explanation": "这个词作名词，预习时重点看可数不可数、常见搭配，以及它在例句里指什么。",
     "nearSynonyms": [
       {
         "word": "adult",
@@ -4843,8 +4843,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kən'tɪnjuəs/",
     "partOfSpeech": "adj.",
     "translation": "不断的；持续的；连续的",
-    "coreMeaning": "continuous means “不断的；持续的；连续的”.",
-    "explanation": "“continuous”表示“不断的；持续的；连续的”。预习时重点看它和“be continuous with sth.”这类表达的搭配方式。",
+    "coreMeaning": "Continuous describes something that goes on without stopping or being interrupted.",
+    "explanation": "这个词的重点搭配是“be continuous with sth.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "constant",
@@ -4885,8 +4885,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'aɪðə(r)/",
     "partOfSpeech": "adv.",
     "translation": "（用于否定词组后）也",
-    "coreMeaning": "either means “（用于否定词组后）也”.",
-    "explanation": "“either”表示“（用于否定词组后）也”。预习时重点看它和“adv. 用于否定句末，表“也””这类表达的搭配方式。",
+    "coreMeaning": "Either is used after a negative statement to add that the same thing is true for another person or thing.",
+    "explanation": "这里的 either 放在否定句末，意思是“也不”。肯定句末的“也”一般用 too。",
     "nearSynonyms": [
       {
         "word": "too",
@@ -4932,8 +4932,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'ru:ɪn/",
     "partOfSpeech": "v.",
     "translation": "毁坏；破坏",
-    "coreMeaning": "ruin means “毁坏；破坏”.",
-    "explanation": "“ruin”表示“毁坏；破坏”。预习时重点看它和“v. ruin sth.”这类表达的搭配方式。",
+    "coreMeaning": "To ruin something is to damage it so badly that it loses its value, success, or pleasure.",
+    "explanation": "课堂上可以先用“ruin sth.”理解基本用法，再用“be in ruins”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "destroy",
@@ -4984,8 +4984,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'aɪsaɪt/",
     "partOfSpeech": "n.",
     "translation": "视力",
-    "coreMeaning": "eyesight means “视力”.",
-    "explanation": "“eyesight”表示“视力”。预习时重点看它和“poor eyesight”这类表达的搭配方式。",
+    "coreMeaning": "Eyesight is the ability to see.",
+    "explanation": "课堂上可以先用“poor eyesight”理解基本用法，再用“protect one’s eyesight”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "vision",
@@ -5031,8 +5031,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/fæn'tæstɪk/",
     "partOfSpeech": "adj.",
     "translation": "极好的；了不起的",
-    "coreMeaning": "fantastic means “极好的；了不起的”.",
-    "explanation": "“fantastic”表示“极好的；了不起的”。预习时注意它的词性、含义和例句用法。",
+    "coreMeaning": "Fantastic describes something extremely good, exciting, or impressive.",
+    "explanation": "这个词作形容词，预习时重点看它修饰什么名词，或者放在 be 动词后描述状态。",
     "nearSynonyms": [
       {
         "word": "excellent",
@@ -5067,8 +5067,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ænt/",
     "partOfSpeech": "n.",
     "translation": "蚂蚁",
-    "coreMeaning": "ant means “蚂蚁”.",
-    "explanation": "“ant”表示“蚂蚁”。预习时注意它的词性、含义和例句用法。",
+    "coreMeaning": "An ant is a very small insect that often lives in large groups.",
+    "explanation": "这个词作名词，预习时重点看可数不可数、常见搭配，以及它在例句里指什么。",
     "nearSynonyms": [
       {
         "word": "insect",
@@ -5103,8 +5103,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/sə'praɪzɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "令人吃惊的",
-    "coreMeaning": "surprising means “令人吃惊的”.",
-    "explanation": "“surprising”表示“令人吃惊的”。预习时重点看它和“be surprising to sb.”这类表达的搭配方式。",
+    "coreMeaning": "Surprising describes something that people do not expect.",
+    "explanation": "课堂上可以先用“be surprising to sb.”理解基本用法，再用“It’s surprising that...”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "amazing",
@@ -5150,8 +5150,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ə'weɪk/",
     "partOfSpeech": "adj.",
     "translation": "醒着（尤指入睡前或刚醒时）",
-    "coreMeaning": "awake means “醒着（尤指入睡前或刚醒时）”.",
-    "explanation": "“awake”表示“醒着（尤指入睡前或刚醒时）”。预习时重点看它和“be awake”这类表达的搭配方式。",
+    "coreMeaning": "Awake describes someone who is not sleeping.",
+    "explanation": "课堂上可以先用“be awake”理解基本用法，再用“stay awake”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "wakeful",
@@ -5197,8 +5197,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'i:gl/",
     "partOfSpeech": "n.",
     "translation": "雕",
-    "coreMeaning": "eagle means “雕”.",
-    "explanation": "“eagle”表示“雕”。预习时注意它的词性、含义和例句用法。",
+    "coreMeaning": "An eagle is a large strong bird with sharp eyes and powerful wings.",
+    "explanation": "这个词作名词，预习时重点看可数不可数、常见搭配，以及它在例句里指什么。",
     "nearSynonyms": [
       {
         "word": "bird",
@@ -5233,8 +5233,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kɑ:'tu:n/",
     "partOfSpeech": "n.",
     "translation": "动画片；卡通片",
-    "coreMeaning": "cartoon means “动画片；卡通片”.",
-    "explanation": "“cartoon”表示“动画片；卡通片”。预习时重点看它和“watch a cartoon”这类表达的搭配方式。",
+    "coreMeaning": "A cartoon is a funny drawing or an animated film, often made for children.",
+    "explanation": "这个词的重点搭配是“watch a cartoon”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "animation",
@@ -5275,8 +5275,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'mu:vi/",
     "partOfSpeech": "n.",
     "translation": "（美）电影",
-    "coreMeaning": "movie means “（美）电影”.",
-    "explanation": "“movie”表示“（美）电影”。预习时重点看它和“watch a movie”这类表达的搭配方式。",
+    "coreMeaning": "A movie is a film that tells a story or shows events on a screen.",
+    "explanation": "课堂上可以先用“watch a movie”理解基本用法，再用“go to the movies”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "film",
@@ -5322,8 +5322,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌnevər 'endɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "永无止境的；没完没了的",
-    "coreMeaning": "never-ending means “永无止境的；没完没了的”.",
-    "explanation": "“never-ending”表示“永无止境的；没完没了的”。预习时注意它的词性、含义和例句用法。",
+    "coreMeaning": "Never-ending describes something that seems to continue for a very long time and not stop.",
+    "explanation": "这个词作形容词，预习时重点看它修饰什么名词，或者放在 be 动词后描述状态。",
     "nearSynonyms": [
       {
         "word": "endless",
@@ -5358,8 +5358,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ə'nɔɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "恼人的；讨厌的",
-    "coreMeaning": "annoying means “恼人的；讨厌的”.",
-    "explanation": "“annoying”表示“恼人的；讨厌的”。预习时重点看它和“be annoying to sb.”这类表达的搭配方式。",
+    "coreMeaning": "Annoying describes something that makes people feel a little angry or impatient.",
+    "explanation": "这个词的重点搭配是“be annoying to sb.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "irritating",
@@ -5400,8 +5400,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/breɪn/",
     "partOfSpeech": "n.",
     "translation": "脑；脑力",
-    "coreMeaning": "brain means “脑；脑力”.",
-    "explanation": "“brain”表示“脑；脑力”。预习时重点看它和“use one’s brain”这类表达的搭配方式。",
+    "coreMeaning": "The brain is the organ in your head that helps you think, feel, remember, and control your body.",
+    "explanation": "课堂上可以先用“use one’s brain”理解基本用法，再用“have a good brain”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "mind",
@@ -5447,8 +5447,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/rɪ'sɜ:tʃə(r)/",
     "partOfSpeech": "n.",
     "translation": "研究者",
-    "coreMeaning": "researcher means “研究者”.",
-    "explanation": "“researcher”表示“研究者”。预习时重点看它和“do research”这类表达的搭配方式。",
+    "coreMeaning": "A researcher is a person who studies a subject carefully to discover new facts.",
+    "explanation": "这个词的重点搭配是“do research”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "scientist",
@@ -5489,8 +5489,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/reɪt/",
     "partOfSpeech": "v.",
     "translation": "划分等级；评估",
-    "coreMeaning": "rate means “划分等级；评估”.",
-    "explanation": "“rate”表示“划分等级；评估”。预习时重点看它和“v. rate sth.”这类表达的搭配方式。",
+    "coreMeaning": "To rate someone or something is to judge their quality or level.",
+    "explanation": "课堂上可以先用“rate sth.”理解基本用法，再用“the rate of...”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "grade",
@@ -5540,8 +5540,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/rɪ'zʌlt/",
     "partOfSpeech": "n.",
     "translation": "结果",
-    "coreMeaning": "result means “结果”.",
-    "explanation": "“result”表示“结果”。预习时重点看它和“the result of...”这类表达的搭配方式。",
+    "coreMeaning": "A result is what happens because of an action, event, or process.",
+    "explanation": "课堂上可以先用“the result of...”理解基本用法，再用“as a result”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "outcome",
@@ -5592,8 +5592,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/mə'dʒɪʃn/",
     "partOfSpeech": "n.",
     "translation": "魔术师；变戏法的人",
-    "coreMeaning": "magician means “魔术师；变戏法的人”.",
-    "explanation": "“magician”表示“魔术师；变戏法的人”。预习时重点看它和“do magic tricks”这类表达的搭配方式。",
+    "coreMeaning": "A magician is a person who entertains people by doing magic tricks.",
+    "explanation": "这个词的重点搭配是“do magic tricks”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "wizard",
@@ -5634,8 +5634,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'ri:snt/",
     "partOfSpeech": "adj.",
     "translation": "近来的；新近的",
-    "coreMeaning": "recent means “近来的；新近的”.",
-    "explanation": "“recent”表示“近来的；新近的”。预习时重点看它和“in recent years”这类表达的搭配方式。",
+    "coreMeaning": "Recent describes something that happened or began not long ago.",
+    "explanation": "课堂上可以先用“in recent years”理解基本用法，再用“recent news”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "latest",
@@ -5681,8 +5681,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/trɪk/",
     "partOfSpeech": "n.",
     "translation": "戏法；把戏",
-    "coreMeaning": "trick means “戏法；把戏”.",
-    "explanation": "“trick”表示“戏法；把戏”。预习时重点看它和“n. play a trick on sb.”这类表达的搭配方式。",
+    "coreMeaning": "A trick is a clever act that surprises people or makes them believe something false.",
+    "explanation": "课堂上可以先用“play a trick on sb.”理解基本用法，再用“magic trick”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "joke",
@@ -5728,8 +5728,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'vɒləntri/",
     "partOfSpeech": "adj.",
     "translation": "自愿的；主动的；志愿的",
-    "coreMeaning": "voluntary means “自愿的；主动的；志愿的”.",
-    "explanation": "“voluntary”表示“自愿的；主动的；志愿的”。预习时重点看它和“voluntary work”这类表达的搭配方式。",
+    "coreMeaning": "Voluntary describes work or actions that people choose to do without being forced.",
+    "explanation": "课堂上可以先用“voluntary work”理解基本用法，再用“voluntary help”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "willing",
@@ -5775,8 +5775,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'kreɪzi/",
     "partOfSpeech": "adj.",
     "translation": "热衷的；狂热的",
-    "coreMeaning": "crazy means “热衷的；狂热的”.",
-    "explanation": "“crazy”表示“热衷的；狂热的”。预习时重点看它和“be crazy about sth./sb.”这类表达的搭配方式。",
+    "coreMeaning": "Crazy can describe someone very excited about something or very interested in it.",
+    "explanation": "课堂上可以先用“be crazy about sth./sb.”理解基本用法，再用“drive sb. crazy”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "mad",
@@ -5822,8 +5822,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'ðeəfɔ:(r)/",
     "partOfSpeech": "adv.",
     "translation": "因此",
-    "coreMeaning": "therefore means “因此”.",
-    "explanation": "“therefore”表示“因此”。预习时重点看它和“表因果关系”这类表达的搭配方式。",
+    "coreMeaning": "Therefore is used to show that the next idea is the result of the previous one.",
+    "explanation": "这个词的重点搭配是“表因果关系”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "so",
@@ -5864,8 +5864,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/'wʌndə(r)/",
     "partOfSpeech": "v.",
     "translation": "想知道；想弄明白；琢磨",
-    "coreMeaning": "wonder means “想知道；想弄明白；琢磨”.",
-    "explanation": "“wonder”表示“想知道；想弄明白；琢磨”。预习时重点看它和“v. wonder + if/whether从句”这类表达的搭配方式。",
+    "coreMeaning": "To wonder is to want to know something or think about a question.",
+    "explanation": "课堂上可以先用“wonder + if/whether从句”理解基本用法，再用“wonder about sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "want to know",
@@ -5916,8 +5916,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ʃeɪk/",
     "partOfSpeech": "v.",
     "translation": "摇动；抖动",
-    "coreMeaning": "shake means “摇动；抖动”.",
-    "explanation": "“shake”表示“摇动；抖动”。预习时重点看它和“shake hands with sb.”这类表达的搭配方式。",
+    "coreMeaning": "To shake something is to move it quickly up and down or from side to side.",
+    "explanation": "课堂上可以先用“shake hands with sb.”理解基本用法，再用“shake sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "wave",
@@ -5963,8 +5963,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/bɑ:k/",
     "partOfSpeech": "v.",
     "translation": "（狗）吠叫",
-    "coreMeaning": "bark means “（狗）吠叫”.",
-    "explanation": "“bark”表示“（狗）吠叫”。预习时重点看它和“v. bark at sb./sth.”这类表达的搭配方式。",
+    "coreMeaning": "A bark is the sound a dog makes; as a verb, to bark is to make that sound.",
+    "explanation": "课堂上可以先用“bark at sb./sth.”理解基本用法，再用“the bark of a dog”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "shout",
@@ -6010,8 +6010,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈmeməri/",
     "partOfSpeech": "n.",
     "translation": "记忆",
-    "coreMeaning": "memory means “记忆”.",
-    "explanation": "“memory”表示“记忆”。预习时重点看它和“in memory of”这类表达的搭配方式。",
+    "coreMeaning": "Memory is the ability to remember things, or a remembered event from the past.",
+    "explanation": "课堂上可以先用“in memory of”理解基本用法，再用“sweet memories”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "recollection",
@@ -6057,8 +6057,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈseldəm/",
     "partOfSpeech": "adv.",
     "translation": "不常；很少",
-    "coreMeaning": "seldom means “不常；很少”.",
-    "explanation": "“seldom”表示“不常；很少”。预习时重点看它和“表否定含义”这类表达的搭配方式。",
+    "coreMeaning": "Seldom is a frequency adverb for something that does not happen often.",
+    "explanation": "课堂上可以先用“表否定含义”理解基本用法，再用“seldom go out”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "rarely",
@@ -6104,8 +6104,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈdʒɜːni/",
     "partOfSpeech": "n.",
     "translation": "旅行",
-    "coreMeaning": "journey means “旅行”.",
-    "explanation": "“journey”表示“旅行”。预习时重点看它和“a journey to...”这类表达的搭配方式。",
+    "coreMeaning": "A journey is the act of travelling from one place to another, especially over a long distance.",
+    "explanation": "课堂上可以先用“a journey to...”理解基本用法，再用“long journey”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "trip",
@@ -6151,8 +6151,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈnaʊədeɪz/",
     "partOfSpeech": "adv.",
     "translation": "现今；现在",
-    "coreMeaning": "nowadays means “现今；现在”.",
-    "explanation": "“nowadays”表示“现今；现在”。预习时重点看它和“常用于一般现在时”这类表达的搭配方式。",
+    "coreMeaning": "Nowadays refers to the present time, especially when comparing it with the past.",
+    "explanation": "这个词的重点搭配是“常用于一般现在时”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "today",
@@ -6193,8 +6193,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/trʌk/",
     "partOfSpeech": "n.",
     "translation": "卡车；货运汽车",
-    "coreMeaning": "truck means “卡车；货运汽车”.",
-    "explanation": "“truck”表示“卡车；货运汽车”。预习时重点看它和“by truck”这类表达的搭配方式。",
+    "coreMeaning": "A truck is a large road vehicle used for carrying goods.",
+    "explanation": "课堂上可以先用“by truck”理解基本用法，再用“truck driver”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "lorry",
@@ -6240,8 +6240,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/waɪd/",
     "partOfSpeech": "adj.",
     "translation": "宽的；宽阔的",
-    "coreMeaning": "wide means “宽的；宽阔的”.",
-    "explanation": "“wide”表示“宽的；宽阔的”。预习时重点看它和“be + 数字 + wide 宽……”这类表达的搭配方式。",
+    "coreMeaning": "Wide describes something that has a large distance from one side to the other.",
+    "explanation": "课堂上可以先用“be + 数字 + wide 宽……”理解基本用法，再用“wide road”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "broad",
@@ -6287,8 +6287,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈmɒdn/",
     "partOfSpeech": "adj.",
     "translation": "现代的；近代的",
-    "coreMeaning": "modern means “现代的；近代的”.",
-    "explanation": "“modern”表示“现代的；近代的”。预习时重点看它和“modern life”这类表达的搭配方式。",
+    "coreMeaning": "Modern describes something connected with the present time or using new ideas and technology.",
+    "explanation": "课堂上可以先用“modern life”理解基本用法，再用“modern technology”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "new",
@@ -6334,8 +6334,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/steɪ/",
     "partOfSpeech": "n.",
     "translation": "停留；逗留（时间）",
-    "coreMeaning": "stay means “停留；逗留（时间）”.",
-    "explanation": "“stay”表示“停留；逗留（时间）”。预习时重点看它和“a stay in...”这类表达的搭配方式。",
+    "coreMeaning": "A stay is a period of time spent in a place.",
+    "explanation": "课堂上可以先用“a stay in...”理解基本用法，再用“short stay”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "visit",
@@ -6381,8 +6381,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/teɪp/",
     "partOfSpeech": "n.",
     "translation": "磁带；录像带",
-    "coreMeaning": "tape means “磁带；录像带”.",
-    "explanation": "“tape”表示“磁带；录像带”。预习时重点看它和“tape recorder”这类表达的搭配方式。",
+    "coreMeaning": "Tape is a long thin material used for recording sound or video, or for sticking things together.",
+    "explanation": "课堂上可以先用“tape recorder”理解基本用法，再用“video tape”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "recording",
@@ -6428,8 +6428,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌɪnˈsaɪd/",
     "partOfSpeech": "prep.",
     "translation": "在（或向）……内",
-    "coreMeaning": "inside means “在（或向）……内”.",
-    "explanation": "“inside”表示“在（或向）……内”。预习时重点看它和“inside + 地点 在……里面”这类表达的搭配方式。",
+    "coreMeaning": "Inside refers to the inner part of a place or thing.",
+    "explanation": "课堂上可以先用“inside + 地点 在……里面”理解基本用法，再用“inside the house”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "within",
@@ -6475,8 +6475,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "adv.",
     "translation": "（否定/疑问句末）再也（不），（不）再",
-    "coreMeaning": "any more means “（否定/疑问句末）再也（不），（不）再”.",
-    "explanation": "“any more”表示“（否定/疑问句末）再也（不），（不）再”。预习时重点看它和“not...any more 不再”这类表达的搭配方式。",
+    "coreMeaning": "Any more is used in negative sentences to say that something no longer happens.",
+    "explanation": "常放在否定句末，结构是 not...any more，表达“现在不再这样”。",
     "nearSynonyms": [
       {
         "word": "no longer",
@@ -6517,8 +6517,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈbɒrəʊ/",
     "partOfSpeech": "v.",
     "translation": "借；借用",
-    "coreMeaning": "borrow means “借；借用”.",
-    "explanation": "“borrow”表示“借；借用”。预习时重点看它和“borrow sth. from sb. 从某人那里借某物”这类表达的搭配方式。",
+    "coreMeaning": "To borrow something is to take and use something that belongs to someone else and give it back later.",
+    "explanation": "borrow 的方向是“借入”，结构是 borrow sth. from sb.；lend 才是“借给别人”。",
     "nearSynonyms": [
       {
         "word": "lend",
@@ -6559,8 +6559,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ɪˈmædʒɪn/",
     "partOfSpeech": "v.",
     "translation": "想象；设想",
-    "coreMeaning": "imagine means “想象；设想”.",
-    "explanation": "“imagine”表示“想象；设想”。预习时重点看它和“imagine doing sth. 想象做某事”这类表达的搭配方式。",
+    "coreMeaning": "To imagine something is to form a picture or idea in your mind.",
+    "explanation": "这个词的重点搭配是“imagine doing sth. 想象做某事”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "picture",
@@ -6601,8 +6601,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/rəʊl/",
     "partOfSpeech": "n.",
     "translation": "卷；卷轴",
-    "coreMeaning": "roll means “卷；卷轴”.",
-    "explanation": "“roll”表示“卷；卷轴”。预习时重点看它和“a roll of”这类表达的搭配方式。",
+    "coreMeaning": "A roll is something wrapped into a round shape or a long piece wound around itself.",
+    "explanation": "课堂上可以先用“a roll of”理解基本用法，再用“roll of paper”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "tube",
@@ -6648,8 +6648,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈrekɔːd/",
     "partOfSpeech": "n.",
     "translation": "唱片",
-    "coreMeaning": "record means “唱片”.",
-    "explanation": "“record”表示“唱片”。预习时重点看它和“music record”这类表达的搭配方式。",
+    "coreMeaning": "A record is a disc or stored piece of music or sound that people can play.",
+    "explanation": "课堂上可以先用“music record”理解基本用法，再用“record player”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "album",
@@ -6695,8 +6695,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈbɪznəs/",
     "partOfSpeech": "n.",
     "translation": "公司；商业",
-    "coreMeaning": "business means “公司；商业”.",
-    "explanation": "“business”表示“公司；商业”。预习时重点看它和“on business”这类表达的搭配方式。",
+    "coreMeaning": "Business is the activity of buying and selling goods or services, or a company that does this.",
+    "explanation": "课堂上可以先用“on business”理解基本用法，再用“do business”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "company",
@@ -6742,8 +6742,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ɪkˈsept/",
     "partOfSpeech": "prep.",
     "translation": "除……之外",
-    "coreMeaning": "except means “除……之外”.",
-    "explanation": "“except”表示“除……之外”。预习时重点看它和“except + 名词/代词 除……之外”这类表达的搭配方式。",
+    "coreMeaning": "Except is used to leave someone or something out of a statement.",
+    "explanation": "课堂上可以先用“except + 名词/代词 除……之外”理解基本用法，再用“except for 除……之外”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "besides",
@@ -6789,8 +6789,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/bɪˈlɒŋ/",
     "partOfSpeech": "v.",
     "translation": "应在（某处）",
-    "coreMeaning": "belong means “应在（某处）”.",
-    "explanation": "“belong”表示“应在（某处）”。预习时重点看它和“belong to sb. 属于某人”这类表达的搭配方式。",
+    "coreMeaning": "To belong is to be in the right place or to be owned by someone.",
+    "explanation": "这个词的重点搭配是“belong to sb. 属于某人”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "own",
@@ -6831,8 +6831,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "属于某人；归某人所有",
-    "coreMeaning": "belong to sb means “属于某人；归某人所有”.",
-    "explanation": "“belong to sb”表示“属于某人；归某人所有”。预习时重点看它和“用法同动词 belong”这类表达的搭配方式。",
+    "coreMeaning": "To belong to someone is to be owned by that person.",
+    "explanation": "这个词的重点搭配是“用法同动词 belong”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "be owned by",
@@ -6873,8 +6873,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈsentʃəri/",
     "partOfSpeech": "n.",
     "translation": "世纪；百年",
-    "coreMeaning": "century means “世纪；百年”.",
-    "explanation": "“century”表示“世纪；百年”。预习时重点看它和“in the +”这类表达的搭配方式。",
+    "coreMeaning": "A century is a period of one hundred years.",
+    "explanation": "课堂上可以先用“in the +”理解基本用法，再用“over a century”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "decade",
@@ -6920,8 +6920,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/wɜːst/",
     "partOfSpeech": "adj.",
     "translation": "最差的；最坏的",
-    "coreMeaning": "worst means “最差的；最坏的”.",
-    "explanation": "“worst”表示“最差的；最坏的”。预习时重点看它和“the worst 最差的”这类表达的搭配方式。",
+    "coreMeaning": "Worst is the superlative form of bad and describes the least good or most serious case.",
+    "explanation": "课堂上可以先用“the worst 最差的”理解基本用法，再用“worst of all”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "bad",
@@ -6967,8 +6967,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈɪndəstri/",
     "partOfSpeech": "n.",
     "translation": "工业",
-    "coreMeaning": "industry means “工业”.",
-    "explanation": "“industry”表示“工业”。预习时重点看它和“heavy industry”这类表达的搭配方式。",
+    "coreMeaning": "Industry is the production of goods in factories, or all the businesses of one type.",
+    "explanation": "课堂上可以先用“heavy industry”理解基本用法，再用“light industry”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "business",
@@ -7014,8 +7014,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈprəʊɡres/",
     "partOfSpeech": "n.",
     "translation": "进步；进展",
-    "coreMeaning": "progress means “进步；进展”.",
-    "explanation": "“progress”表示“进步；进展”。预习时重点看它和“make progress 取得进步”这类表达的搭配方式。",
+    "coreMeaning": "Progress is improvement or development toward a better state.",
+    "explanation": "这个词的重点搭配是“make progress 取得进步”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "improvement",
@@ -7056,8 +7056,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈɔːdnri/",
     "partOfSpeech": "adj.",
     "translation": "普通的；平凡的",
-    "coreMeaning": "ordinary means “普通的；平凡的”.",
-    "explanation": "“ordinary”表示“普通的；平凡的”。预习时重点看它和“ordinary people”这类表达的搭配方式。",
+    "coreMeaning": "Ordinary describes something normal, usual, and not special.",
+    "explanation": "课堂上可以先用“ordinary people”理解基本用法，再用“ordinary life”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "common",
@@ -7103,8 +7103,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/drəˈmætɪkli/",
     "partOfSpeech": "adv.",
     "translation": "突然地；巨大地",
-    "coreMeaning": "dramatically means “突然地；巨大地”.",
-    "explanation": "“dramatically”表示“突然地；巨大地”。预习时重点看它和“change dramatically”这类表达的搭配方式。",
+    "coreMeaning": "Dramatically describes a change that is very great, sudden, or noticeable.",
+    "explanation": "课堂上可以先用“change dramatically”理解基本用法，再用“increase dramatically”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "greatly",
@@ -7150,8 +7150,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈreəli/",
     "partOfSpeech": "adv.",
     "translation": "罕有；很少",
-    "coreMeaning": "rarely means “罕有；很少”.",
-    "explanation": "“rarely”表示“罕有；很少”。预习时重点看它和“表否定含义”这类表达的搭配方式。",
+    "coreMeaning": "Rarely is a frequency adverb for something that almost never happens.",
+    "explanation": "课堂上可以先用“表否定含义”理解基本用法，再用“rarely see”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "seldom",
@@ -7197,8 +7197,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈdekeɪd/",
     "partOfSpeech": "n.",
     "translation": "十年",
-    "coreMeaning": "decade means “十年”.",
-    "explanation": "“decade”表示“十年”。预习时重点看它和“in the past decade”这类表达的搭配方式。",
+    "coreMeaning": "A decade is a period of ten years.",
+    "explanation": "课堂上可以先用“in the past decade”理解基本用法，再用“over two decades”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "century",
@@ -7244,8 +7244,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/dɪˈveləpmənt/",
     "partOfSpeech": "n.",
     "translation": "发展；成长",
-    "coreMeaning": "development means “发展；成长”.",
-    "explanation": "“development”表示“发展；成长”。预习时重点看它和“the development of... ……”这类表达的搭配方式。",
+    "coreMeaning": "Development is the process of growing, improving, or becoming more advanced.",
+    "explanation": "这个词的重点搭配是“the development of... ……”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "growth",
@@ -7286,8 +7286,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/dɪˈveləp/",
     "partOfSpeech": "v.",
     "translation": "(使)成长，发展",
-    "coreMeaning": "develop means “(使)成长，发展”.",
-    "explanation": "“develop”表示“(使)成长，发展”。预习时重点看它和“develop into”这类表达的搭配方式。",
+    "coreMeaning": "To develop is to grow, improve, or make something more advanced over time.",
+    "explanation": "课堂上可以先用“develop into”理解基本用法，再用“develop a habit”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "grow",
@@ -7333,8 +7333,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kənˈdɪʃn/",
     "partOfSpeech": "n.",
     "translation": "状况；状态",
-    "coreMeaning": "condition means “状况；状态”.",
-    "explanation": "“condition”表示“状况；状态”。预习时重点看它和“in good/bad condition”这类表达的搭配方式。",
+    "coreMeaning": "Condition is the state that someone or something is in.",
+    "explanation": "课堂上可以先用“in good/bad condition”理解基本用法，再用“living conditions 生活条件”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "situation",
@@ -7380,8 +7380,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "生活条件",
-    "coreMeaning": "living conditions means “生活条件”.",
-    "explanation": "“living conditions”表示“生活条件”。预习时重点看它和“improve living conditions”这类表达的搭配方式。",
+    "coreMeaning": "Living conditions are the situation and environment in which people live.",
+    "explanation": "这个词的重点搭配是“improve living conditions”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "life quality",
@@ -7422,8 +7422,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈmeɪdʒə(r)/",
     "partOfSpeech": "adj.",
     "translation": "主要的；重要的",
-    "coreMeaning": "major means “主要的；重要的”.",
-    "explanation": "“major”表示“主要的；重要的”。预习时重点看它和“major reasons”这类表达的搭配方式。",
+    "coreMeaning": "Major describes something very important, serious, or large.",
+    "explanation": "课堂上可以先用“major reasons”理解基本用法，再用“major problem”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "main",
@@ -7469,8 +7469,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ɡrəʊθ/",
     "partOfSpeech": "n.",
     "translation": "增长",
-    "coreMeaning": "growth means “增长”.",
-    "explanation": "“growth”表示“增长”。预习时重点看它和“the growth of population”这类表达的搭配方式。",
+    "coreMeaning": "Growth is an increase in size, number, or importance.",
+    "explanation": "课堂上可以先用“the growth of population”理解基本用法，再用“economic growth”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "increase",
@@ -7516,8 +7516,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈkʌntrisaɪd/",
     "partOfSpeech": "n.",
     "translation": "乡村；农村",
-    "coreMeaning": "countryside means “乡村；农村”.",
-    "explanation": "“countryside”表示“乡村；农村”。预习时重点看它和“in the countryside”这类表达的搭配方式。",
+    "coreMeaning": "The countryside is land outside towns and cities, with farms, fields, and villages.",
+    "explanation": "课堂上可以先用“in the countryside”理解基本用法，再用“go to the countryside”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "village",
@@ -7563,8 +7563,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ɔːlˈðəʊ/",
     "partOfSpeech": "conj.",
     "translation": "虽然；尽管",
-    "coreMeaning": "although means “虽然；尽管”.",
-    "explanation": "“although”表示“虽然；尽管”。预习时重点看它和“引导让步状语从句”这类表达的搭配方式。",
+    "coreMeaning": "Although introduces a fact that makes the main idea surprising or different from what people expect.",
+    "explanation": "这个词引导让步状语从句。中文可以说“虽然……但是……”，英文里 although 和 but 不要放在同一个主从句里。",
     "nearSynonyms": [
       {
         "word": "though",
@@ -7610,8 +7610,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ʌnˈpleznt/",
     "partOfSpeech": "adj.",
     "translation": "令人不快的；不舒服的",
-    "coreMeaning": "unpleasant means “令人不快的；不舒服的”.",
-    "explanation": "“unpleasant”表示“令人不快的；不舒服的”。预习时重点看它和“unpleasant weather”这类表达的搭配方式。",
+    "coreMeaning": "Unpleasant describes something that makes people feel uncomfortable or unhappy.",
+    "explanation": "课堂上可以先用“unpleasant weather”理解基本用法，再用“unpleasant smell”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "uncomfortable",
@@ -7657,8 +7657,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/bɑːθ/",
     "partOfSpeech": "n.",
     "translation": "浴缸；洗澡",
-    "coreMeaning": "bath means “浴缸；洗澡”.",
-    "explanation": "“bath”表示“浴缸；洗澡”。预习时重点看它和“take a bath 洗澡”这类表达的搭配方式。",
+    "coreMeaning": "A bath is washing your body in water, or the container used for doing this.",
+    "explanation": "这个词的重点搭配是“take a bath 洗澡”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "shower",
@@ -7699,8 +7699,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ɪkˈstriːmli/",
     "partOfSpeech": "adv.",
     "translation": "极其；非常",
-    "coreMeaning": "extremely means “极其；非常”.",
-    "explanation": "“extremely”表示“极其；非常”。预习时重点看它和“extremely + 形容词 极其……”这类表达的搭配方式。",
+    "coreMeaning": "Extremely adds a very strong degree to an adjective or adverb.",
+    "explanation": "这个词的重点搭配是“extremely + 形容词 极其……”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "very",
@@ -7741,8 +7741,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈsmeli/",
     "partOfSpeech": "adj.",
     "translation": "有难闻气味的；有臭味的",
-    "coreMeaning": "smelly means “有难闻气味的；有臭味的”.",
-    "explanation": "“smelly”表示“有难闻气味的；有臭味的”。预习时重点看它和“smelly rubbish”这类表达的搭配方式。",
+    "coreMeaning": "Smelly describes something that has a bad smell.",
+    "explanation": "课堂上可以先用“smelly rubbish”理解基本用法，再用“smelly food”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "stinky",
@@ -7788,8 +7788,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈwelθi/",
     "partOfSpeech": "adj.",
     "translation": "富有的；富裕的",
-    "coreMeaning": "wealthy means “富有的；富裕的”.",
-    "explanation": "“wealthy”表示“富有的；富裕的”。预习时重点看它和“a wealthy family”这类表达的搭配方式。",
+    "coreMeaning": "Wealthy describes someone who has a lot of money or property.",
+    "explanation": "课堂上可以先用“a wealthy family”理解基本用法，再用“wealthy people”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "rich",
@@ -7835,8 +7835,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌedʒuˈkeɪʃn/",
     "partOfSpeech": "n.",
     "translation": "教育",
-    "coreMeaning": "education means “教育”.",
-    "explanation": "“education”表示“教育”。预习时重点看它和“higher education”这类表达的搭配方式。",
+    "coreMeaning": "Education is learning and teaching, especially at school or college.",
+    "explanation": "课堂上可以先用“higher education”理解基本用法，再用“receive education”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "schooling",
@@ -7882,8 +7882,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈfɒrən/",
     "partOfSpeech": "adj.",
     "translation": "外国的",
-    "coreMeaning": "foreign means “外国的”.",
-    "explanation": "“foreign”表示“外国的”。预习时重点看它和“foreign language”这类表达的搭配方式。",
+    "coreMeaning": "Foreign describes something from or connected with another country.",
+    "explanation": "课堂上可以先用“foreign language”理解基本用法，再用“foreign country”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "overseas",
@@ -7929,8 +7929,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/maɪn/",
     "partOfSpeech": "n.",
     "translation": "矿井；矿",
-    "coreMeaning": "mine means “矿井；矿”.",
-    "explanation": "“mine”表示“矿井；矿”。预习时重点看它和“coal mine”这类表达的搭配方式。",
+    "coreMeaning": "A mine is a place under the ground where people dig out coal, metal, or minerals.",
+    "explanation": "课堂上可以先用“coal mine”理解基本用法，再用“gold mine”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "pit",
@@ -7976,8 +7976,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "造成；导致",
-    "coreMeaning": "result in means “造成；导致”.",
-    "explanation": "“result in”表示“造成；导致”。预习时重点看它和“result in + 结果 造成/导致……”这类表达的搭配方式。",
+    "coreMeaning": "To result in something is to cause it to happen.",
+    "explanation": "result in 后面接结果，意思是“导致……”。如果想说“由……造成”，要用 result from。",
     "nearSynonyms": [
       {
         "word": "lead to",
@@ -8018,8 +8018,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/sɪˈvɪə(r)/",
     "partOfSpeech": "adj.",
     "translation": "极为恶劣的；十分严重的",
-    "coreMeaning": "severe means “极为恶劣的；十分严重的”.",
-    "explanation": "“severe”表示“极为恶劣的；十分严重的”。预习时重点看它和“severe weather”这类表达的搭配方式。",
+    "coreMeaning": "Severe describes something very serious, harsh, or bad.",
+    "explanation": "课堂上可以先用“severe weather”理解基本用法，再用“severe damage”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "serious",
@@ -8065,8 +8065,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈpʌnɪʃ/",
     "partOfSpeech": "v.",
     "translation": "处罚；惩罚",
-    "coreMeaning": "punish means “处罚；惩罚”.",
-    "explanation": "“punish”表示“处罚；惩罚”。预习时重点看它和“punish sb. for (doing) sth.”这类表达的搭配方式。",
+    "coreMeaning": "To punish someone is to make them suffer because they have done something wrong.",
+    "explanation": "这个词的重点搭配是“punish sb. for (doing) sth.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "penalize",
@@ -8107,8 +8107,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈpʌnɪʃmənt/",
     "partOfSpeech": "n.",
     "translation": "惩罚；处罚",
-    "coreMeaning": "punishment means “惩罚；处罚”.",
-    "explanation": "“punishment”表示“惩罚；处罚”。预习时重点看它和“give sb. punishment”这类表达的搭配方式。",
+    "coreMeaning": "Punishment is something done to someone because they have broken a rule or done wrong.",
+    "explanation": "课堂上可以先用“give sb. punishment”理解基本用法，再用“severe punishment”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "penalty",
@@ -8154,8 +8154,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/bɜːn/",
     "partOfSpeech": "v.",
     "translation": "燃烧；烧",
-    "coreMeaning": "burn means “燃烧；烧”.",
-    "explanation": "“burn”表示“燃烧；烧”。预习时重点看它和“burn down 烧毁”这类表达的搭配方式。",
+    "coreMeaning": "To burn is to be on fire or to damage something with fire or heat.",
+    "explanation": "课堂上可以先用“burn down 烧毁”理解基本用法，再用“burn sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "fire",
@@ -8201,8 +8201,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈhiːtə(r)/",
     "partOfSpeech": "n.",
     "translation": "加热器；炉子；热水器",
-    "coreMeaning": "heater means “加热器；炉子；热水器”.",
-    "explanation": "“heater”表示“加热器；炉子；热水器”。预习时重点看它和“electric heater”这类表达的搭配方式。",
+    "coreMeaning": "A heater is a machine or device that makes a room, water, or air warm.",
+    "explanation": "课堂上可以先用“electric heater”理解基本用法，再用“water heater”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "stove",
@@ -8248,8 +8248,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈhaʊswɜːk/",
     "partOfSpeech": "n.",
     "translation": "家务劳动；家务事",
-    "coreMeaning": "housework means “家务劳动；家务事”.",
-    "explanation": "“housework”表示“家务劳动；家务事”。预习时重点看它和“do housework 做家务”这类表达的搭配方式。",
+    "coreMeaning": "Housework is the work people do to keep a home clean and organized.",
+    "explanation": "这个词的重点搭配是“do housework 做家务”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "chores",
@@ -8290,8 +8290,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈtiːmwɜːk/",
     "partOfSpeech": "n.",
     "translation": "协同工作；配合",
-    "coreMeaning": "teamwork means “协同工作；配合”.",
-    "explanation": "“teamwork”表示“协同工作；配合”。预习时重点看它和“good teamwork”这类表达的搭配方式。",
+    "coreMeaning": "Teamwork is people working together well as a group to reach a goal.",
+    "explanation": "课堂上可以先用“good teamwork”理解基本用法，再用“develop teamwork”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "cooperation",
@@ -8337,8 +8337,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/bænd/",
     "partOfSpeech": "n.",
     "translation": "流行音乐乐队",
-    "coreMeaning": "band means “流行音乐乐队”.",
-    "explanation": "“band”表示“流行音乐乐队”。预习时重点看它和“a music band”这类表达的搭配方式。",
+    "coreMeaning": "A band is a small group of musicians who play music together.",
+    "explanation": "课堂上可以先用“a music band”理解基本用法，再用“join a band”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "group",
@@ -8384,8 +8384,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "n.",
     "translation": "(= disc jockey) 唱片节目主持人",
-    "coreMeaning": "DJ means “(= disc jockey) 唱片节目主持人”.",
-    "explanation": "“DJ”表示“(= disc jockey) 唱片节目主持人”。预习时重点看它和“a radio DJ”这类表达的搭配方式。",
+    "coreMeaning": "A DJ is a person who plays recorded music for an audience or on the radio.",
+    "explanation": "课堂上可以先用“a radio DJ”理解基本用法，再用“a club DJ”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "host",
@@ -8431,8 +8431,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/liːd/",
     "partOfSpeech": "n.",
     "translation": "主角；领先地位",
-    "coreMeaning": "lead means “主角；领先地位”.",
-    "explanation": "“lead”表示“主角；领先地位”。预习时重点看它和“play the lead”这类表达的搭配方式。",
+    "coreMeaning": "A lead is the main role in a performance, or the position at the front of a competition.",
+    "explanation": "课堂上可以先用“play the lead”理解基本用法，再用“take the lead”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "main role",
@@ -8478,8 +8478,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌkɒnvəˈseɪʃn/",
     "partOfSpeech": "n.",
     "translation": "非正式交谈，谈话",
-    "coreMeaning": "conversation means “非正式交谈，谈话”.",
-    "explanation": "“conversation”表示“非正式交谈，谈话”。预习时重点看它和“have a conversation with sb.”这类表达的搭配方式。",
+    "coreMeaning": "A conversation is an informal talk between two or more people.",
+    "explanation": "这个词的重点搭配是“have a conversation with sb.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "talk",
@@ -8520,8 +8520,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈsiːkrət/",
     "partOfSpeech": "n.",
     "translation": "秘密；机密",
-    "coreMeaning": "secret means “秘密；机密”.",
-    "explanation": "“secret”表示“秘密；机密”。预习时重点看它和“keep a secret”这类表达的搭配方式。",
+    "coreMeaning": "A secret is information that only a few people know and should not be told to others.",
+    "explanation": "课堂上可以先用“keep a secret”理解基本用法，再用“tell sb. a secret”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "mystery",
@@ -8567,8 +8567,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈpæʃn/",
     "partOfSpeech": "n.",
     "translation": "酷爱；热衷的爱好",
-    "coreMeaning": "passion means “酷爱；热衷的爱好”.",
-    "explanation": "“passion”表示“酷爱；热衷的爱好”。预习时重点看它和“passion for sth.”这类表达的搭配方式。",
+    "coreMeaning": "Passion is a very strong interest in or love for something.",
+    "explanation": "这个词的重点搭配是“passion for sth.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "love",
@@ -8609,8 +8609,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌɒf ˈsteɪdʒ/",
     "partOfSpeech": "adj.",
     "translation": "舞台外的；幕后的 adv. 在舞台外；在幕后",
-    "coreMeaning": "off-stage means “舞台外的；幕后的 adv. 在舞台外；在幕后”.",
-    "explanation": "“off-stage”表示“舞台外的；幕后的 adv. 在舞台外；在幕后”。预习时重点看它和“adj. off-stage activities”这类表达的搭配方式。",
+    "coreMeaning": "Off-stage describes things that happen away from the stage or behind the performance.",
+    "explanation": "课堂上可以先用“off-stage activities”理解基本用法，再用“adv. stay off-stage”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "backstage",
@@ -8656,8 +8656,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ɡest/",
     "partOfSpeech": "n.",
     "translation": "客人；宾客",
-    "coreMeaning": "guest means “客人；宾客”.",
-    "explanation": "“guest”表示“客人；宾客”。预习时重点看它和“invite a guest”这类表达的搭配方式。",
+    "coreMeaning": "A guest is a person who is invited to visit a place, event, or programme.",
+    "explanation": "课堂上可以先用“invite a guest”理解基本用法，再用“special guest”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "visitor",
@@ -8703,8 +8703,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/həʊld/",
     "partOfSpeech": "v.",
     "translation": "使保持(在某位置)",
-    "coreMeaning": "hold means “使保持(在某位置)”.",
-    "explanation": "“hold”表示“使保持(在某位置)”。预习时重点看它和“hold sth. in hand”这类表达的搭配方式。",
+    "coreMeaning": "To hold something is to keep it in a particular position, especially in your hand or arms.",
+    "explanation": "课堂上可以先用“hold sth. in hand”理解基本用法，再用“hold on”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "keep",
@@ -8750,8 +8750,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈneɪʃn/",
     "partOfSpeech": "n.",
     "translation": "国家；民族",
-    "coreMeaning": "nation means “国家；民族”.",
-    "explanation": "“nation”表示“国家；民族”。预习时重点看它和“the whole nation”这类表达的搭配方式。",
+    "coreMeaning": "A nation is a country and its people.",
+    "explanation": "课堂上可以先用“the whole nation”理解基本用法，再用“national day”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "country",
@@ -8797,8 +8797,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "n.",
     "translation": "(= information technology) 信息技术",
-    "coreMeaning": "IT means “(= information technology) 信息技术”.",
-    "explanation": "“IT”表示“(= information technology) 信息技术”。预习时重点看它和“IT industry”这类表达的搭配方式。",
+    "coreMeaning": "IT is the use of computers and communication systems to store, find, and send information.",
+    "explanation": "课堂上可以先用“IT industry”理解基本用法，再用“IT skills”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "computer science",
@@ -8844,8 +8844,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "n.",
     "translation": "(= Very Important Person) 要人；贵宾",
-    "coreMeaning": "VIP means “(= Very Important Person) 要人；贵宾”.",
-    "explanation": "“VIP”表示“(= Very Important Person) 要人；贵宾”。预习时重点看它和“invite VIPs”这类表达的搭配方式。",
+    "coreMeaning": "A VIP is a very important person who receives special treatment.",
+    "explanation": "课堂上可以先用“invite VIPs”理解基本用法，再用“VIP area”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "important person",
@@ -8891,8 +8891,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "abbr.",
     "translation": "(= as soon as possible) 尽快",
-    "coreMeaning": "ASAP means “(= as soon as possible) 尽快”.",
-    "explanation": "“ASAP”表示“(= as soon as possible) 尽快”。预习时重点看它和“do sth. ASAP”这类表达的搭配方式。",
+    "coreMeaning": "ASAP is an abbreviation meaning as soon as possible.",
+    "explanation": "这个词的重点搭配是“do sth. ASAP”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "immediately",
@@ -8933,8 +8933,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈmiːtɪŋ/",
     "partOfSpeech": "n.",
     "translation": "会议",
-    "coreMeaning": "meeting means “会议”.",
-    "explanation": "“meeting”表示“会议”。预习时重点看它和“have a meeting”这类表达的搭配方式。",
+    "coreMeaning": "A meeting is an occasion when people come together to discuss something.",
+    "explanation": "课堂上可以先用“have a meeting”理解基本用法，再用“attend a meeting”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "conference",
@@ -8980,8 +8980,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kəmˈpleɪn/",
     "partOfSpeech": "v.",
     "translation": "抱怨；投诉",
-    "coreMeaning": "complain means “抱怨；投诉”.",
-    "explanation": "“complain”表示“抱怨；投诉”。预习时重点看它和“complain about sth.”这类表达的搭配方式。",
+    "coreMeaning": "To complain is to say that you are unhappy about something.",
+    "explanation": "课堂上可以先用“complain about sth.”理解基本用法，再用“complain to sb.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "argue",
@@ -9027,8 +9027,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/tɑːsk/",
     "partOfSpeech": "n.",
     "translation": "任务；工作",
-    "coreMeaning": "task means “任务；工作”.",
-    "explanation": "“task”表示“任务；工作”。预习时重点看它和“finish a task”这类表达的搭配方式。",
+    "coreMeaning": "A task is a piece of work that someone needs to do.",
+    "explanation": "课堂上可以先用“finish a task”理解基本用法，再用“difficult task”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "job",
@@ -9074,8 +9074,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈpɪti/",
     "partOfSpeech": "n.",
     "translation": "遗憾，可惜",
-    "coreMeaning": "pity means “遗憾，可惜”.",
-    "explanation": "“pity”表示“遗憾，可惜”。预习时重点看它和“It’s a pity that...”这类表达的搭配方式。",
+    "coreMeaning": "Pity is a feeling of sadness about something unfortunate, or a word used to say something is unfortunate.",
+    "explanation": "这个词的重点搭配是“It’s a pity that...”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "shame",
@@ -9116,8 +9116,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ʃeɪm/",
     "partOfSpeech": "n.",
     "translation": "令人惋惜的事；让人遗憾的事",
-    "coreMeaning": "shame means “令人惋惜的事；让人遗憾的事”.",
-    "explanation": "“shame”表示“令人惋惜的事；让人遗憾的事”。预习时重点看它和“It’s a shame that...”这类表达的搭配方式。",
+    "coreMeaning": "Shame can mean a sad or disappointing thing that makes people feel regret.",
+    "explanation": "这个词的重点搭配是“It’s a shame that...”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "pity",
@@ -9158,8 +9158,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/dɪˈskʌʃn/",
     "partOfSpeech": "n.",
     "translation": "讨论；商讨",
-    "coreMeaning": "discussion means “讨论；商讨”.",
-    "explanation": "“discussion”表示“讨论；商讨”。预习时重点看它和“have a discussion about sth.”这类表达的搭配方式。",
+    "coreMeaning": "A discussion is a talk about a subject in which people share ideas or opinions.",
+    "explanation": "这个词的重点搭配是“have a discussion about sth.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "conversation",
@@ -9200,8 +9200,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kəʊˈɒpəreɪt/",
     "partOfSpeech": "v.",
     "translation": "合作；协作",
-    "coreMeaning": "cooperate means “合作；协作”.",
-    "explanation": "“cooperate”表示“合作；协作”。预习时重点看它和“cooperate with sb.”这类表达的搭配方式。",
+    "coreMeaning": "To cooperate is to work together with others toward the same goal.",
+    "explanation": "这个词的重点搭配是“cooperate with sb.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "work together",
@@ -9242,8 +9242,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/səkˈses/",
     "partOfSpeech": "n.",
     "translation": "成功；胜利",
-    "coreMeaning": "success means “成功；胜利”.",
-    "explanation": "“success”表示“成功；胜利”。预习时重点看它和“achieve success”这类表达的搭配方式。",
+    "coreMeaning": "Success is achieving what you wanted or planned to do.",
+    "explanation": "课堂上可以先用“achieve success”理解基本用法，再用“a great success”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "victory",
@@ -9289,8 +9289,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈwʌndəlænd/",
     "partOfSpeech": "n.",
     "translation": "（童话中的）仙境，奇境",
-    "coreMeaning": "wonderland means “（童话中的）仙境，奇境”.",
-    "explanation": "“wonderland”表示“（童话中的）仙境，奇境”。预习时重点看它和“a winter wonderland”这类表达的搭配方式。",
+    "coreMeaning": "A wonderland is a beautiful or magical place, like one in a story.",
+    "explanation": "课堂上可以先用“a winter wonderland”理解基本用法，再用“a fairy wonderland”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "paradise",
@@ -9336,8 +9336,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈiːɡəli/",
     "partOfSpeech": "adv.",
     "translation": "渴望地；热切地",
-    "coreMeaning": "eagerly means “渴望地；热切地”.",
-    "explanation": "“eagerly”表示“渴望地；热切地”。预习时重点看它和“eagerly wait for”这类表达的搭配方式。",
+    "coreMeaning": "Eagerly describes doing something with strong interest and excitement.",
+    "explanation": "课堂上可以先用“eagerly wait for”理解基本用法，再用“be eager to do sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "excitedly",
@@ -9383,8 +9383,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌdɪsəˈpɔɪnt/",
     "partOfSpeech": "v.",
     "translation": "使失望",
-    "coreMeaning": "disappoint means “使失望”.",
-    "explanation": "“disappoint”表示“使失望”。预习时重点看它和“disappoint sb.”这类表达的搭配方式。",
+    "coreMeaning": "To disappoint someone is to make them unhappy because something is not as good as expected.",
+    "explanation": "这个词的重点搭配是“disappoint sb.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "let down",
@@ -9425,8 +9425,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌdɪsəˈpɔɪntɪd/",
     "partOfSpeech": "adj.",
     "translation": "失望的；沮丧的",
-    "coreMeaning": "disappointed means “失望的；沮丧的”.",
-    "explanation": "“disappointed”表示“失望的；沮丧的”。预习时重点看它和“be disappointed at sth.”这类表达的搭配方式。",
+    "coreMeaning": "Disappointed describes someone unhappy because something was not as good as expected.",
+    "explanation": "课堂上可以先用“be disappointed at sth.”理解基本用法，再用“be disappointed with sb.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "upset",
@@ -9472,8 +9472,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌbækˈsteɪdʒ/",
     "partOfSpeech": "adv.",
     "translation": "在后台 adj. 后台的",
-    "coreMeaning": "backstage means “在后台 adj. 后台的”.",
-    "explanation": "“backstage”表示“在后台 adj. 后台的”。预习时重点看它和“adv. go backstage”这类表达的搭配方式。",
+    "coreMeaning": "Backstage refers to the area behind the stage where performers prepare.",
+    "explanation": "课堂上可以先用“adv. go backstage”理解基本用法，再用“backstage area”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "off-stage",
@@ -9519,8 +9519,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ɪnˈdʒɔɪəbl/",
     "partOfSpeech": "adj.",
     "translation": "有乐趣的；令人愉快的",
-    "coreMeaning": "enjoyable means “有乐趣的；令人愉快的”.",
-    "explanation": "“enjoyable”表示“有乐趣的；令人愉快的”。预习时重点看它和“an enjoyable experience”这类表达的搭配方式。",
+    "coreMeaning": "Enjoyable describes something that gives people pleasure.",
+    "explanation": "课堂上可以先用“an enjoyable experience”理解基本用法，再用“enjoy doing sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "pleasant",
@@ -9566,8 +9566,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈsætɪsfaɪɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "令人满意（或满足）的",
-    "coreMeaning": "satisfying means “令人满意（或满足）的”.",
-    "explanation": "“satisfying”表示“令人满意（或满足）的”。预习时重点看它和“a satisfying result”这类表达的搭配方式。",
+    "coreMeaning": "Satisfying describes something that makes people feel pleased because it meets a need or hope.",
+    "explanation": "课堂上可以先用“a satisfying result”理解基本用法，再用“satisfy one’s needs”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "pleasing",
@@ -9613,8 +9613,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈkɜːtn/",
     "partOfSpeech": "n.",
     "translation": "（舞台上的）幕，幕布",
-    "coreMeaning": "curtain means “（舞台上的）幕，幕布”.",
-    "explanation": "“curtain”表示“（舞台上的）幕，幕布”。预习时重点看它和“draw the curtains”这类表达的搭配方式。",
+    "coreMeaning": "A curtain is a piece of cloth that hangs in front of a window or stage.",
+    "explanation": "课堂上可以先用“draw the curtains”理解基本用法，再用“stage curtain”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "screen",
@@ -9660,8 +9660,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/pliːzd/",
     "partOfSpeech": "adj.",
     "translation": "高兴；满意；愉快",
-    "coreMeaning": "pleased means “高兴；满意；愉快”.",
-    "explanation": "“pleased”表示“高兴；满意；愉快”。预习时重点看它和“be pleased with sth.”这类表达的搭配方式。",
+    "coreMeaning": "Pleased describes someone happy or satisfied about something.",
+    "explanation": "课堂上可以先用“be pleased with sth.”理解基本用法，再用“be pleased to do sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "happy",
@@ -9707,8 +9707,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌself ɪmˈpɔːtnt/",
     "partOfSpeech": "adj.",
     "translation": "自大的；自负的",
-    "coreMeaning": "self-important means “自大的；自负的”.",
-    "explanation": "“self-important”表示“自大的；自负的”。预习时重点看它和“a self-important man”这类表达的搭配方式。",
+    "coreMeaning": "Self-important describes someone who thinks they are more important than they really are.",
+    "explanation": "课堂上可以先用“a self-important man”理解基本用法，再用“self-important attitude”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "proud",
@@ -9754,8 +9754,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈnætʃrəl/",
     "partOfSpeech": "adj.",
     "translation": "自然的",
-    "coreMeaning": "natural means “自然的”.",
-    "explanation": "“natural”表示“自然的”。预习时重点看它和“natural beauty”这类表达的搭配方式。",
+    "coreMeaning": "Natural describes something that comes from nature or happens without being forced.",
+    "explanation": "课堂上可以先用“natural beauty”理解基本用法，再用“natural ability”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "normal",
@@ -9801,8 +9801,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈpɜːfɪkt/",
     "partOfSpeech": "adj.",
     "translation": "完美的",
-    "coreMeaning": "perfect means “完美的”.",
-    "explanation": "“perfect”表示“完美的”。预习时重点看它和“a perfect plan”这类表达的搭配方式。",
+    "coreMeaning": "Perfect describes something with no mistakes or as good as it can be.",
+    "explanation": "课堂上可以先用“a perfect plan”理解基本用法，再用“perfect weather”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "excellent",
@@ -9848,8 +9848,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/klæp/",
     "partOfSpeech": "v.",
     "translation": "鼓掌，拍手（表赞许）",
-    "coreMeaning": "clap means “鼓掌，拍手（表赞许）”.",
-    "explanation": "“clap”表示“鼓掌，拍手（表赞许）”。预习时重点看它和“clap for sb.”这类表达的搭配方式。",
+    "coreMeaning": "To clap is to hit your hands together to show approval or enjoyment.",
+    "explanation": "课堂上可以先用“clap for sb.”理解基本用法，再用“clap hands”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "applaud",
@@ -9895,8 +9895,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈtæləntɪd/",
     "partOfSpeech": "adj.",
     "translation": "有才能的；天才的",
-    "coreMeaning": "talented means “有才能的；天才的”.",
-    "explanation": "“talented”表示“有才能的；天才的”。预习时重点看它和“a talented singer”这类表达的搭配方式。",
+    "coreMeaning": "Talented describes someone who has a natural ability to do something well.",
+    "explanation": "课堂上可以先用“a talented singer”理解基本用法，再用“have talent for”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "gifted",
@@ -9942,8 +9942,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/flæɡ/",
     "partOfSpeech": "n.",
     "translation": "（体育运动的）信号旗；标志旗",
-    "coreMeaning": "flag means “（体育运动的）信号旗；标志旗”.",
-    "explanation": "“flag”表示“（体育运动的）信号旗；标志旗”。预习时重点看它和“raise a flag”这类表达的搭配方式。",
+    "coreMeaning": "A flag is a piece of cloth with colours or signs, often used as a symbol or signal.",
+    "explanation": "课堂上可以先用“raise a flag”理解基本用法，再用“sports flag”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "banner",
@@ -9989,8 +9989,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈkæptɪn/",
     "partOfSpeech": "n.",
     "translation": "（尤指运动队的）队长",
-    "coreMeaning": "captain means “（尤指运动队的）队长”.",
-    "explanation": "“captain”表示“（尤指运动队的）队长”。预习时重点看它和“the team captain”这类表达的搭配方式。",
+    "coreMeaning": "A captain is the leader of a team, ship, or group.",
+    "explanation": "课堂上可以先用“the team captain”理解基本用法，再用“elect a captain”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "leader",
@@ -10036,8 +10036,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/mɪs/",
     "partOfSpeech": "v.",
     "translation": "未击中；未得到；错过",
-    "coreMeaning": "miss means “未击中；未得到；错过”.",
-    "explanation": "“miss”表示“未击中；未得到；错过”。预习时重点看它和“miss the bus”这类表达的搭配方式。",
+    "coreMeaning": "To miss is to fail to hit, catch, reach, or arrive in time for something.",
+    "explanation": "课堂上可以先用“miss the bus”理解基本用法，再用“miss a goal”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "lose",
@@ -10083,8 +10083,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/rəʊ/",
     "partOfSpeech": "n.",
     "translation": "一排；一列；一行",
-    "coreMeaning": "row means “一排；一列；一行”.",
-    "explanation": "“row”表示“一排；一列；一行”。预习时重点看它和“a row of”这类表达的搭配方式。",
+    "coreMeaning": "A row is a straight line of people or things.",
+    "explanation": "课堂上可以先用“a row of”理解基本用法，再用“sit in a row”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "line",
@@ -10130,8 +10130,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "连续几次地",
-    "coreMeaning": "in a row means “连续几次地”.",
-    "explanation": "“in a row”表示“连续几次地”。预习时重点看它和“win three times in a row”这类表达的搭配方式。",
+    "coreMeaning": "In a row describes things happening one after another without a break.",
+    "explanation": "它放在次数后面，three times in a row 就是“连续三次”，重点是没有中断。",
     "nearSynonyms": [
       {
         "word": "continually",
@@ -10177,8 +10177,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈvɪktəri/",
     "partOfSpeech": "n.",
     "translation": "胜利；成功",
-    "coreMeaning": "victory means “胜利；成功”.",
-    "explanation": "“victory”表示“胜利；成功”。预习时重点看它和“win a victory”这类表达的搭配方式。",
+    "coreMeaning": "Victory is success in a game, competition, battle, or difficult situation.",
+    "explanation": "课堂上可以先用“win a victory”理解基本用法，再用“great victory”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "success",
@@ -10224,8 +10224,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "abbr.",
     "translation": "(= virtual reality) 虚拟现实",
-    "coreMeaning": "VR means “(= virtual reality) 虚拟现实”.",
-    "explanation": "“VR”表示“(= virtual reality) 虚拟现实”。预习时重点看它和“VR technology”这类表达的搭配方式。",
+    "coreMeaning": "VR is technology that creates a computer-made world that feels real to the user.",
+    "explanation": "课堂上可以先用“VR technology”理解基本用法，再用“experience VR”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "virtual reality",
@@ -10271,8 +10271,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/hæt/",
     "partOfSpeech": "n.",
     "translation": "（常指带檐的）帽子",
-    "coreMeaning": "hat means “（常指带檐的）帽子”.",
-    "explanation": "“hat”表示“（常指带檐的）帽子”。预习时重点看它和“wear a hat”这类表达的搭配方式。",
+    "coreMeaning": "A hat is something worn on the head, often for warmth, protection, or style.",
+    "explanation": "课堂上可以先用“wear a hat”理解基本用法，再用“a baseball hat”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "cap",
@@ -10318,8 +10318,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈeɪbl/",
     "partOfSpeech": "adj.",
     "translation": "能；能够",
-    "coreMeaning": "able means “能；能够”.",
-    "explanation": "“able”表示“能；能够”。预习时重点看它和“be able to do sth.”这类表达的搭配方式。",
+    "coreMeaning": "Able describes someone who has the skill, power, or chance to do something.",
+    "explanation": "这个词的重点搭配是“be able to do sth.”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "capable",
@@ -10360,8 +10360,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "能；能够",
-    "coreMeaning": "be able to means “能；能够”.",
-    "explanation": "“be able to”表示“能；能够”。预习时重点看它和“区别于“can”，可用于将来时、完成时”这类表达的搭配方式。",
+    "coreMeaning": "To be able to do something is to have the ability or chance to do it.",
+    "explanation": "它和 can 都能表“能够”，但 be able to 能放进更多时态，比如 will be able to、have been able to。",
     "nearSynonyms": [
       {
         "word": "can",
@@ -10402,8 +10402,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/əˈtend/",
     "partOfSpeech": "v.",
     "translation": "出席；参加",
-    "coreMeaning": "attend means “出席；参加”.",
-    "explanation": "“attend”表示“出席；参加”。预习时重点看它和“attend a meeting”这类表达的搭配方式。",
+    "coreMeaning": "To attend an event, meeting, school, or class is to go to it.",
+    "explanation": "课堂上可以先用“attend a meeting”理解基本用法，再用“attend school”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "join",
@@ -10449,8 +10449,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈæbsənt/",
     "partOfSpeech": "adj.",
     "translation": "缺席；不在",
-    "coreMeaning": "absent means “缺席；不在”.",
-    "explanation": "“absent”表示“缺席；不在”。预习时重点看它和“be absent from”这类表达的搭配方式。",
+    "coreMeaning": "Absent describes someone who is not in the place where they should be.",
+    "explanation": "这个词的重点搭配是“be absent from”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "missing",
@@ -10491,8 +10491,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈætɪtjuːd/",
     "partOfSpeech": "n.",
     "translation": "态度；看法",
-    "coreMeaning": "attitude means “态度；看法”.",
-    "explanation": "“attitude”表示“态度；看法”。预习时重点看它和“attitude towards/to”这类表达的搭配方式。",
+    "coreMeaning": "An attitude is the way someone thinks or feels about a person, thing, or situation.",
+    "explanation": "这个词的重点搭配是“attitude towards/to”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "opinion",
@@ -10533,8 +10533,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/dɪˈstɜːbɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "令人不安的",
-    "coreMeaning": "disturbing means “令人不安的”.",
-    "explanation": "“disturbing”表示“令人不安的”。预习时重点看它和“a disturbing fact”这类表达的搭配方式。",
+    "coreMeaning": "Disturbing describes something that makes people feel worried or upset.",
+    "explanation": "课堂上可以先用“a disturbing fact”理解基本用法，再用“disturbing news”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "worrying",
@@ -10580,8 +10580,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈpɒsəbl/",
     "partOfSpeech": "adj.",
     "translation": "可能",
-    "coreMeaning": "possible means “可能”.",
-    "explanation": "“possible”表示“可能”。预习时重点看它和“It is possible (for sb.) to do sth.”这类表达的搭配方式。",
+    "coreMeaning": "Possible describes something that can happen or can be done.",
+    "explanation": "课堂上可以先用“It is possible (for sb.) to do sth.”理解基本用法，再用“as soon as possible”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "likely",
@@ -10627,8 +10627,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ənˈles/",
     "partOfSpeech": "conj.",
     "translation": "除非；如果不",
-    "coreMeaning": "unless means “除非；如果不”.",
-    "explanation": "“unless”表示“除非；如果不”。预习时重点看它和“引导条件状语从句，“主将从现””这类表达的搭配方式。",
+    "coreMeaning": "Unless introduces the only situation that will stop something from happening; it has the idea of if not.",
+    "explanation": "这个词等于 if...not。遇到将来动作时，unless 从句常用一般现在时，也就是“主将从现”。",
     "nearSynonyms": [
       {
         "word": "if not",
@@ -10669,8 +10669,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈeni taɪm/",
     "partOfSpeech": "adv.",
     "translation": "(= anytime) 在任何时候",
-    "coreMeaning": "any time means “(= anytime) 在任何时候”.",
-    "explanation": "“any time”表示“(= anytime) 在任何时候”。预习时重点看它和“at any time”这类表达的搭配方式。",
+    "coreMeaning": "Any time refers to whatever time someone chooses or needs.",
+    "explanation": "课堂上可以先用“at any time”理解基本用法，再用“any time you like”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "anytime",
@@ -10716,8 +10716,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈprɒbəbli/",
     "partOfSpeech": "adv.",
     "translation": "很可能；大概",
-    "coreMeaning": "probably means “很可能；大概”.",
-    "explanation": "“probably”表示“很可能；大概”。预习时重点看它和“位置：be动词/情态动词后”这类表达的搭配方式。",
+    "coreMeaning": "Probably shows that something is likely to happen or likely to be true.",
+    "explanation": "这个词的重点搭配是“位置：be动词/情态动词后”。复习时把它放进完整句子里看，不要只孤立背词义。",
     "nearSynonyms": [
       {
         "word": "perhaps",
@@ -10758,8 +10758,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈsɜːkl/",
     "partOfSpeech": "v.",
     "translation": "（尤指在空中）盘旋，环行 n. 圆形",
-    "coreMeaning": "circle means “（尤指在空中）盘旋，环行 n. 圆形”.",
-    "explanation": "“circle”表示“（尤指在空中）盘旋，环行 n. 圆形”。预习时重点看它和“v. circle around”这类表达的搭配方式。",
+    "coreMeaning": "To circle is to move around something; a circle is also a round shape.",
+    "explanation": "课堂上可以先用“circle around”理解基本用法，再用“draw a circle”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "round",
@@ -10810,8 +10810,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈrɒkɪt/",
     "partOfSpeech": "n.",
     "translation": "火箭",
-    "coreMeaning": "rocket means “火箭”.",
-    "explanation": "“rocket”表示“火箭”。预习时重点看它和“launch a rocket”这类表达的搭配方式。",
+    "coreMeaning": "A rocket is a vehicle or engine that travels upward very fast, often into space.",
+    "explanation": "课堂上可以先用“launch a rocket”理解基本用法，再用“a space rocket”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "spaceship",
@@ -10857,8 +10857,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ʌnˈlaɪkli/",
     "partOfSpeech": "adj.",
     "translation": "不大可能发生的",
-    "coreMeaning": "unlikely means “不大可能发生的”.",
-    "explanation": "“unlikely”表示“不大可能发生的”。预习时重点看它和“It is unlikely that...”这类表达的搭配方式。",
+    "coreMeaning": "Unlikely describes something that probably will not happen.",
+    "explanation": "课堂上可以先用“It is unlikely that...”理解基本用法，再用“be unlikely to do sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "impossible",
@@ -10904,8 +10904,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈsjuːpə spiːd/",
     "partOfSpeech": "adj.",
     "translation": "超高速的",
-    "coreMeaning": "super-speed means “超高速的”.",
-    "explanation": "“super-speed”表示“超高速的”。预习时重点看它和“super-speed train”这类表达的搭配方式。",
+    "coreMeaning": "Super-speed describes something that moves or works extremely fast.",
+    "explanation": "课堂上可以先用“super-speed train”理解基本用法，再用“super-speed internet”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "high-speed",
@@ -10951,8 +10951,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/flaɪt/",
     "partOfSpeech": "n.",
     "translation": "航班飞机；飞行",
-    "coreMeaning": "flight means “航班飞机；飞行”.",
-    "explanation": "“flight”表示“航班飞机；飞行”。预习时重点看它和“take a flight”这类表达的搭配方式。",
+    "coreMeaning": "A flight is a journey through the air, especially in a plane.",
+    "explanation": "课堂上可以先用“take a flight”理解基本用法，再用“flight number”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "trip",
@@ -10998,8 +10998,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈelɪveɪtə(r)/",
     "partOfSpeech": "n.",
     "translation": "电梯；升降机",
-    "coreMeaning": "elevator means “电梯；升降机”.",
-    "explanation": "“elevator”表示“电梯；升降机”。预习时重点看它和“take the elevator”这类表达的搭配方式。",
+    "coreMeaning": "An elevator is a machine that carries people or things up and down between floors.",
+    "explanation": "课堂上可以先用“take the elevator”理解基本用法，再用“elevator hall”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "lift",
@@ -11045,8 +11045,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈeɪliən/",
     "partOfSpeech": "n.",
     "translation": "外星人；外星生物",
-    "coreMeaning": "alien means “外星人；外星生物”.",
-    "explanation": "“alien”表示“外星人；外星生物”。预习时重点看它和“alien life”这类表达的搭配方式。",
+    "coreMeaning": "An alien is a creature from another planet in stories or science fiction.",
+    "explanation": "课堂上可以先用“alien life”理解基本用法，再用“a movie about aliens”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "foreigner",
@@ -11092,8 +11092,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/wɪˈðɪn/",
     "partOfSpeech": "prep.",
     "translation": "在（某段时间）之内",
-    "coreMeaning": "within means “在（某段时间）之内”.",
-    "explanation": "“within”表示“在（某段时间）之内”。预习时重点看它和“within 10 minutes”这类表达的搭配方式。",
+    "coreMeaning": "Within places something inside a period of time, distance, area, or limit.",
+    "explanation": "课堂上可以先用“within 10 minutes”理解基本用法，再用“within walking distance”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "inside",
@@ -11139,8 +11139,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kɪs/",
     "partOfSpeech": "v.",
     "translation": "亲吻 n. 吻",
-    "coreMeaning": "kiss means “亲吻 n. 吻”.",
-    "explanation": "“kiss”表示“亲吻 n. 吻”。预习时重点看它和“v. kiss sb. goodbye”这类表达的搭配方式。",
+    "coreMeaning": "To kiss someone is to touch them with your lips to show love, greeting, or goodbye.",
+    "explanation": "课堂上可以先用“kiss sb. goodbye”理解基本用法，再用“give sb. a kiss”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "hug",
@@ -11186,8 +11186,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/skɑːf/",
     "partOfSpeech": "n.",
     "translation": "围巾；头巾",
-    "coreMeaning": "scarf means “围巾；头巾”.",
-    "explanation": "“scarf”表示“围巾；头巾”。预习时重点看它和“a woolen scarf”这类表达的搭配方式。",
+    "coreMeaning": "A scarf is a long piece of cloth worn around the neck or head.",
+    "explanation": "课堂上可以先用“a woolen scarf”理解基本用法，再用“wear a scarf”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "shawl",
@@ -11233,8 +11233,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/rɪsk/",
     "partOfSpeech": "v.",
     "translation": "冒……的风险 n. 风险",
-    "coreMeaning": "risk means “冒……的风险 n. 风险”.",
-    "explanation": "“risk”表示“冒……的风险 n. 风险”。预习时重点看它和“v. risk doing sth.”这类表达的搭配方式。",
+    "coreMeaning": "A risk is the possibility of danger or loss; to risk something is to do it despite danger.",
+    "explanation": "课堂上可以先用“risk doing sth.”理解基本用法，再用“take a risk”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "danger",
@@ -11280,8 +11280,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/taʊn/",
     "partOfSpeech": "n.",
     "translation": "镇；市镇",
-    "coreMeaning": "town means “镇；市镇”.",
-    "explanation": "“town”表示“镇；市镇”。预习时重点看它和“in the town”这类表达的搭配方式。",
+    "coreMeaning": "A town is a place where people live and work, usually smaller than a city.",
+    "explanation": "课堂上可以先用“in the town”理解基本用法，再用“town center”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "city",
@@ -11327,8 +11327,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈpraɪməri/",
     "partOfSpeech": "adj.",
     "translation": "主要的；最重要的；基本的",
-    "coreMeaning": "primary means “主要的；最重要的；基本的”.",
-    "explanation": "“primary”表示“主要的；最重要的；基本的”。预习时重点看它和“primary school”这类表达的搭配方式。",
+    "coreMeaning": "Primary describes something most important, basic, or coming first.",
+    "explanation": "课堂上可以先用“primary school”理解基本用法，再用“primary reason”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "main",
@@ -11374,8 +11374,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/sɪˈkjʊərəti/",
     "partOfSpeech": "n.",
     "translation": "安全工作；保安部门",
-    "coreMeaning": "security means “安全工作；保安部门”.",
-    "explanation": "“security”表示“安全工作；保安部门”。预习时重点看它和“security check”这类表达的搭配方式。",
+    "coreMeaning": "Security is protection that keeps people, places, or information safe.",
+    "explanation": "课堂上可以先用“security check”理解基本用法，再用“security guard”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "safety",
@@ -11421,8 +11421,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/fləʊt/",
     "partOfSpeech": "v.",
     "translation": "飘动；漂移",
-    "coreMeaning": "float means “飘动；漂移”.",
-    "explanation": "“float”表示“飘动；漂移”。预习时重点看它和“float in the air”这类表达的搭配方式。",
+    "coreMeaning": "To float is to stay or move on water or in the air without falling.",
+    "explanation": "课堂上可以先用“float in the air”理解基本用法，再用“float on water”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "fly",
@@ -11468,8 +11468,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈtaʊə(r)/",
     "partOfSpeech": "v.",
     "translation": "高于，超过 n. 塔",
-    "coreMeaning": "tower means “高于，超过 n. 塔”.",
-    "explanation": "“tower”表示“高于，超过 n. 塔”。预习时重点看它和“v. tower over”这类表达的搭配方式。",
+    "coreMeaning": "To tower over something is to be much higher than it; a tower is a tall structure.",
+    "explanation": "课堂上可以先用“tower over”理解基本用法，再用“the Eiffel Tower”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "rise",
@@ -11520,8 +11520,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈfɪɡə(r)/",
     "partOfSpeech": "v.",
     "translation": "计算 n. 数字；人物",
-    "coreMeaning": "figure means “计算 n. 数字；人物”.",
-    "explanation": "“figure”表示“计算 n. 数字；人物”。预习时重点看它和“v. figure out”这类表达的搭配方式。",
+    "coreMeaning": "Figure can mean a number, a person, or to calculate or think something out.",
+    "explanation": "课堂上可以先用“figure out”理解基本用法，再用“math figures”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "number",
@@ -11572,8 +11572,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "弄懂；弄明白",
-    "coreMeaning": "figure out means “弄懂；弄明白”.",
-    "explanation": "“figure out”表示“弄懂；弄明白”。预习时重点看它和“figure out sth. / figure out how to do sth.”这类表达的搭配方式。",
+    "coreMeaning": "To figure something out is to understand or solve it after thinking.",
+    "explanation": "它不是简单的 know，而是“通过思考后弄明白”，后面可接名词或 how/why/what 从句。",
     "nearSynonyms": [
       {
         "word": "understand",
@@ -11614,8 +11614,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/fəˈmɪliə(r)/",
     "partOfSpeech": "adj.",
     "translation": "熟悉的",
-    "coreMeaning": "familiar means “熟悉的”.",
-    "explanation": "“familiar”表示“熟悉的”。预习时重点看它和“be familiar with”这类表达的搭配方式。",
+    "coreMeaning": "Familiar describes something or someone you know well or have seen before.",
+    "explanation": "课堂上可以先用“be familiar with”理解基本用法，再用“be familiar to”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "known",
@@ -11661,8 +11661,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈhændprɪnt/",
     "partOfSpeech": "n.",
     "translation": "手印",
-    "coreMeaning": "handprint means “手印”.",
-    "explanation": "“handprint”表示“手印”。预习时重点看它和“leave handprints”这类表达的搭配方式。",
+    "coreMeaning": "A handprint is a mark made by pressing a hand onto a surface.",
+    "explanation": "课堂上可以先用“leave handprints”理解基本用法，再用“colorful handprints”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "fingerprint",
@@ -11708,8 +11708,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/maɪl/",
     "partOfSpeech": "n.",
     "translation": "英里（=1 609 米或1 760 码）",
-    "coreMeaning": "mile means “英里（=1 609 米或1 760 码）”.",
-    "explanation": "“mile”表示“英里（=1 609 米或1 760 码）”。预习时重点看它和“a mile away”这类表达的搭配方式。",
+    "coreMeaning": "A mile is a unit of distance equal to about 1.6 kilometres.",
+    "explanation": "课堂上可以先用“a mile away”理解基本用法，再用“miles of”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "kilometre",
@@ -11755,8 +11755,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˌʌnbɪˈliːvəbl/",
     "partOfSpeech": "adj.",
     "translation": "难以置信的；惊人的",
-    "coreMeaning": "unbelievable means “难以置信的；惊人的”.",
-    "explanation": "“unbelievable”表示“难以置信的；惊人的”。预习时重点看它和“an unbelievable story”这类表达的搭配方式。",
+    "coreMeaning": "Unbelievable describes something so surprising that it is hard to believe.",
+    "explanation": "课堂上可以先用“an unbelievable story”理解基本用法，再用“unbelievable speed”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "amazing",
@@ -11802,8 +11802,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "插嘴",
-    "coreMeaning": "cut in means “插嘴”.",
-    "explanation": "“cut in”表示“插嘴”。预习时重点看它和“cut in (on sb./sth.)”这类表达的搭配方式。",
+    "coreMeaning": "To cut in is to interrupt someone while they are speaking.",
+    "explanation": "这个短语多用于谈话场景，指别人说话时插嘴，语气通常带一点不礼貌。",
     "nearSynonyms": [
       {
         "word": "interrupt",
@@ -11844,8 +11844,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/bləʊ/",
     "partOfSpeech": "v.",
     "translation": "炸开；吹 n. 吹；打击",
-    "coreMeaning": "blow means “炸开；吹 n. 吹；打击”.",
-    "explanation": "“blow”表示“炸开；吹 n. 吹；打击”。预习时重点看它和“v. blow up”这类表达的搭配方式。",
+    "coreMeaning": "To blow is to move air with force; the word can also describe an explosion or a hard hit.",
+    "explanation": "课堂上可以先用“blow up”理解基本用法，再用“blow away”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "explode",
@@ -11896,8 +11896,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "",
     "partOfSpeech": "phr.",
     "translation": "爆炸",
-    "coreMeaning": "blow up means “爆炸”.",
-    "explanation": "“blow up”表示“爆炸”。预习时重点看它和“blow up sth.”这类表达的搭配方式。",
+    "coreMeaning": "To blow up is to explode or make something explode.",
+    "explanation": "这个短语可及物也可不及物：blow up the bridge / The bridge blew up。",
     "nearSynonyms": [
       {
         "word": "explode",
@@ -11943,8 +11943,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈpɒzətɪv/",
     "partOfSpeech": "adj.",
     "translation": "积极乐观的",
-    "coreMeaning": "positive means “积极乐观的”.",
-    "explanation": "“positive”表示“积极乐观的”。预习时重点看它和“positive attitude”这类表达的搭配方式。",
+    "coreMeaning": "Positive describes a hopeful, confident, or helpful way of thinking.",
+    "explanation": "课堂上可以先用“positive attitude”理解基本用法，再用“be positive about”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "optimistic",
@@ -11990,8 +11990,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/kjʊə(r)/",
     "partOfSpeech": "n.",
     "translation": "药物；疗法 v. 治愈",
-    "coreMeaning": "cure means “药物；疗法 v. 治愈”.",
-    "explanation": "“cure”表示“药物；疗法 v. 治愈”。预习时重点看它和“n. a cure for”这类表达的搭配方式。",
+    "coreMeaning": "A cure is a medicine or treatment that makes an illness go away; to cure is to heal.",
+    "explanation": "课堂上可以先用“a cure for”理解基本用法，再用“cure sb. of sth.”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "treat",
@@ -12037,8 +12037,8 @@ export const previewWords: PreviewWord[] = [
     "phonetic": "/ˈkænsə(r)/",
     "partOfSpeech": "n.",
     "translation": "癌；癌症",
-    "coreMeaning": "cancer means “癌；癌症”.",
-    "explanation": "“cancer”表示“癌；癌症”。预习时重点看它和“lung cancer”这类表达的搭配方式。",
+    "coreMeaning": "Cancer is a serious disease in which harmful cells grow in the body.",
+    "explanation": "课堂上可以先用“lung cancer”理解基本用法，再用“fight against cancer”扩展到常见搭配；这样比只背中文更稳。",
     "nearSynonyms": [
       {
         "word": "disease",
