@@ -35,6 +35,7 @@ export interface PreviewWord {
   phonetic: string;
   partOfSpeech: string;
   translation: string;
+  derivedWords: PreviewDerivedWord[];
   coreMeaning: string;
   explanation: string;
   nearSynonyms: PreviewNearSynonym[];
@@ -42,6 +43,12 @@ export interface PreviewWord {
   examples: PreviewExample[];
   usageTip: string;
   quiz: PreviewQuiz | null;
+}
+
+export interface PreviewDerivedWord {
+  word: string;
+  partOfSpeech: string;
+  translation: string;
 }
 
 export interface PreviewNearSynonym {

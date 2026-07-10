@@ -1322,6 +1322,16 @@ export default function App() {
               </PreviewSection>
             )}
 
+            {word.derivedWords.length > 0 && (
+              <PreviewSection icon={<Layers size={14} />} label="派生词" color={C.blueText}>
+                <div className="flex flex-wrap gap-2">
+                  {word.derivedWords.map((item) => (
+                    <DerivedWordChip key={`${item.word}-${item.partOfSpeech}`} item={item} />
+                  ))}
+                </div>
+              </PreviewSection>
+            )}
+
             {word.corePoints.length > 0 && (
               <PreviewSection icon={<Layers size={14} />} label="核心考点" color={C.blueText}>
                 <div className="flex flex-wrap gap-2">
@@ -2012,6 +2022,21 @@ function CorePointChip({ point }: { point: PreviewWord["corePoints"][number] }) 
           <span className="text-xs text-gray-500">{point.note}</span>
         </>
       )}
+    </div>
+  );
+}
+
+function DerivedWordChip({ item }: { item: PreviewWord["derivedWords"][number] }) {
+  return (
+    <div
+      className="inline-flex flex-col px-3.5 py-2 rounded-2xl border min-w-[120px]"
+      style={{ background: C.blueLight, borderColor: C.blue, color: C.blueText }}
+    >
+      <div className="flex items-baseline gap-2">
+        <span className="font-semibold">{item.word}</span>
+        <span className="text-xs text-gray-400">{item.partOfSpeech}</span>
+      </div>
+      <span className="text-sm opacity-85">{item.translation}</span>
     </div>
   );
 }

@@ -36,7 +36,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "表示容量时常用 a litre of / two litres of，注意复数 litres。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-002",
@@ -84,7 +85,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“car factory”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-003",
@@ -132,7 +134,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "前面有具体数字时 billion 通常不加 s；表示“数十亿”时用 billions of。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-004",
@@ -180,7 +183,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“salty food”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-005",
@@ -232,7 +236,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "the rest of 表示“剩余的……”，have a rest 表示“休息一下”，两个用法要区分。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-006",
@@ -280,7 +285,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“rare animal”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-007",
@@ -328,7 +334,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“give a presentation”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-008",
@@ -376,7 +383,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“be useful for”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-009",
@@ -424,7 +432,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“boring movie”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-010",
@@ -472,7 +481,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“chemical factory”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-011",
@@ -520,7 +530,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“wastewater treatment”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-012",
@@ -562,7 +573,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "treatment 可指医疗处理，也可指废水、垃圾等的处理，需结合语境理解。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-013",
@@ -610,7 +622,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "include 后直接接被包含的内容，不要写 include in sth. 表示“包括在某物里”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-014",
@@ -658,7 +671,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "research 可作名词也可作动词；do research on 表示“做关于……的研究”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-015",
@@ -706,7 +720,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "agree with sb. 表示同意某人观点；agree to do sth. 表示同意做某事。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-016",
@@ -754,7 +769,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "beyond 常表示“超出”，如 beyond one's ability，不只是空间上的“在……之外”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-017",
@@ -796,7 +812,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "energy-saving 常作形容词放在名词前，如 energy-saving lamp。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-018",
@@ -838,7 +855,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“use a dishwasher”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-019",
@@ -886,7 +904,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "indirect 是 direct 的反义词，常用于 effect、cost、speech 等名词前。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-020",
@@ -934,7 +953,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "kilo 是 kilogram 的简写，前面有 two 等数量时用复数 kilos。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-021",
@@ -982,7 +1002,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“beef hamburger”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-022",
@@ -1030,7 +1051,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“cotton clothes”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-023",
@@ -1072,7 +1094,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“the Sahara Desert”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-024",
@@ -1114,7 +1137,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "soap 可作名词“肥皂”，也可作动词“抹肥皂；擦洗”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-025",
@@ -1162,7 +1186,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“in the corner”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-026",
@@ -1210,7 +1235,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“flower pot”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-027",
@@ -1258,7 +1284,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "set off 是动词短语，后接地点时常用 set off for。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-028",
@@ -1306,7 +1333,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“dig a hole”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-029",
@@ -1348,7 +1376,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“step on”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-030",
@@ -1390,7 +1419,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“in the mud”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-031",
@@ -1432,7 +1462,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“bathe in”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-032",
@@ -1474,7 +1505,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“shine brightly”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-033",
@@ -1516,7 +1548,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "look forward to 中 to 是介词，后面接名词或动词-ing。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-034",
@@ -1558,7 +1591,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“pour into”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-035",
@@ -1600,7 +1634,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "shut 的过去式和过去分词仍是 shut。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-036",
@@ -1648,7 +1683,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“listen carefully”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-037",
@@ -1690,7 +1726,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "drop 可作名词“一滴”，也可作动词“落下；掉下”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-038",
@@ -1732,7 +1769,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“fully understand”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-039",
@@ -1780,7 +1818,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“precious time”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-040",
@@ -1822,7 +1861,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "shoulder 可作名词“肩膀”，也可作动词“承担；扛”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-041",
@@ -1864,7 +1904,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "snake 作动词时可表示“蜿蜒前行”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-042",
@@ -1906,7 +1947,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "be thirsty for 可表示“渴望……”，不只表示口渴。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-043",
@@ -1954,7 +1996,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "be limited to 表示“局限于……”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-044",
@@ -2002,7 +2045,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "spread 的过去式和过去分词仍是 spread。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-045",
@@ -2044,7 +2088,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "常见考点是“a clean-up campaign”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-046",
@@ -2092,7 +2137,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "raise 是及物动词，常接宾语，如 raise money / raise awareness。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u1-047",
@@ -2134,7 +2180,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "awareness 常和 raise 搭配，表示“提高意识”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-001",
@@ -2181,7 +2228,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“digital camera”，再看“digital product”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-002",
@@ -2228,7 +2276,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“get support from”，再看“technical support”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "supportive",
+        "partOfSpeech": "adj.",
+        "translation": "支持的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-003",
@@ -2275,7 +2330,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“use a laptop”，再看“a new laptop”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-004",
@@ -2322,7 +2378,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“computer keyboard”，再看“type on the keyboard”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-005",
@@ -2369,7 +2426,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“connect via bluetooth”，再看“bluetooth speaker”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-006",
@@ -2416,7 +2474,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“use a smartphone”，再看“smartphone apps”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-007",
@@ -2463,7 +2522,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“wear a headset”，再看“headset with microphone”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-008",
@@ -2510,7 +2570,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a large number of”，再看“large size”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "largely",
+        "partOfSpeech": "adv.",
+        "translation": "主要地；在很大程度上"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-009",
@@ -2562,7 +2629,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“adj. clear voice”，再看“be clear about”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "clearly",
+        "partOfSpeech": "adv.",
+        "translation": "清楚地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-010",
@@ -2609,7 +2683,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“private life”，再看“private information”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "privately",
+        "partOfSpeech": "adv.",
+        "translation": "私下地；秘密地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-011",
@@ -2661,7 +2742,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“n. keep in touch”，再看“a light touch”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-012",
@@ -2708,7 +2790,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“use the touch screen”，再看“touch screen phone”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-013",
@@ -2755,7 +2838,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“have an advantage over”，再看“the advantage of”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "disadvantage",
+        "partOfSpeech": "n.",
+        "translation": "不利因素；劣势"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-014",
@@ -2802,7 +2892,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“computer chip”，再看“microchip”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-015",
@@ -2849,7 +2940,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“adj. lightning speed”，再看“n. during lightning”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-016",
@@ -2896,7 +2988,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“purple flowers”，再看“wear purple”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-017",
@@ -2943,7 +3036,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“AI technology”，再看“use AI”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-018",
@@ -2985,7 +3079,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“keep an eye on sb./sth.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-019",
@@ -3032,7 +3127,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“good health”，再看“be bad for health”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "healthy",
+        "partOfSpeech": "adj.",
+        "translation": "健康的"
+      },
+      {
+        "word": "healthily",
+        "partOfSpeech": "adv.",
+        "translation": "健康地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-020",
@@ -3079,7 +3186,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“make a complaint”，再看“complaint about”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "complain",
+        "partOfSpeech": "v.",
+        "translation": "投诉；抱怨"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-021",
@@ -3126,7 +3240,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“press the button”，再看“press down”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "pressure",
+        "partOfSpeech": "n.",
+        "translation": "压力"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-022",
@@ -3173,7 +3294,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“cause inconvenience”，再看“sorry for the inconvenience”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "convenient",
+        "partOfSpeech": "adj.",
+        "translation": "方便的"
+      },
+      {
+        "word": "inconvenient",
+        "partOfSpeech": "adj.",
+        "translation": "不方便的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-023",
@@ -3220,7 +3353,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“repeat sth.”，再看“repeat after sb.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "repetition",
+        "partOfSpeech": "n.",
+        "translation": "重复"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-024",
@@ -3262,7 +3402,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“a couple of”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-025",
@@ -3309,7 +3450,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“freeze up”，再看“be frozen”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-026",
@@ -3356,7 +3498,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“computer software”，再看“install software”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-027",
@@ -3403,7 +3546,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“mobile app”，再看“use an app”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-028",
@@ -3450,7 +3594,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“computer network”，再看“network connection”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-029",
@@ -3497,7 +3642,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“help disabled people”，再看“disabled access”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "disability",
+        "partOfSpeech": "n.",
+        "translation": "残疾"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-030",
@@ -3549,7 +3701,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“n. type of”，再看“different types”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-031",
@@ -3596,7 +3749,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“the blind”，再看“be blind to”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "blindness",
+        "partOfSpeech": "n.",
+        "translation": "失明"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-032",
@@ -3643,7 +3803,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“detect errors”，再看“detect a problem”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "detection",
+        "partOfSpeech": "n.",
+        "translation": "探测"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-033",
@@ -3690,7 +3857,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“solid object”，再看“strange object”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-034",
@@ -3732,7 +3900,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "as soon as 表“一……就……”，引导时间状语从句时也常用“主将从现”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-035",
@@ -3779,7 +3948,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“warn sb. of sth.”，再看“warn sb. not to do sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "warning",
+        "partOfSpeech": "n.",
+        "translation": "警告；警示"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-036",
@@ -3826,7 +4002,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in the direction of”，再看“follow the directions”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "direct",
+        "partOfSpeech": "v./adj.",
+        "translation": "指引；直接的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-037",
@@ -3873,7 +4056,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“inform sb. of sth.”，再看“inform sb. that...”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "information",
+        "partOfSpeech": "n.",
+        "translation": "信息"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-038",
@@ -3925,7 +4115,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“n. write a report”，再看“research report”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "reporter",
+        "partOfSpeech": "n.",
+        "translation": "记者"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-039",
@@ -3972,7 +4169,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "population 作“人口数量”时常作单数；说“人口多”用 have a large population。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-040",
@@ -4019,7 +4217,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“rural areas”，再看“rural life”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-041",
@@ -4066,7 +4265,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“network connection”，再看“connection between A and B”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "connect",
+        "partOfSpeech": "v.",
+        "translation": "连接；联系"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-042",
@@ -4113,7 +4319,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“firefighting work”，再看“firefighting equipment”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "firefighter",
+        "partOfSpeech": "n.",
+        "translation": "消防员"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-043",
@@ -4160,7 +4373,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“send sth. to sb.”，再看“send an email”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-044",
@@ -4207,7 +4421,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“machine unit”，再看“a unit of measurement”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-045",
@@ -4254,7 +4469,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in one’s opinion”，再看“give one’s opinion”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-046",
@@ -4296,7 +4512,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "in my opinion 常放句首，用逗号隔开，适合写作里表达个人观点。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-047",
@@ -4343,7 +4560,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be aware of”，再看“be aware that...”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "awareness",
+        "partOfSpeech": "n.",
+        "translation": "意识"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-048",
@@ -4385,7 +4609,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "be aware of 后接名词、代词或动名词；接完整句子时用 be aware that...。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-049",
@@ -4432,7 +4657,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“the disadvantage of”，再看“have a disadvantage”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-050",
@@ -4479,7 +4705,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“hide sth. from sb.”，再看“hide away”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-051",
@@ -4526,7 +4753,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“hidden treasure”，再看“be hidden in”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-052",
@@ -4573,7 +4801,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“computer virus”，再看“catch a virus”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-053",
@@ -4620,7 +4849,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“draw a conclusion”，再看“in conclusion”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "conclude",
+        "partOfSpeech": "v.",
+        "translation": "得出结论；结束"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-054",
@@ -4662,7 +4898,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "in conclusion 常放段落结尾或总结句开头，用来收束观点。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u2-055",
@@ -4709,7 +4946,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“the benefit of”，再看“get benefits from”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "beneficial",
+        "partOfSpeech": "adj.",
+        "translation": "有益的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-001",
@@ -4745,7 +4989,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "inborn 作形容词时通常放在名词前或 be 动词后，复习时配一个简单名词一起记。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-002",
@@ -4792,7 +5037,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be unfamiliar with sth.”，再看“be unfamiliar to sb.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "familiar",
+        "partOfSpeech": "adj.",
+        "translation": "熟悉的"
+      },
+      {
+        "word": "familiarity",
+        "partOfSpeech": "n.",
+        "translation": "熟悉"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-003",
@@ -4828,7 +5085,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "grown-up 作名词时重点看可数/不可数和常见搭配，例句比单词表更好记。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "grow",
+        "partOfSpeech": "v.",
+        "translation": "成长；种植"
+      },
+      {
+        "word": "growth",
+        "partOfSpeech": "n.",
+        "translation": "成长；增长"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-004",
@@ -4870,7 +5139,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“be continuous with sth.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "continue",
+        "partOfSpeech": "v.",
+        "translation": "继续"
+      },
+      {
+        "word": "continuation",
+        "partOfSpeech": "n.",
+        "translation": "继续"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-005",
@@ -4917,7 +5198,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "either 表“也”时放否定句末；肯定句里的“也”通常用 too。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-006",
@@ -4969,7 +5251,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. ruin sth.”，再看“n. be in ruins”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-007",
@@ -5016,7 +5299,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“poor eyesight”，再看“protect one’s eyesight”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-008",
@@ -5052,7 +5336,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "fantastic 作形容词时通常放在名词前或 be 动词后，复习时配一个简单名词一起记。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "fantasy",
+        "partOfSpeech": "n.",
+        "translation": "幻想；想象"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-009",
@@ -5088,7 +5379,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "ant 作名词时重点看可数/不可数和常见搭配，例句比单词表更好记。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-010",
@@ -5135,7 +5427,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be surprising to sb.”，再看“It’s surprising that...”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "surprise",
+        "partOfSpeech": "v./n.",
+        "translation": "使吃惊；惊喜"
+      },
+      {
+        "word": "surprised",
+        "partOfSpeech": "adj.",
+        "translation": "感到吃惊的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-011",
@@ -5182,7 +5486,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be awake”，再看“stay awake”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "wake",
+        "partOfSpeech": "v.",
+        "translation": "唤醒；醒来"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-012",
@@ -5218,7 +5529,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "eagle 作名词时重点看可数/不可数和常见搭配，例句比单词表更好记。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-013",
@@ -5260,7 +5572,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“watch a cartoon”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-014",
@@ -5307,7 +5620,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“watch a movie”，再看“go to the movies”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-015",
@@ -5343,7 +5657,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "never-ending 作形容词时通常放在名词前或 be 动词后，复习时配一个简单名词一起记。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "end",
+        "partOfSpeech": "v./n.",
+        "translation": "结束；结尾"
+      },
+      {
+        "word": "ending",
+        "partOfSpeech": "n.",
+        "translation": "结尾；结局"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-016",
@@ -5385,7 +5711,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“be annoying to sb.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "annoy",
+        "partOfSpeech": "v.",
+        "translation": "使恼怒；打扰"
+      },
+      {
+        "word": "annoyed",
+        "partOfSpeech": "adj.",
+        "translation": "感到恼怒的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-017",
@@ -5432,7 +5770,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“use one’s brain”，再看“have a good brain”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "brainy",
+        "partOfSpeech": "adj.",
+        "translation": "聪明的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-018",
@@ -5474,7 +5819,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“do research”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "research",
+        "partOfSpeech": "v./n.",
+        "translation": "研究"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-019",
@@ -5525,7 +5877,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. rate sth.”，再看“n. the rate of...”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "rating",
+        "partOfSpeech": "n.",
+        "translation": "等级；评分"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-020",
@@ -5577,7 +5936,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“the result of...”，再看“as a result”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-021",
@@ -5619,7 +5979,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“do magic tricks”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "magic",
+        "partOfSpeech": "n./adj.",
+        "translation": "魔法；有魔力的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-022",
@@ -5666,7 +6033,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in recent years”，再看“recent news”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "recently",
+        "partOfSpeech": "adv.",
+        "translation": "近来；最近"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-023",
@@ -5713,7 +6087,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“n. play a trick on sb.”，再看“n. magic trick”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "tricky",
+        "partOfSpeech": "adj.",
+        "translation": "难办的；狡猾的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-024",
@@ -5760,7 +6141,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“voluntary work”，再看“voluntary help”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "volunteer",
+        "partOfSpeech": "n./v.",
+        "translation": "志愿者；自愿做"
+      },
+      {
+        "word": "voluntarily",
+        "partOfSpeech": "adv.",
+        "translation": "自愿地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-025",
@@ -5807,7 +6200,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be crazy about sth./sb.”，再看“drive sb. crazy”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "crazily",
+        "partOfSpeech": "adv.",
+        "translation": "疯狂地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-026",
@@ -5849,7 +6249,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“表因果关系”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-027",
@@ -5901,7 +6302,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. wonder + if/whether从句”，再看“v. wonder about sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "wonderful",
+        "partOfSpeech": "adj.",
+        "translation": "精彩的；极好的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u3-028",
@@ -5948,7 +6356,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“shake hands with sb.”，再看“shake sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u3-029",
@@ -5995,7 +6404,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. bark at sb./sth.”，再看“n. the bark of a dog”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-001",
@@ -6042,7 +6452,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in memory of”，再看“sweet memories”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "memorize",
+        "partOfSpeech": "v.",
+        "translation": "记忆；记住"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-002",
@@ -6089,7 +6506,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“表否定含义”，再看“seldom go out”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-003",
@@ -6136,7 +6554,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a journey to...”，再看“long journey”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-004",
@@ -6178,7 +6597,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“常用于一般现在时”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-005",
@@ -6225,7 +6645,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“by truck”，再看“truck driver”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-006",
@@ -6272,7 +6693,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be + 数字 + wide 宽……”，再看“wide road”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "widely",
+        "partOfSpeech": "adv.",
+        "translation": "广泛地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-007",
@@ -6319,7 +6747,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“modern life”，再看“modern technology”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "modernize",
+        "partOfSpeech": "v.",
+        "translation": "使现代化"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-008",
@@ -6366,7 +6801,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a stay in...”，再看“short stay”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-009",
@@ -6413,7 +6849,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“tape recorder”，再看“video tape”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-010",
@@ -6460,7 +6897,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“inside + 地点 在……里面”，再看“inside the house”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-011",
@@ -6502,7 +6940,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "any more 常放否定句末，结构是 not...any more，表示“不再”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-012",
@@ -6544,7 +6983,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "borrow 是“借入”，常用 borrow sth. from sb.；不要和 lend 的方向混。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "borrower",
+        "partOfSpeech": "n.",
+        "translation": "借用人"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-013",
@@ -6586,7 +7032,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“imagine doing sth. 想象做某事”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "imagination",
+        "partOfSpeech": "n.",
+        "translation": "想象力"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-014",
@@ -6633,7 +7086,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a roll of”，再看“roll of paper”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-015",
@@ -6680,7 +7134,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“music record”，再看“record player”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "recorder",
+        "partOfSpeech": "n.",
+        "translation": "录音机"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-016",
@@ -6727,7 +7188,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“on business”，再看“do business”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "businessman",
+        "partOfSpeech": "n.",
+        "translation": "商人"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-017",
@@ -6774,7 +7242,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“except + 名词/代词 除……之外”，再看“except for 除……之外”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-018",
@@ -6816,7 +7285,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“belong to sb. 属于某人”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-019",
@@ -6858,7 +7328,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“用法同动词 belong”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-020",
@@ -6905,7 +7376,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in the +”，再看“over a century”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-021",
@@ -6952,7 +7424,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“the worst 最差的”，再看“worst of all”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-022",
@@ -6999,7 +7472,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“heavy industry”，再看“light industry”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "industrial",
+        "partOfSpeech": "adj.",
+        "translation": "工业的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-023",
@@ -7041,7 +7521,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“make progress 取得进步”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-024",
@@ -7088,7 +7569,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“ordinary people”，再看“ordinary life”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "ordinarily",
+        "partOfSpeech": "adv.",
+        "translation": "通常"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-025",
@@ -7135,7 +7623,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“change dramatically”，再看“increase dramatically”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "dramatic",
+        "partOfSpeech": "adj.",
+        "translation": "戏剧性的；巨大的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-026",
@@ -7182,7 +7677,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“表否定含义”，再看“rarely see”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "rare",
+        "partOfSpeech": "adj.",
+        "translation": "稀有的；罕见的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-027",
@@ -7229,7 +7731,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in the past decade”，再看“over two decades”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-028",
@@ -7271,7 +7774,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“the development of... ……”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "develop",
+        "partOfSpeech": "v.",
+        "translation": "（使）发展；成长"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-029",
@@ -7318,7 +7828,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“develop into”，再看“develop a habit”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "development",
+        "partOfSpeech": "n.",
+        "translation": "发展"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-030",
@@ -7365,7 +7882,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in good/bad condition”，再看“living conditions 生活条件”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "conditional",
+        "partOfSpeech": "adj.",
+        "translation": "有条件的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-031",
@@ -7407,7 +7931,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“improve living conditions”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-032",
@@ -7454,7 +7979,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“major reasons”，再看“major problem”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-033",
@@ -7501,7 +8027,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“the growth of population”，再看“economic growth”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "grow",
+        "partOfSpeech": "v.",
+        "translation": "生长；增长"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-034",
@@ -7548,7 +8081,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in the countryside”，再看“go to the countryside”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-035",
@@ -7595,7 +8129,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "although 引导让步状语从句，中文虽有“虽然……但是……”，英文里不要和 but 连用。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-036",
@@ -7642,7 +8177,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“unpleasant weather”，再看“unpleasant smell”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-037",
@@ -7684,7 +8220,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“take a bath 洗澡”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "bathe",
+        "partOfSpeech": "v.",
+        "translation": "洗澡；沐浴"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-038",
@@ -7726,7 +8269,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“extremely + 形容词 极其……”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "extreme",
+        "partOfSpeech": "adj.",
+        "translation": "极端的；极度的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-039",
@@ -7773,7 +8323,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“smelly rubbish”，再看“smelly food”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "smell",
+        "partOfSpeech": "v./n.",
+        "translation": "闻起来；气味"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-040",
@@ -7820,7 +8377,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a wealthy family”，再看“wealthy people”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "wealth",
+        "partOfSpeech": "n.",
+        "translation": "财富"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-041",
@@ -7867,7 +8431,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“higher education”，再看“receive education”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "educate",
+        "partOfSpeech": "v.",
+        "translation": "教育；培养"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-042",
@@ -7914,7 +8485,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“foreign language”，再看“foreign country”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "foreigner",
+        "partOfSpeech": "n.",
+        "translation": "外国人"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-043",
@@ -7961,7 +8539,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“coal mine”，再看“gold mine”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-044",
@@ -8003,7 +8582,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "result in 后面接结果；如果后面接原因，要用 result from。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u4-045",
@@ -8050,7 +8630,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“severe weather”，再看“severe damage”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "severely",
+        "partOfSpeech": "adv.",
+        "translation": "严重地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-046",
@@ -8092,7 +8679,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“punish sb. for (doing) sth.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "punishment",
+        "partOfSpeech": "n.",
+        "translation": "惩罚"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-047",
@@ -8139,7 +8733,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“give sb. punishment”，再看“severe punishment”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "punish",
+        "partOfSpeech": "v.",
+        "translation": "处罚；惩罚"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-048",
@@ -8186,7 +8787,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“burn down 烧毁”，再看“burn sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "burning",
+        "partOfSpeech": "adj.",
+        "translation": "燃烧的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-049",
@@ -8233,7 +8841,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“electric heater”，再看“water heater”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "heat",
+        "partOfSpeech": "v./n.",
+        "translation": "加热；热量"
+      }
+    ]
   },
   {
     "id": "sh-g8-u4-050",
@@ -8275,7 +8890,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“do housework 做家务”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-001",
@@ -8322,7 +8938,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“good teamwork”，再看“develop teamwork”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-002",
@@ -8369,7 +8986,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a music band”，再看“join a band”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-003",
@@ -8416,7 +9034,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a radio DJ”，再看“a club DJ”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-004",
@@ -8463,7 +9082,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“play the lead”，再看“take the lead”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "leader",
+        "partOfSpeech": "n.",
+        "translation": "领导者；领队"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-005",
@@ -8505,7 +9131,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“have a conversation with sb.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "converse",
+        "partOfSpeech": "v.",
+        "translation": "交谈"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-006",
@@ -8552,7 +9185,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“keep a secret”，再看“tell sb. a secret”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "secretly",
+        "partOfSpeech": "adv.",
+        "translation": "秘密地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-007",
@@ -8594,7 +9234,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“passion for sth.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "passionate",
+        "partOfSpeech": "adj.",
+        "translation": "热情的；热衷的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-008",
@@ -8641,7 +9288,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“adj. off-stage activities”，再看“adv. stay off-stage”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-009",
@@ -8688,7 +9336,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“invite a guest”，再看“special guest”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-010",
@@ -8735,7 +9384,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“hold sth. in hand”，再看“hold on”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "holder",
+        "partOfSpeech": "n.",
+        "translation": "持有者"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-011",
@@ -8782,7 +9438,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“the whole nation”，再看“national day”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "national",
+        "partOfSpeech": "adj.",
+        "translation": "国家的；民族的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-012",
@@ -8829,7 +9492,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“IT industry”，再看“IT skills”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-013",
@@ -8876,7 +9540,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“invite VIPs”，再看“VIP area”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-014",
@@ -8918,7 +9583,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“do sth. ASAP”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-015",
@@ -8965,7 +9631,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“have a meeting”，再看“attend a meeting”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "meet",
+        "partOfSpeech": "v.",
+        "translation": "遇见；开会"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-016",
@@ -9012,7 +9685,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“complain about sth.”，再看“complain to sb.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "complaint",
+        "partOfSpeech": "n.",
+        "translation": "投诉；抱怨"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-017",
@@ -9059,7 +9739,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“finish a task”，再看“difficult task”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-018",
@@ -9101,7 +9782,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“It’s a pity that...”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "pitiful",
+        "partOfSpeech": "adj.",
+        "translation": "可怜的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-019",
@@ -9143,7 +9831,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“It’s a shame that...”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "shameful",
+        "partOfSpeech": "adj.",
+        "translation": "可耻的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-020",
@@ -9185,7 +9880,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“have a discussion about sth.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "discuss",
+        "partOfSpeech": "v.",
+        "translation": "讨论；商讨"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-021",
@@ -9227,7 +9929,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“cooperate with sb.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "cooperation",
+        "partOfSpeech": "n.",
+        "translation": "合作"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-022",
@@ -9274,7 +9983,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“achieve success”，再看“a great success”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "successful",
+        "partOfSpeech": "adj.",
+        "translation": "成功的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-023",
@@ -9321,7 +10037,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a winter wonderland”，再看“a fairy wonderland”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-024",
@@ -9368,7 +10085,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“eagerly wait for”，再看“be eager to do sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "eager",
+        "partOfSpeech": "adj.",
+        "translation": "渴望的；热切的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-025",
@@ -9410,7 +10134,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“disappoint sb.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "disappointment",
+        "partOfSpeech": "n.",
+        "translation": "失望"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-026",
@@ -9457,7 +10188,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be disappointed at sth.”，再看“be disappointed with sb.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "disappointing",
+        "partOfSpeech": "adj.",
+        "translation": "令人失望的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-027",
@@ -9504,7 +10242,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“adv. go backstage”，再看“adj. backstage area”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-028",
@@ -9551,7 +10290,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“an enjoyable experience”，再看“enjoy doing sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "enjoy",
+        "partOfSpeech": "v.",
+        "translation": "享受；喜欢"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-029",
@@ -9598,7 +10344,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a satisfying result”，再看“satisfy one’s needs”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "satisfy",
+        "partOfSpeech": "v.",
+        "translation": "使满意；满足"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-030",
@@ -9645,7 +10398,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“draw the curtains”，再看“stage curtain”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-031",
@@ -9692,7 +10446,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be pleased with sth.”，再看“be pleased to do sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "please",
+        "partOfSpeech": "v.",
+        "translation": "使高兴；请"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-032",
@@ -9739,7 +10500,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a self-important man”，再看“self-important attitude”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-033",
@@ -9786,7 +10548,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“natural beauty”，再看“natural ability”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "nature",
+        "partOfSpeech": "n.",
+        "translation": "自然；天性"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-034",
@@ -9833,7 +10602,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a perfect plan”，再看“perfect weather”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "perfectly",
+        "partOfSpeech": "adv.",
+        "translation": "完美地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-035",
@@ -9880,7 +10656,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“clap for sb.”，再看“clap hands”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "clapping",
+        "partOfSpeech": "n.",
+        "translation": "掌声"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-036",
@@ -9927,7 +10710,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a talented singer”，再看“have talent for”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "talent",
+        "partOfSpeech": "n.",
+        "translation": "天赋；才能"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-037",
@@ -9974,7 +10764,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“raise a flag”，再看“sports flag”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-038",
@@ -10021,7 +10812,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“the team captain”，再看“elect a captain”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-039",
@@ -10068,7 +10860,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“miss the bus”，再看“miss a goal”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "missing",
+        "partOfSpeech": "adj.",
+        "translation": "失踪的；丢失的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u5-040",
@@ -10115,7 +10914,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a row of”，再看“sit in a row”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-041",
@@ -10162,7 +10962,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "in a row 放在次数后面，three times in a row 表示“连续三次”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u5-042",
@@ -10209,7 +11010,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“win a victory”，再看“great victory”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "victorious",
+        "partOfSpeech": "adj.",
+        "translation": "胜利的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-001",
@@ -10256,7 +11064,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“VR technology”，再看“experience VR”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-002",
@@ -10303,7 +11112,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“wear a hat”，再看“a baseball hat”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-003",
@@ -10345,7 +11155,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“be able to do sth.”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "ability",
+        "partOfSpeech": "n.",
+        "translation": "能力"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-004",
@@ -10387,7 +11204,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "be able to 比 can 更灵活，可用于 will be able to、have been able to 等时态。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-005",
@@ -10434,7 +11252,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“attend a meeting”，再看“attend school”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "attendance",
+        "partOfSpeech": "n.",
+        "translation": "出席；到场"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-006",
@@ -10476,7 +11301,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“be absent from”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "absence",
+        "partOfSpeech": "n.",
+        "translation": "缺席"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-007",
@@ -10518,7 +11350,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“attitude towards/to”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-008",
@@ -10565,7 +11398,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a disturbing fact”，再看“disturbing news”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "disturb",
+        "partOfSpeech": "v.",
+        "translation": "打扰；使不安"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-009",
@@ -10612,7 +11452,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“It is possible (for sb.) to do sth.”，再看“as soon as possible”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "impossible",
+        "partOfSpeech": "adj.",
+        "translation": "不可能的"
+      },
+      {
+        "word": "possibility",
+        "partOfSpeech": "n.",
+        "translation": "可能性"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-010",
@@ -10654,7 +11506,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "unless 相当于 if...not，引导条件状语从句时常用“主将从现”。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-011",
@@ -10701,7 +11554,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“at any time”，再看“any time you like”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-012",
@@ -10743,7 +11597,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "这个词重点看“位置：be动词/情态动词后”这个用法，做题时先找它前后的固定搭配。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "probable",
+        "partOfSpeech": "adj.",
+        "translation": "很可能的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-013",
@@ -10795,7 +11656,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. circle around”，再看“n. draw a circle”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-014",
@@ -10842,7 +11704,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“launch a rocket”，再看“a space rocket”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-015",
@@ -10889,7 +11752,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“It is unlikely that...”，再看“be unlikely to do sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "likely",
+        "partOfSpeech": "adj.",
+        "translation": "可能的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-016",
@@ -10936,7 +11806,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“super-speed train”，再看“super-speed internet”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-017",
@@ -10983,7 +11854,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“take a flight”，再看“flight number”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "fly",
+        "partOfSpeech": "v.",
+        "translation": "飞；飞行"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-018",
@@ -11030,7 +11908,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“take the elevator”，再看“elevator hall”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-019",
@@ -11077,7 +11956,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“alien life”，再看“a movie about aliens”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-020",
@@ -11124,7 +12004,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“within 10 minutes”，再看“within walking distance”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-021",
@@ -11171,7 +12052,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. kiss sb. goodbye”，再看“n. give sb. a kiss”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-022",
@@ -11218,7 +12100,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a woolen scarf”，再看“wear a scarf”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-023",
@@ -11265,7 +12148,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. risk doing sth.”，再看“n. take a risk”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "risky",
+        "partOfSpeech": "adj.",
+        "translation": "有风险的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-024",
@@ -11312,7 +12202,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“in the town”，再看“town center”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-025",
@@ -11359,7 +12250,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“primary school”，再看“primary reason”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-026",
@@ -11406,7 +12298,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“security check”，再看“security guard”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "secure",
+        "partOfSpeech": "adj.",
+        "translation": "安全的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-027",
@@ -11453,7 +12352,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“float in the air”，再看“float on water”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-028",
@@ -11505,7 +12405,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. tower over”，再看“n. the Eiffel Tower”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-029",
@@ -11557,7 +12458,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. figure out”，再看“n. math figures”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-030",
@@ -11599,7 +12501,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "figure out 后可接名词，也可接 how/why/what 等疑问词引导的结构。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-031",
@@ -11646,7 +12549,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“be familiar with”，再看“be familiar to”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "unfamiliar",
+        "partOfSpeech": "adj.",
+        "translation": "不熟悉的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-032",
@@ -11693,7 +12603,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“leave handprints”，再看“colorful handprints”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-033",
@@ -11740,7 +12651,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“a mile away”，再看“miles of”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-034",
@@ -11787,7 +12699,19 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“an unbelievable story”，再看“unbelievable speed”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "believe",
+        "partOfSpeech": "v.",
+        "translation": "相信"
+      },
+      {
+        "word": "belief",
+        "partOfSpeech": "n.",
+        "translation": "信念"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-035",
@@ -11829,7 +12753,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "cut in 表“插嘴”时是不礼貌地打断别人，常用于谈话场景。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-036",
@@ -11881,7 +12806,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“v. blow up”，再看“blow away”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-037",
@@ -11928,7 +12854,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "blow up 可及物也可不及物：blow up the bridge / The bridge blew up。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-038",
@@ -11975,7 +12902,14 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“positive attitude”，再看“be positive about”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": [
+      {
+        "word": "positively",
+        "partOfSpeech": "adv.",
+        "translation": "积极地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u6-039",
@@ -12022,7 +12956,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“n. a cure for”，再看“v. cure sb. of sth.”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   },
   {
     "id": "sh-g8-u6-040",
@@ -12069,7 +13004,8 @@ export const previewWords: PreviewWord[] = [
       }
     ],
     "usageTip": "预习时优先记“lung cancer”，再看“fight against cancer”；这些搭配比单背中文更容易考到。",
-    "quiz": null
+    "quiz": null,
+    "derivedWords": []
   }
 ];
 
