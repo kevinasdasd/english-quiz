@@ -11,7 +11,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 1,
     "word": "litre (AmE liter)",
-    "phonetic": "/ˈliːtə(r)/",
+    "phonetic": "/'li:tə(r)/",
     "partOfSpeech": "n.",
     "translation": "升",
     "coreMeaning": "A litre is a unit for measuring liquid, such as water or milk.",
@@ -22,17 +22,16 @@ export const previewWords: PreviewWord[] = [
         "phrase": "a litre of",
         "translation": "一升……",
         "note": ""
-      },
-      {
-        "phrase": "two litres of",
-        "translation": "两升……",
-        "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "There is a litre of milk in the fridge.",
-        "translation": "冰箱里有一升牛奶。"
+        "sentence": "This bottle can hold one litre of water.",
+        "translation": "这个瓶子能装一升水。"
+      },
+      {
+        "sentence": "We need two litres of milk for the cake.",
+        "translation": "做这个蛋糕我们需要两升牛奶。"
       }
     ],
     "usageTip": "表示容量时常用 a litre of / two litres of，注意复数 litres。",
@@ -49,7 +48,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 2,
     "word": "factory",
-    "phonetic": "/ˈfæktri/",
+    "phonetic": "/'fæktri/",
     "partOfSpeech": "n.",
     "translation": "工厂",
     "coreMeaning": "A factory is a building where people or machines make products.",
@@ -63,25 +62,24 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "car factory",
-        "translation": "汽车工厂",
+        "phrase": "a factory",
+        "translation": "一家工厂",
         "note": ""
       },
       {
-        "phrase": "toy factory",
-        "translation": "玩具工厂",
-        "note": ""
-      },
-      {
-        "phrase": "work in a factory",
-        "translation": "在工厂工作",
+        "phrase": "factory workers",
+        "translation": "工厂工人",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "My father works in a factory near our home.",
-        "translation": "我爸爸在我们家附近的一家工厂工作。"
+        "sentence": "There is a big factory near our school.",
+        "translation": "我们学校附近有一家大工厂。"
+      },
+      {
+        "sentence": "The factory produces many kinds of machines.",
+        "translation": "这家工厂生产多种机器。"
       }
     ],
     "usageTip": "常见考点是“car factory”，做题时先看空格前后是否和该搭配对应。",
@@ -98,7 +96,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 3,
     "word": "billion",
-    "phonetic": "/ˈbɪljən/",
+    "phonetic": "/'bɪljən/",
     "partOfSpeech": "n.",
     "translation": "十亿",
     "coreMeaning": "A billion is the number 1,000,000,000.",
@@ -117,11 +115,6 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "two billion",
-        "translation": "二十亿",
-        "note": ""
-      },
-      {
         "phrase": "billions of",
         "translation": "数十亿的",
         "note": ""
@@ -129,8 +122,12 @@ export const previewWords: PreviewWord[] = [
     ],
     "examples": [
       {
-        "sentence": "The population of this country is over one billion.",
-        "translation": "这个国家的人口超过十亿。"
+        "sentence": "The earth has a population of over seven billion.",
+        "translation": "地球人口超过七十亿。"
+      },
+      {
+        "sentence": "Billions of stars are in the sky at night.",
+        "translation": "晚上天空中有数十亿颗星星。"
       }
     ],
     "usageTip": "前面有具体数字时 billion 通常不加 s；表示“数十亿”时用 billions of。",
@@ -147,7 +144,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 4,
     "word": "salty",
-    "phonetic": "/ˈsɔːlti/",
+    "phonetic": "/'sɔ:lti/",
     "partOfSpeech": "adj.",
     "translation": "含盐的；咸的",
     "coreMeaning": "Salty food or water contains a lot of salt or tastes like salt.",
@@ -161,30 +158,30 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "salty food",
-        "translation": "含盐的食物",
-        "note": ""
-      },
-      {
-        "phrase": "salty water",
-        "translation": "咸水",
-        "note": ""
-      },
-      {
-        "phrase": "too salty",
-        "translation": "太咸",
+        "phrase": "taste salty",
+        "translation": "尝起来咸",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "This soup is too salty for me to drink.",
-        "translation": "这碗汤对我来说太咸了，没法喝。"
+        "sentence": "The soup is too salty for me.",
+        "translation": "这汤对我来说太咸了。"
+      },
+      {
+        "sentence": "Sea water is salty because it has much salt.",
+        "translation": "海水是咸的，因为它含有很多盐。"
       }
     ],
     "usageTip": "常见考点是“salty food”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "salt",
+        "partOfSpeech": "n./v.",
+        "translation": "盐；加盐"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-005",
@@ -216,28 +213,39 @@ export const previewWords: PreviewWord[] = [
       },
       {
         "phrase": "the rest of",
-        "translation": "剩余的……",
+        "translation": "……的剩余部分",
         "note": ""
       },
       {
-        "phrase": "rest time",
-        "translation": "休息时间",
+        "phrase": "rest on（依靠",
+        "translation": "",
+        "note": ""
+      },
+      {
+        "phrase": "停留在）",
+        "translation": "",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "You can eat the rest of the cake tomorrow.",
-        "translation": "你明天可以吃蛋糕的剩余部分。"
+        "sentence": "Let's stop to have a rest after walking for an hour.",
+        "translation": "走了一个小时后，我们停下来休息一下吧。"
       },
       {
-        "sentence": "Let's stop to have a rest after working for an hour.",
-        "translation": "工作一小时后，我们停下来休息一下吧。"
+        "sentence": "The rest of the students will go to the park tomorrow.",
+        "translation": "其余的学生明天将去公园。"
       }
     ],
     "usageTip": "the rest of 表示“剩余的……”，have a rest 表示“休息一下”，两个用法要区分。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "restful",
+        "partOfSpeech": "adj.",
+        "translation": "令人放松的；宁静的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-006",
@@ -263,13 +271,8 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "rare animal",
+        "phrase": "rare animals",
         "translation": "珍稀动物",
-        "note": ""
-      },
-      {
-        "phrase": "rare plant",
-        "translation": "珍稀植物",
         "note": ""
       },
       {
@@ -281,12 +284,22 @@ export const previewWords: PreviewWord[] = [
     "examples": [
       {
         "sentence": "Pandas are rare animals in the world.",
-        "translation": "熊猫是世界上珍稀的动物。"
+        "translation": "熊猫是世界上的珍稀动物。"
+      },
+      {
+        "sentence": "It's a rare chance to meet the famous writer.",
+        "translation": "见到这位著名作家是一个难得的机会。"
       }
     ],
     "usageTip": "常见考点是“rare animal”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "rarely",
+        "partOfSpeech": "adv.",
+        "translation": "很少；难得"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-007",
@@ -298,7 +311,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 7,
     "word": "presentation",
-    "phonetic": "/ˌpreznˈteɪʃn/",
+    "phonetic": "/ˌprezn'teɪʃn/",
     "partOfSpeech": "n.",
     "translation": "展示会；介绍会",
     "coreMeaning": "A presentation is a talk or show that explains something to other people.",
@@ -312,79 +325,35 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "give a presentation",
-        "translation": "做展示 / 介绍",
+        "phrase": "give a presentation（做展示",
+        "translation": "",
         "note": ""
       },
       {
-        "phrase": "attend a presentation",
-        "translation": "参加展示会",
-        "note": ""
-      },
-      {
-        "phrase": "business presentation",
-        "translation": "商务展示会",
+        "phrase": "做介绍）",
+        "translation": "",
         "note": ""
       }
     ],
     "examples": [
       {
         "sentence": "She will give a presentation about environmental protection tomorrow.",
-        "translation": "她明天将做一个关于环境保护的展示会。"
+        "translation": "她明天将做一个关于环境保护的展示。"
+      },
+      {
+        "sentence": "The presentation of the new product was very successful.",
+        "translation": "新产品的介绍会非常成功。"
       }
     ],
     "usageTip": "常见考点是“give a presentation”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
-  },
-  {
-    "id": "sh-g8-u1-008",
-    "courseId": "shanghai-grade8-preview",
-    "book": "沪教版八年级上册",
-    "edition": "沪教版",
-    "grade": "八年级",
-    "unit": "Unit 1",
-    "unitId": "unit-1",
-    "order": 8,
-    "word": "useful",
-    "phonetic": "/ˈjuːsfl/",
-    "partOfSpeech": "adj.",
-    "translation": "有用的",
-    "coreMeaning": "Useful means helpful or able to help you do something.",
-    "explanation": "“useful”表示“有用的”。预习时重点看它和“be useful for”这类表达的搭配方式。",
-    "nearSynonyms": [
+    "derivedWords": [
       {
-        "word": "helpful",
-        "translation": "有帮助的",
-        "difference": "useful 强调有实际用途；helpful 强调能提供帮助。"
+        "word": "present",
+        "partOfSpeech": "v./adj./n.",
+        "translation": "呈现；介绍；现在的；礼物"
       }
-    ],
-    "corePoints": [
-      {
-        "phrase": "be useful for",
-        "translation": "对…… 有用",
-        "note": ""
-      },
-      {
-        "phrase": "useful tool",
-        "translation": "有用的工具",
-        "note": ""
-      },
-      {
-        "phrase": "very useful",
-        "translation": "非常有用",
-        "note": ""
-      }
-    ],
-    "examples": [
-      {
-        "sentence": "This dictionary is very useful for English learners.",
-        "translation": "这本词典对英语学习者来说非常有用。"
-      }
-    ],
-    "usageTip": "常见考点是“be useful for”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null,
-    "derivedWords": []
+    ]
   },
   {
     "id": "sh-g8-u1-009",
@@ -394,9 +363,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 9,
+    "order": 8,
     "word": "boring",
-    "phonetic": "/ˈbɔːrɪŋ/",
+    "phonetic": "/'bɔ:rɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "没趣的",
     "coreMeaning": "Boring means not interesting and making people feel tired.",
@@ -410,30 +379,40 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "boring movie",
-        "translation": "无聊的电影",
+        "phrase": "be boring",
+        "translation": "令人厌烦的",
         "note": ""
       },
       {
-        "phrase": "boring class",
-        "translation": "无聊的课",
-        "note": ""
-      },
-      {
-        "phrase": "so boring",
-        "translation": "如此无聊",
+        "phrase": "a boring movie",
+        "translation": "一部无聊的电影",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "The boring lecture made many students fall asleep.",
-        "translation": "这场没趣的讲座让很多学生睡着了。"
+        "sentence": "This book is so boring that I can't finish it.",
+        "translation": "这本书太无聊了，我读不完。"
+      },
+      {
+        "sentence": "He thinks history classes are boring.",
+        "translation": "他认为历史课很无聊。"
       }
     ],
     "usageTip": "常见考点是“boring movie”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "bore",
+        "partOfSpeech": "v./n.",
+        "translation": "使厌烦；令人厌烦的人/事"
+      },
+      {
+        "word": "bored",
+        "partOfSpeech": "adj.",
+        "translation": "感到厌烦的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-010",
@@ -443,9 +422,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 10,
+    "order": 9,
     "word": "chemical",
-    "phonetic": "/ˈkemɪkl/",
+    "phonetic": "/'kemɪkl/",
     "partOfSpeech": "n.",
     "translation": "化学品",
     "coreMeaning": "A chemical is a substance used in science, industry, or daily life.",
@@ -459,30 +438,40 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "chemical factory",
-        "translation": "化工厂",
+        "phrase": "chemical products",
+        "translation": "化学产品",
         "note": ""
       },
       {
-        "phrase": "chemical product",
-        "translation": "化工产品",
-        "note": ""
-      },
-      {
-        "phrase": "harmful chemical",
-        "translation": "有害化学品",
+        "phrase": "chemical industry",
+        "translation": "化学工业",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "We should keep harmful chemicals away from children.",
-        "translation": "我们应该让有害化学品远离儿童。"
+        "sentence": "We shouldn't pour chemicals into the river.",
+        "translation": "我们不应该把化学品倒入河里。"
+      },
+      {
+        "sentence": "This factory produces many kinds of chemicals.",
+        "translation": "这家工厂生产多种化学品。"
       }
     ],
     "usageTip": "常见考点是“chemical factory”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "chemistry",
+        "partOfSpeech": "n.",
+        "translation": "化学"
+      },
+      {
+        "word": "chemist",
+        "partOfSpeech": "n.",
+        "translation": "化学家；药剂师"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-011",
@@ -492,9 +481,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 11,
+    "order": 10,
     "word": "wastewater",
-    "phonetic": "/ˈweɪstwɔːtə(r)/",
+    "phonetic": "/'weɪstwɔ:tə(r)/",
     "partOfSpeech": "n.",
     "translation": "废水",
     "coreMeaning": "Wastewater is dirty water that has been used and should be treated.",
@@ -511,22 +500,16 @@ export const previewWords: PreviewWord[] = [
         "phrase": "wastewater treatment",
         "translation": "废水处理",
         "note": ""
-      },
-      {
-        "phrase": "industrial wastewater",
-        "translation": "工业废水",
-        "note": ""
-      },
-      {
-        "phrase": "domestic wastewater",
-        "translation": "生活废水",
-        "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "The factory has to treat wastewater before releasing it.",
-        "translation": "工厂必须先处理废水才能排放。"
+        "sentence": "The factory has to treat wastewater before pouring it out.",
+        "translation": "这家工厂必须先处理废水才能排放。"
+      },
+      {
+        "sentence": "Wastewater from homes can also pollute the environment.",
+        "translation": "家庭废水也会污染环境。"
       }
     ],
     "usageTip": "常见考点是“wastewater treatment”，做题时先看空格前后是否和该搭配对应。",
@@ -541,9 +524,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 12,
+    "order": 11,
     "word": "treatment",
-    "phonetic": "/ˈtriːtmənt/",
+    "phonetic": "/'tri:tmənt/",
     "partOfSpeech": "n.",
     "translation": "（净化或防治）处理；加工",
     "coreMeaning": "Treatment means the process of dealing with a problem, illness, or waste.",
@@ -552,29 +535,34 @@ export const previewWords: PreviewWord[] = [
     "corePoints": [
       {
         "phrase": "medical treatment",
-        "translation": "医疗处理",
+        "translation": "医疗",
         "note": ""
       },
       {
-        "phrase": "water treatment",
-        "translation": "水处理",
-        "note": ""
-      },
-      {
-        "phrase": "waste treatment",
-        "translation": "废物处理",
+        "phrase": "wastewater treatment",
+        "translation": "废水处理",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "The treatment of this kind of disease has made great progress.",
-        "translation": "这种疾病的 （防治）处理已经取得了很大进展。"
+        "sentence": "He needs special medical treatment for his illness.",
+        "translation": "他的病需要特殊的医疗。"
+      },
+      {
+        "sentence": "The treatment of the old building will take three months.",
+        "translation": "这座旧建筑的修缮将需要三个月。"
       }
     ],
     "usageTip": "treatment 可指医疗处理，也可指废水、垃圾等的处理，需结合语境理解。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "treat",
+        "partOfSpeech": "v.",
+        "translation": "治疗；对待；处理"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-013",
@@ -584,9 +572,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 13,
+    "order": 12,
     "word": "include",
-    "phonetic": "/ɪnˈkluːd/",
+    "phonetic": "/ɪn'klu:d/",
     "partOfSpeech": "v.",
     "translation": "使成为…… 的一部分",
     "coreMeaning": "Include means to have something as one part of a group or whole.",
@@ -600,30 +588,40 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "include sth. in",
-        "translation": "把某物包含在…… 里",
+        "phrase": "include sth.",
+        "translation": "包括某物",
         "note": ""
       },
       {
-        "phrase": "include sb. in",
-        "translation": "把某人纳入…… 中",
-        "note": ""
-      },
-      {
-        "phrase": "such as including",
-        "translation": "例如包括",
+        "phrase": "include doing sth.",
+        "translation": "包括做某事",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "The tour package will include breakfast and dinner.",
-        "translation": "这个旅游套餐将包含早餐和晚餐。"
+        "sentence": "The price of the tour includes breakfast and dinner.",
+        "translation": "这次旅行的费用包括早餐和晚餐。"
+      },
+      {
+        "sentence": "His hobbies include reading and playing basketball.",
+        "translation": "他的爱好包括阅读和打篮球。"
       }
     ],
     "usageTip": "include 后直接接被包含的内容，不要写 include in sth. 表示“包括在某物里”。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "including",
+        "partOfSpeech": "prep.",
+        "translation": "包括……在内"
+      },
+      {
+        "word": "inclusion",
+        "partOfSpeech": "n.",
+        "translation": "包含；加入"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-014",
@@ -633,9 +631,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 14,
+    "order": 13,
     "word": "research",
-    "phonetic": "/rɪˈsɜːtʃ/",
+    "phonetic": "/rɪ'sɜ:tʃ/",
     "partOfSpeech": "v. / n.",
     "translation": "研究；探讨；调查 研究；调查；探索",
     "coreMeaning": "Research means careful study to discover facts or learn more about something.",
@@ -655,24 +653,29 @@ export const previewWords: PreviewWord[] = [
       },
       {
         "phrase": "research on",
-        "translation": "关于…… 的研究",
-        "note": ""
-      },
-      {
-        "phrase": "scientific research",
-        "translation": "科学研究",
+        "translation": "关于……的研究",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "He spent five years doing research on climate change.",
-        "translation": "他花了五年时间对气候变化进行研究。"
+        "sentence": "She is researching the effects of climate change.",
+        "translation": "她正在研究气候变化的影响。"
+      },
+      {
+        "sentence": "The team did a lot of research on this problem.",
+        "translation": "这个团队对这个问题做了大量研究。"
       }
     ],
     "usageTip": "research 可作名词也可作动词；do research on 表示“做关于……的研究”。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "researcher",
+        "partOfSpeech": "n.",
+        "translation": "研究者；调查者"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-015",
@@ -682,9 +685,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 15,
+    "order": 14,
     "word": "agree",
-    "phonetic": "/əˈɡriː/",
+    "phonetic": "/ə'gri:/",
     "partOfSpeech": "v.",
     "translation": "同意；赞同",
     "coreMeaning": "Agree means to have the same opinion or say yes to a plan.",
@@ -699,7 +702,7 @@ export const previewWords: PreviewWord[] = [
     "corePoints": [
       {
         "phrase": "agree with sb.",
-        "translation": "同意某人（的观点）",
+        "translation": "同意某人",
         "note": ""
       },
       {
@@ -708,20 +711,35 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "agree on",
-        "translation": "就…… 达成一致",
+        "phrase": "agree on sth.",
+        "translation": "就某事达成一致",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "I agree with you that we should protect the environment.",
-        "translation": "我同意你的观点，我们应该保护环境。"
+        "sentence": "I agree with you that we should save water.",
+        "translation": "我同意你的看法，我们应该节约用水。"
+      },
+      {
+        "sentence": "They agreed to meet at the school gate at 8 o'clock.",
+        "translation": "他们同意八点在学校门口见面。"
       }
     ],
     "usageTip": "agree with sb. 表示同意某人观点；agree to do sth. 表示同意做某事。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "agreement",
+        "partOfSpeech": "n.",
+        "translation": "同意；协议"
+      },
+      {
+        "word": "disagree",
+        "partOfSpeech": "v.",
+        "translation": "不同意"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-016",
@@ -731,9 +749,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 16,
+    "order": 15,
     "word": "beyond",
-    "phonetic": "/bɪˈjɒnd/",
+    "phonetic": "/bɪ'jɒnd/",
     "partOfSpeech": "prep.",
     "translation": "除…… 之外",
     "coreMeaning": "Beyond means outside a limit, range, or ability.",
@@ -755,17 +773,16 @@ export const previewWords: PreviewWord[] = [
         "phrase": "beyond doubt",
         "translation": "毫无疑问",
         "note": ""
-      },
-      {
-        "phrase": "beyond description",
-        "translation": "难以描述",
-        "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "This task is beyond my ability to finish alone.",
-        "translation": "这项任务超出了我独自完成的能力范围。"
+        "sentence": "This math problem is beyond my ability.",
+        "translation": "这道数学题超出了我的能力范围。"
+      },
+      {
+        "sentence": "Beyond all doubt, he is the best student in our class.",
+        "translation": "毫无疑问，他是我们班最好的学生。"
       }
     ],
     "usageTip": "beyond 常表示“超出”，如 beyond one's ability，不只是空间上的“在……之外”。",
@@ -780,9 +797,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 17,
+    "order": 16,
     "word": "energy-saving",
-    "phonetic": "/ˈenədʒi seɪvɪŋ/",
+    "phonetic": "/'enədʒi seɪvɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "节能的",
     "coreMeaning": "Energy-saving things use less energy than usual.",
@@ -790,30 +807,40 @@ export const previewWords: PreviewWord[] = [
     "nearSynonyms": [],
     "corePoints": [
       {
-        "phrase": "energy-saving lamp",
-        "translation": "节能灯",
-        "note": ""
-      },
-      {
-        "phrase": "energy-saving product",
+        "phrase": "energy-saving products",
         "translation": "节能产品",
         "note": ""
       },
       {
-        "phrase": "energy-saving technology",
-        "translation": "节能技术",
+        "phrase": "energy-saving lamp",
+        "translation": "节能灯",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "We bought some energy-saving lamps to reduce electricity use.",
-        "translation": "我们买了一些节能的灯来减少用电量。"
+        "sentence": "We should use more energy-saving appliances at home.",
+        "translation": "我们家里应该使用更多节能电器。"
+      },
+      {
+        "sentence": "This energy-saving car uses less petrol.",
+        "translation": "这款节能汽车消耗更少的汽油。"
       }
     ],
     "usageTip": "energy-saving 常作形容词放在名词前，如 energy-saving lamp。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "energy",
+        "partOfSpeech": "n.",
+        "translation": "能量；能源"
+      },
+      {
+        "word": "save",
+        "partOfSpeech": "v.",
+        "translation": "节约；拯救"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-018",
@@ -823,9 +850,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 18,
+    "order": 17,
     "word": "dishwasher",
-    "phonetic": "/ˈdɪʃwɒʃə(r)/",
+    "phonetic": "/'dɪʃwɒʃə(r)/",
     "partOfSpeech": "n.",
     "translation": "洗碗碟机",
     "coreMeaning": "A dishwasher is a machine that washes dishes, bowls, and plates.",
@@ -836,27 +863,32 @@ export const previewWords: PreviewWord[] = [
         "phrase": "use a dishwasher",
         "translation": "使用洗碗机",
         "note": ""
-      },
-      {
-        "phrase": "automatic dishwasher",
-        "translation": "自动洗碗机",
-        "note": ""
-      },
-      {
-        "phrase": "kitchen dishwasher",
-        "translation": "厨房洗碗机",
-        "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "My mother often uses the dishwasher to clean bowls and plates.",
-        "translation": "我妈妈经常用洗碗碟机清洗碗碟。"
+        "sentence": "My mother bought a new dishwasher last week.",
+        "translation": "我妈妈上周买了一台新的洗碗机。"
+      },
+      {
+        "sentence": "Using a dishwasher can save a lot of time.",
+        "translation": "使用洗碗机可以节省很多时间。"
       }
     ],
     "usageTip": "常见考点是“use a dishwasher”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "dish",
+        "partOfSpeech": "n.",
+        "translation": "盘子；菜肴"
+      },
+      {
+        "word": "wash",
+        "partOfSpeech": "v.",
+        "translation": "洗"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-019",
@@ -866,9 +898,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 19,
+    "order": 18,
     "word": "indirect",
-    "phonetic": "/ˌɪndəˈrekt/, /ˌɪndaɪˈrekt/",
+    "phonetic": "/ˌɪndə'rekt; ˌɪndaɪ'rekt/",
     "partOfSpeech": "adj.",
     "translation": "间接的",
     "coreMeaning": "Indirect means not done or caused in a direct way.",
@@ -882,30 +914,40 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "indirect cost",
-        "translation": "间接成本",
+        "phrase": "indirect way",
+        "translation": "间接的方式",
         "note": ""
       },
       {
-        "phrase": "indirect effect",
+        "phrase": "indirect influence",
         "translation": "间接影响",
-        "note": ""
-      },
-      {
-        "phrase": "indirect speech",
-        "translation": "间接引语",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "The event had an indirect effect on the local economy.",
-        "translation": "这件事对当地经济产生了间接的影响。"
+        "sentence": "He told me the news in an indirect way.",
+        "translation": "他用间接的方式告诉了我这个消息。"
+      },
+      {
+        "sentence": "The change has an indirect influence on our life.",
+        "translation": "这个变化对我们的生活有间接影响。"
       }
     ],
     "usageTip": "indirect 是 direct 的反义词，常用于 effect、cost、speech 等名词前。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "direct",
+        "partOfSpeech": "adj./v.",
+        "translation": "直接的；指导"
+      },
+      {
+        "word": "directly",
+        "partOfSpeech": "adv.",
+        "translation": "直接地"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-020",
@@ -915,9 +957,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 20,
+    "order": 19,
     "word": "kilo",
-    "phonetic": "/ˈkiːləʊ/",
+    "phonetic": "/'ki:ləʊ/",
     "partOfSpeech": "n.",
     "translation": "（=kilogram）千克；公斤",
     "coreMeaning": "A kilo is a kilogram, a unit used to measure weight.",
@@ -931,30 +973,40 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "one kilo of",
+        "phrase": "a kilo of",
         "translation": "一千克……",
         "note": ""
       },
       {
-        "phrase": "two kilos of",
-        "translation": "两千克……",
-        "note": ""
-      },
-      {
-        "phrase": "half a kilo",
-        "translation": "半千克",
+        "phrase": "two kilos of apples",
+        "translation": "两千克苹果",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "I bought one kilo of apples from the supermarket.",
-        "translation": "我从超市买了一千克苹果。"
+        "sentence": "I need to buy a kilo of meat for dinner.",
+        "translation": "我需要买一千克肉做晚饭。"
+      },
+      {
+        "sentence": "This bag of rice weighs five kilos.",
+        "translation": "这袋大米重五千克。"
       }
     ],
     "usageTip": "kilo 是 kilogram 的简写，前面有 two 等数量时用复数 kilos。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "kilogram",
+        "partOfSpeech": "n.",
+        "translation": "千克；公斤"
+      },
+      {
+        "word": "kilometre",
+        "partOfSpeech": "n.",
+        "translation": "千米；公里"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-021",
@@ -964,9 +1016,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 21,
+    "order": 20,
     "word": "hamburger",
-    "phonetic": "/ˈhæmbɜːɡə(r)/",
+    "phonetic": "/'hæmbɜ:gə(r)/",
     "partOfSpeech": "n.",
     "translation": "汉堡包",
     "coreMeaning": "A hamburger is a round bread roll with meat or other food inside.",
@@ -980,25 +1032,24 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "beef hamburger",
-        "translation": "牛肉汉堡包",
-        "note": ""
-      },
-      {
-        "phrase": "chicken hamburger",
-        "translation": "鸡肉汉堡包",
-        "note": ""
-      },
-      {
         "phrase": "eat a hamburger",
         "translation": "吃一个汉堡包",
+        "note": ""
+      },
+      {
+        "phrase": "a beef hamburger",
+        "translation": "牛肉汉堡包",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "He likes to eat a hamburger for lunch sometimes.",
-        "translation": "他有时喜欢午餐吃一个汉堡包。"
+        "sentence": "He often eats a hamburger for lunch.",
+        "translation": "他午餐经常吃一个汉堡包。"
+      },
+      {
+        "sentence": "My little sister doesn't like hamburgers with onions.",
+        "translation": "我妹妹不喜欢加洋葱的汉堡包。"
       }
     ],
     "usageTip": "常见考点是“beef hamburger”，做题时先看空格前后是否和该搭配对应。",
@@ -1013,9 +1064,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 22,
+    "order": 21,
     "word": "cotton",
-    "phonetic": "/ˈkɒtn/",
+    "phonetic": "/'kɒtn/",
     "partOfSpeech": "n.",
     "translation": "棉织物；棉布",
     "coreMeaning": "Cotton is a soft material used to make clothes and cloth.",
@@ -1034,25 +1085,89 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "pure cotton",
-        "translation": "纯棉",
-        "note": ""
-      },
-      {
-        "phrase": "cotton fabric",
-        "translation": "棉织物",
+        "phrase": "a piece of cotton",
+        "translation": "一块棉布",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "These cotton clothes are very comfortable to wear.",
-        "translation": "这些棉织物做的衣服穿起来很舒服。"
+        "sentence": "She likes wearing cotton clothes in summer.",
+        "translation": "她夏天喜欢穿棉质衣服。"
+      },
+      {
+        "sentence": "This shirt is made of cotton.",
+        "translation": "这件衬衫是棉质的。"
       }
     ],
     "usageTip": "常见考点是“cotton clothes”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "cottony",
+        "partOfSpeech": "adj.",
+        "translation": "棉质的；像棉花的"
+      }
+    ]
+  },
+  {
+    "id": "sh-g8-u1-touching",
+    "courseId": "shanghai-grade8-preview",
+    "book": "沪教版八年级上册",
+    "edition": "沪教版",
+    "grade": "八年级",
+    "unit": "Unit 1",
+    "unitId": "unit-1",
+    "order": 22,
+    "word": "touching",
+    "phonetic": "/'tʌtʃɪŋ/",
+    "partOfSpeech": "adj.",
+    "translation": "令人同情的；感人的",
+    "derivedWords": [
+      {
+        "word": "touch",
+        "partOfSpeech": "v./n.",
+        "translation": "触摸；感动；触摸；接触"
+      },
+      {
+        "word": "touched",
+        "partOfSpeech": "adj.",
+        "translation": "受感动的"
+      }
+    ],
+    "coreMeaning": "Touching describes a story, film, speech, or action that makes people feel strong emotion or sympathy.",
+    "explanation": "touching 描述故事、电影、话语或行为本身“令人感动”；如果说人受到感动，要用 be touched。",
+    "nearSynonyms": [
+      {
+        "word": "moving",
+        "translation": "感人的",
+        "difference": "moving 和 touching 都可表示“感人的”；touching 更常用于描述故事、话语等带来的情感触动。"
+      }
+    ],
+    "corePoints": [
+      {
+        "phrase": "a touching story",
+        "translation": "一个感人的故事",
+        "note": ""
+      },
+      {
+        "phrase": "be touching",
+        "translation": "令人感动的",
+        "note": ""
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "The movie tells a touching story about a mother and her son.",
+        "translation": "这部电影讲述了一个关于母亲和儿子的感人故事。"
+      },
+      {
+        "sentence": "Her words were so touching that everyone cried.",
+        "translation": "她的话太感人了，大家都哭了。"
+      }
+    ],
+    "usageTip": "touching 修饰事物，表示“令人感动的”；touched 修饰人，表示“感到感动的”。",
+    "quiz": null
   },
   {
     "id": "sh-g8-u1-023",
@@ -1064,7 +1179,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 23,
     "word": "desert",
-    "phonetic": "/ˈdezət/",
+    "phonetic": "/'dezət/",
     "partOfSpeech": "n.",
     "translation": "沙漠",
     "coreMeaning": "A desert is a very dry place with little rain and few plants.",
@@ -1077,25 +1192,30 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "desert plant",
-        "translation": "沙漠植物",
-        "note": ""
-      },
-      {
-        "phrase": "desert climate",
-        "translation": "沙漠气候",
+        "phrase": "cross the desert",
+        "translation": "穿越沙漠",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "Few animals can live in the desert because of the lack of water.",
-        "translation": "由于缺水，很少有动物能在沙漠里生存。"
+        "sentence": "The Sahara Desert is the largest hot desert in the world.",
+        "translation": "撒哈拉沙漠是世界上最大的热沙漠。"
+      },
+      {
+        "sentence": "It's very difficult to cross the desert without water.",
+        "translation": "没有水穿越沙漠是非常困难的。"
       }
     ],
     "usageTip": "常见考点是“the Sahara Desert”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "deserted",
+        "partOfSpeech": "adj.",
+        "translation": "荒芜的；被遗弃的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-024",
@@ -1115,30 +1235,35 @@ export const previewWords: PreviewWord[] = [
     "nearSynonyms": [],
     "corePoints": [
       {
+        "phrase": "a bar of soap",
+        "translation": "一块肥皂",
+        "note": ""
+      },
+      {
         "phrase": "wash with soap",
         "translation": "用肥皂洗",
-        "note": ""
-      },
-      {
-        "phrase": "laundry soap",
-        "translation": "洗衣皂",
-        "note": ""
-      },
-      {
-        "phrase": "soap and water",
-        "translation": "肥皂和水",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "You need to wash your hands with soap before eating.",
-        "translation": "吃饭前你需要用肥皂洗手。"
+        "sentence": "Please buy a bar of soap when you go to the supermarket.",
+        "translation": "你去超市时请买一块肥皂。"
+      },
+      {
+        "sentence": "She soaped her hands before washing them.",
+        "translation": "她洗手前先在手上抹了肥皂。"
       }
     ],
     "usageTip": "soap 可作名词“肥皂”，也可作动词“抹肥皂；擦洗”。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "soapy",
+        "partOfSpeech": "adj.",
+        "translation": "涂有肥皂的；多肥皂泡的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-025",
@@ -1150,7 +1275,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 25,
     "word": "corner",
-    "phonetic": "/ˈkɔːnə(r)/",
+    "phonetic": "/'kɔ:nə(r)/",
     "partOfSpeech": "n.",
     "translation": "角",
     "coreMeaning": "A corner is the place where two sides or edges meet.",
@@ -1164,25 +1289,24 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "in the corner",
-        "translation": "在角落里",
+        "phrase": "in the corner of",
+        "translation": "在……的角落里",
         "note": ""
       },
       {
         "phrase": "at the corner of",
-        "translation": "在…… 的拐角处",
-        "note": ""
-      },
-      {
-        "phrase": "street corner",
-        "translation": "街角",
+        "translation": "在……的拐角处",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "There is a small table in the corner of the room.",
-        "translation": "房间的角落里有一张小桌子。"
+        "sentence": "There is a table in the corner of the room.",
+        "translation": "房间的角落里有一张桌子。"
+      },
+      {
+        "sentence": "You can find a bank at the corner of this street.",
+        "translation": "在这条街的拐角处你能找到一家银行。"
       }
     ],
     "usageTip": "常见考点是“in the corner”，做题时先看空格前后是否和该搭配对应。",
@@ -1213,30 +1337,40 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "flower pot",
+        "phrase": "a coffee pot",
+        "translation": "咖啡壶",
+        "note": ""
+      },
+      {
+        "phrase": "a flower pot",
         "translation": "花盆",
-        "note": ""
-      },
-      {
-        "phrase": "soup pot",
-        "translation": "汤锅",
-        "note": ""
-      },
-      {
-        "phrase": "tea pot",
-        "translation": "茶壶",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "My grandmother planted a rose in a flower pot.",
-        "translation": "我奶奶在一个花盆里种了一朵玫瑰。"
+        "sentence": "My grandma uses a clay pot to cook soup.",
+        "translation": "我奶奶用砂锅煮汤。"
+      },
+      {
+        "sentence": "There are some beautiful flowers in the pot.",
+        "translation": "花盆里有一些漂亮的花。"
       }
     ],
     "usageTip": "常见考点是“flower pot”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "pottery",
+        "partOfSpeech": "n.",
+        "translation": "陶器"
+      },
+      {
+        "word": "potter",
+        "partOfSpeech": "n.",
+        "translation": "陶工"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-027",
@@ -1262,25 +1396,24 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "set off early",
-        "translation": "早早出发",
-        "note": ""
-      },
-      {
         "phrase": "set off for",
         "translation": "动身去……",
         "note": ""
       },
       {
-        "phrase": "set off on a trip",
-        "translation": "启程去旅行",
+        "phrase": "set off early",
+        "translation": "早早出发",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "We will set off early tomorrow morning to avoid traffic jams.",
-        "translation": "我们明天早上会早早出发，以避开交通堵塞。"
+        "sentence": "They will set off for Beijing tomorrow morning.",
+        "translation": "他们明天早上将动身去北京。"
+      },
+      {
+        "sentence": "We set off at 6 o'clock to catch the early train.",
+        "translation": "为了赶上早班火车，我们六点就出发了。"
       }
     ],
     "usageTip": "set off 是动词短语，后接地点时常用 set off for。",
@@ -1311,25 +1444,24 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
+        "phrase": "a hole in the ground",
+        "translation": "地上的一个洞",
+        "note": ""
+      },
+      {
         "phrase": "dig a hole",
         "translation": "挖一个坑",
-        "note": ""
-      },
-      {
-        "phrase": "mouse hole",
-        "translation": "老鼠洞",
-        "note": ""
-      },
-      {
-        "phrase": "hole in the wall",
-        "translation": "墙上的洞",
         "note": ""
       }
     ],
     "examples": [
       {
         "sentence": "The dog dug a hole in the garden to hide its bone.",
-        "translation": "狗在花园里挖了一个坑来藏它的骨头。"
+        "translation": "狗在花园里挖了个坑藏骨头。"
+      },
+      {
+        "sentence": "There is a hole in my socks, so I need to buy a new pair.",
+        "translation": "我的袜子上有个洞，所以我需要买一双新的。"
       }
     ],
     "usageTip": "常见考点是“dig a hole”，做题时先看空格前后是否和该搭配对应。",
@@ -1355,7 +1487,7 @@ export const previewWords: PreviewWord[] = [
     "corePoints": [
       {
         "phrase": "step on",
-        "translation": "踩在…… 上",
+        "translation": "踩在……上",
         "note": ""
       },
       {
@@ -1364,15 +1496,19 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "step by step",
-        "translation": "一步步地",
+        "phrase": "step forward",
+        "translation": "向前迈步",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "Be careful not to step on the wet floor.",
-        "translation": "小心别踩到湿地板上。"
+        "sentence": "Be careful not to step on the grass.",
+        "translation": "小心别踩到草地上。"
+      },
+      {
+        "sentence": "She took a step forward and smiled at me.",
+        "translation": "她向前迈了一步，对我笑了笑。"
       }
     ],
     "usageTip": "常见考点是“step on”，做题时先看空格前后是否和该搭配对应。",
@@ -1402,25 +1538,30 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "mud slide",
-        "translation": "泥石流",
-        "note": ""
-      },
-      {
-        "phrase": "cover with mud",
-        "translation": "覆盖着泥",
+        "phrase": "muddy water",
+        "translation": "泥水",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "The child's shoes were covered with mud after playing in the rain.",
-        "translation": "孩子在雨中玩耍后，鞋子上沾满了泥。"
+        "sentence": "His shoes were covered with mud after the rain.",
+        "translation": "雨后他的鞋子沾满了泥。"
+      },
+      {
+        "sentence": "The children like to play in the mud, which makes their parents angry.",
+        "translation": "孩子们喜欢在泥里玩，这让他们的父母很生气。"
       }
     ],
     "usageTip": "常见考点是“in the mud”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "muddy",
+        "partOfSpeech": "adj.",
+        "translation": "泥泞的；多泥的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-031",
@@ -1440,30 +1581,45 @@ export const previewWords: PreviewWord[] = [
     "nearSynonyms": [],
     "corePoints": [
       {
-        "phrase": "bathe in",
-        "translation": "沐浴在…… 中",
+        "phrase": "bathe sb.'s feet",
+        "translation": "给某人洗脚",
         "note": ""
       },
       {
-        "phrase": "bathe oneself",
-        "translation": "给自己洗澡",
+        "phrase": "bathe in（在……中洗澡",
+        "translation": "",
         "note": ""
       },
       {
-        "phrase": "bathe the baby",
-        "translation": "给婴儿洗澡",
+        "phrase": "沉浸在）",
+        "translation": "",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "She likes to bathe her face with cold water in the morning.",
-        "translation": "她喜欢早上用冷水清洗脸部。"
+        "sentence": "She bathed her baby's face with warm water.",
+        "translation": "她用温水给宝宝洗脸。"
+      },
+      {
+        "sentence": "People like to bathe in the sea during summer.",
+        "translation": "夏天人们喜欢在海里游泳。"
       }
     ],
     "usageTip": "常见考点是“bathe in”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "bath",
+        "partOfSpeech": "n./v.",
+        "translation": "洗澡；浴室；洗澡"
+      },
+      {
+        "word": "bathroom",
+        "partOfSpeech": "n.",
+        "translation": "浴室；卫生间"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-032",
@@ -1489,24 +1645,29 @@ export const previewWords: PreviewWord[] = [
       },
       {
         "phrase": "shine on",
-        "translation": "照耀在…… 上",
-        "note": ""
-      },
-      {
-        "phrase": "sunshine shines",
-        "translation": "阳光照耀",
+        "translation": "照耀在……上",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "The sun shines brightly in the sky on a sunny day.",
-        "translation": "晴天时，太阳在天空中明亮地照耀着。"
+        "sentence": "The sun shone brightly in the sky yesterday.",
+        "translation": "昨天太阳在天空中明亮地照耀着。"
+      },
+      {
+        "sentence": "The moonlight shone on the lake, making it very beautiful.",
+        "translation": "月光照耀在湖面上，使它非常美丽。"
       }
     ],
     "usageTip": "常见考点是“shine brightly”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "shiny",
+        "partOfSpeech": "adj.",
+        "translation": "闪亮的；发光的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-033",
@@ -1518,7 +1679,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 33,
     "word": "forward",
-    "phonetic": "/ˈfɔːwəd/",
+    "phonetic": "/'fɔ:wəd/",
     "partOfSpeech": "adv.",
     "translation": "向前",
     "coreMeaning": "Forward means towards the front or ahead.",
@@ -1526,25 +1687,24 @@ export const previewWords: PreviewWord[] = [
     "nearSynonyms": [],
     "corePoints": [
       {
-        "phrase": "look forward to",
-        "translation": "期待……",
-        "note": ""
-      },
-      {
         "phrase": "move forward",
         "translation": "向前移动",
         "note": ""
       },
       {
-        "phrase": "step forward",
-        "translation": "向前迈步",
+        "phrase": "look forward to",
+        "translation": "期待……，后接名词/动名词",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "We are all looking forward to the summer holiday.",
-        "translation": "我们都在期待暑假的到来。"
+        "sentence": "The car moved forward slowly in the heavy traffic.",
+        "translation": "在拥挤的交通中，汽车缓慢地向前移动。"
+      },
+      {
+        "sentence": "We are looking forward to meeting our new teacher.",
+        "translation": "我们期待着见到我们的新老师。"
       }
     ],
     "usageTip": "look forward to 中 to 是介词，后面接名词或动词-ing。",
@@ -1561,7 +1721,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 34,
     "word": "pour",
-    "phonetic": "/pɔː(r)/",
+    "phonetic": "/pɔ:(r)/",
     "partOfSpeech": "v.",
     "translation": "使（液体）连续流出；倒出",
     "coreMeaning": "Pour means to make liquid flow from one container to another.",
@@ -1569,30 +1729,35 @@ export const previewWords: PreviewWord[] = [
     "nearSynonyms": [],
     "corePoints": [
       {
-        "phrase": "pour into",
-        "translation": "倒入…… 中",
+        "phrase": "pour sth. into",
+        "translation": "把某物倒入……",
         "note": ""
       },
       {
-        "phrase": "pour out",
-        "translation": "倒出；倾诉",
-        "note": ""
-      },
-      {
-        "phrase": "pour water",
-        "translation": "倒水",
+        "phrase": "pour down",
+        "translation": "倾盆而下，指雨",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "She helped her mother pour milk into the cup.",
-        "translation": "她帮妈妈把牛奶倒入杯子里。"
+        "sentence": "She poured the milk into a glass carefully.",
+        "translation": "她小心地把牛奶倒入杯子里。"
+      },
+      {
+        "sentence": "It poured down all night, so the ground is wet now.",
+        "translation": "雨下了一整晚，所以现在地面是湿的。"
       }
     ],
     "usageTip": "常见考点是“pour into”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "pouring",
+        "partOfSpeech": "adj.",
+        "translation": "倾盆而下的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-035",
@@ -1617,74 +1782,40 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "shut down",
-        "translation": "关闭（机器、工厂等）",
+        "phrase": "shut off（切断",
+        "translation": "",
         "note": ""
       },
       {
-        "phrase": "keep shut",
-        "translation": "保持关闭状态",
+        "phrase": "关闭）",
+        "translation": "",
+        "note": ""
+      },
+      {
+        "phrase": "be shut",
+        "translation": "处于关闭状态",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "Please shut the door when you leave the room.",
-        "translation": "离开房间时请关上门。"
+        "sentence": "Please shut the window before you leave the room.",
+        "translation": "离开房间前请关上窗户。"
+      },
+      {
+        "sentence": "The shop is shut on Sundays.",
+        "translation": "这家商店周日关门。"
       }
     ],
     "usageTip": "shut 的过去式和过去分词仍是 shut。",
     "quiz": null,
-    "derivedWords": []
-  },
-  {
-    "id": "sh-g8-u1-036",
-    "courseId": "shanghai-grade8-preview",
-    "book": "沪教版八年级上册",
-    "edition": "沪教版",
-    "grade": "八年级",
-    "unit": "Unit 1",
-    "unitId": "unit-1",
-    "order": 36,
-    "word": "carefully",
-    "phonetic": "/ˈkeəfəli/",
-    "partOfSpeech": "adv.",
-    "translation": "仔细地",
-    "coreMeaning": "Carefully means with attention, so that you do not make mistakes.",
-    "explanation": "“carefully”表示“仔细地”。预习时重点看它和“listen carefully”这类表达的搭配方式。",
-    "nearSynonyms": [
+    "derivedWords": [
       {
-        "word": "cautiously",
-        "translation": "小心地；谨慎地",
-        "difference": "carefully 强调仔细；cautiously 强调谨慎避免危险。"
+        "word": "shutdown",
+        "partOfSpeech": "n.",
+        "translation": "关闭；停工"
       }
-    ],
-    "corePoints": [
-      {
-        "phrase": "listen carefully",
-        "translation": "仔细听",
-        "note": ""
-      },
-      {
-        "phrase": "read carefully",
-        "translation": "仔细读",
-        "note": ""
-      },
-      {
-        "phrase": "do carefully",
-        "translation": "认真做",
-        "note": ""
-      }
-    ],
-    "examples": [
-      {
-        "sentence": "You must read carefully before answering the questions.",
-        "translation": "回答问题前，你必须仔细地阅读。"
-      }
-    ],
-    "usageTip": "常见考点是“listen carefully”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null,
-    "derivedWords": []
+    ]
   },
   {
     "id": "sh-g8-u1-037",
@@ -1694,7 +1825,7 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 37,
+    "order": 36,
     "word": "drop",
     "phonetic": "/drɒp/",
     "partOfSpeech": "n. / v.",
@@ -1709,25 +1840,40 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "drop by",
-        "translation": "顺便拜访",
+        "phrase": "drop sth.",
+        "translation": "掉落某物",
         "note": ""
       },
       {
-        "phrase": "drop off",
-        "translation": "落下；减少",
+        "phrase": "drop off（入睡",
+        "translation": "",
+        "note": ""
+      },
+      {
+        "phrase": "减少）",
+        "translation": "",
         "note": ""
       }
     ],
     "examples": [
       {
         "sentence": "There is a drop of water on the leaf.",
-        "translation": "叶子上有一滴水珠。"
+        "translation": "叶子上有一滴水。"
+      },
+      {
+        "sentence": "She dropped her phone on the floor by accident.",
+        "translation": "她不小心把手机掉在了地上。"
       }
     ],
     "usageTip": "drop 可作名词“一滴”，也可作动词“落下；掉下”。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "dropping",
+        "partOfSpeech": "n.",
+        "translation": "滴；落下物"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-038",
@@ -1737,9 +1883,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 38,
+    "order": 37,
     "word": "fully",
-    "phonetic": "/ˈfʊli/",
+    "phonetic": "/'fʊli/",
     "partOfSpeech": "adv.",
     "translation": "完全地；充分地",
     "coreMeaning": "Fully means completely or as much as possible.",
@@ -1752,25 +1898,35 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "fully prepare",
-        "translation": "充分准备",
-        "note": ""
-      },
-      {
-        "phrase": "fully use",
-        "translation": "充分利用",
+        "phrase": "be fully prepared",
+        "translation": "做好充分准备",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "You need to fully understand the rules before the game.",
-        "translation": "比赛前你需要完全地理解规则。"
+        "sentence": "I fully understand your feelings now.",
+        "translation": "我现在完全理解你的感受了。"
+      },
+      {
+        "sentence": "They are fully prepared for the coming exam.",
+        "translation": "他们为即将到来的考试做好了充分准备。"
       }
     ],
     "usageTip": "常见考点是“fully understand”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "full",
+        "partOfSpeech": "adj.",
+        "translation": "满的；完全的"
+      },
+      {
+        "word": "fullness",
+        "partOfSpeech": "n.",
+        "translation": "满；丰富"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-039",
@@ -1780,9 +1936,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 39,
+    "order": 38,
     "word": "precious",
-    "phonetic": "/ˈpreʃəs/",
+    "phonetic": "/'preʃəs/",
     "partOfSpeech": "adj.",
     "translation": "宝贵的；珍贵的",
     "coreMeaning": "Precious means very valuable or important.",
@@ -1801,25 +1957,30 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "precious memory",
+        "phrase": "precious memories",
         "translation": "珍贵的回忆",
-        "note": ""
-      },
-      {
-        "phrase": "precious stone",
-        "translation": "宝石",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "We should cherish every precious moment with our family.",
-        "translation": "我们应该珍惜和家人在一起的每一个宝贵的时刻。"
+        "sentence": "We should cherish every precious minute in our life.",
+        "translation": "我们应该珍惜生命中的每一分宝贵时光。"
+      },
+      {
+        "sentence": "The photo album is full of precious memories of my family.",
+        "translation": "这本相册里满是我家人的珍贵回忆。"
       }
     ],
     "usageTip": "常见考点是“precious time”，做题时先看空格前后是否和该搭配对应。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "preciousness",
+        "partOfSpeech": "n.",
+        "translation": "珍贵；宝贵"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-040",
@@ -1829,9 +1990,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 40,
+    "order": 39,
     "word": "shoulder",
-    "phonetic": "/ˈʃəʊldə(r)/",
+    "phonetic": "/'ʃəʊldə(r)/",
     "partOfSpeech": "n. / v.",
     "translation": "肩膀 背；扛；挑",
     "coreMeaning": "A shoulder is the part of your body between your neck and arm.",
@@ -1840,24 +2001,23 @@ export const previewWords: PreviewWord[] = [
     "corePoints": [
       {
         "phrase": "on one's shoulder",
-        "translation": "在某人的肩膀上",
+        "translation": "在某人肩上",
         "note": ""
       },
       {
         "phrase": "shoulder the responsibility",
         "translation": "承担责任",
         "note": ""
-      },
-      {
-        "phrase": "shoulder a bag",
-        "translation": "扛着一个包",
-        "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "He put his son on his shoulder to see the parade.",
-        "translation": "他把儿子放在自己的肩膀上看游行。"
+        "sentence": "The little girl sat on her father's shoulders to see the show.",
+        "translation": "小女孩坐在爸爸的肩上看表演。"
+      },
+      {
+        "sentence": "He is ready to shoulder the responsibility of the team.",
+        "translation": "他准备好承担团队的责任了。"
       }
     ],
     "usageTip": "shoulder 可作名词“肩膀”，也可作动词“承担；扛”。",
@@ -1872,7 +2032,7 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 41,
+    "order": 40,
     "word": "snake",
     "phonetic": "/sneɪk/",
     "partOfSpeech": "n. / v.",
@@ -1890,17 +2050,16 @@ export const previewWords: PreviewWord[] = [
         "phrase": "snake through",
         "translation": "蜿蜒穿过",
         "note": ""
-      },
-      {
-        "phrase": "snake along",
-        "translation": "沿着…… 曲折前行",
-        "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "A small snake was crawling in the grass.",
-        "translation": "一条小蛇正在草丛里爬。"
+        "sentence": "We saw a small snake in the grass when we were hiking.",
+        "translation": "我们徒步旅行时在草丛里看到了一条小蛇。"
+      },
+      {
+        "sentence": "The river snakes through the small village.",
+        "translation": "这条河蜿蜒穿过这个小村庄。"
       }
     ],
     "usageTip": "snake 作动词时可表示“蜿蜒前行”。",
@@ -1915,9 +2074,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 42,
+    "order": 41,
     "word": "thirsty",
-    "phonetic": "/ˈθɜːsti/",
+    "phonetic": "/'θɜ:sti/",
     "partOfSpeech": "adj.",
     "translation": "口渴的",
     "coreMeaning": "Thirsty means needing or wanting to drink.",
@@ -1925,30 +2084,77 @@ export const previewWords: PreviewWord[] = [
     "nearSynonyms": [],
     "corePoints": [
       {
+        "phrase": "be thirsty",
+        "translation": "口渴",
+        "note": ""
+      },
+      {
         "phrase": "be thirsty for",
-        "translation": "渴望……；口渴想喝……",
-        "note": ""
-      },
-      {
-        "phrase": "feel thirsty",
-        "translation": "感到口渴",
-        "note": ""
-      },
-      {
-        "phrase": "very thirsty",
-        "translation": "非常口渴",
+        "translation": "渴望……",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "After running for an hour, I felt very thirsty.",
-        "translation": "跑了一个小时后，我感到非常口渴。"
+        "sentence": "After playing basketball for an hour, I felt very thirsty.",
+        "translation": "打了一个小时篮球后，我感到非常口渴。"
+      },
+      {
+        "sentence": "All the students are thirsty for knowledge.",
+        "translation": "所有学生都渴望知识。"
       }
     ],
     "usageTip": "be thirsty for 可表示“渴望……”，不只表示口渴。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "thirst",
+        "partOfSpeech": "n.",
+        "translation": "口渴；渴望"
+      },
+      {
+        "word": "thirstily",
+        "partOfSpeech": "adv.",
+        "translation": "口渴地"
+      }
+    ]
+  },
+  {
+    "id": "sh-g8-u1-nor",
+    "courseId": "shanghai-grade8-preview",
+    "book": "沪教版八年级上册",
+    "edition": "沪教版",
+    "grade": "八年级",
+    "unit": "Unit 1",
+    "unitId": "unit-1",
+    "order": 42,
+    "word": "nor",
+    "phonetic": "/nɔ:(r)/",
+    "partOfSpeech": "conj.",
+    "translation": "也不",
+    "derivedWords": [],
+    "coreMeaning": "Nor is used to add another negative idea, especially after neither or another negative statement.",
+    "explanation": "nor 常和 neither 构成 neither...nor...，表示“既不……也不……”；连接两个主语时，谓语动词通常遵循就近原则。",
+    "nearSynonyms": [],
+    "corePoints": [
+      {
+        "phrase": "neither...nor...",
+        "translation": "既不……也不……，谓语动词就近原则",
+        "note": ""
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "He can neither speak English nor French.",
+        "translation": "他既不会说英语也不会说法语。"
+      },
+      {
+        "sentence": "Neither my mother nor my father likes spicy food.",
+        "translation": "我妈妈和爸爸都不喜欢吃辣的食物。"
+      }
+    ],
+    "usageTip": "neither...nor... 表示“既不……也不……”，连接两个主语时，谓语动词通常和 nor 后面的主语保持一致。",
+    "quiz": null
   },
   {
     "id": "sh-g8-u1-043",
@@ -1960,7 +2166,7 @@ export const previewWords: PreviewWord[] = [
     "unitId": "unit-1",
     "order": 43,
     "word": "limited",
-    "phonetic": "/ˈlɪmɪtɪd/",
+    "phonetic": "/'lɪmɪtɪd/",
     "partOfSpeech": "adj.",
     "translation": "有限的",
     "coreMeaning": "Limited means not much, or not enough.",
@@ -1979,25 +2185,35 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "limited resources",
-        "translation": "有限的资源",
-        "note": ""
-      },
-      {
         "phrase": "be limited to",
-        "translation": "局限于……",
+        "translation": "被限制在……",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "Our limited time requires us to finish the work quickly.",
-        "translation": "我们有限的时间要求我们快速完成这项工作。"
+        "sentence": "We have limited time to finish this work, so we must hurry.",
+        "translation": "我们完成这项工作的时间有限，所以必须快点。"
+      },
+      {
+        "sentence": "The number of participants is limited to 50.",
+        "translation": "参与者的人数限制在50人以内。"
       }
     ],
     "usageTip": "be limited to 表示“局限于……”。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "limit",
+        "partOfSpeech": "v./n.",
+        "translation": "限制；限制；限度"
+      },
+      {
+        "word": "limitation",
+        "partOfSpeech": "n.",
+        "translation": "限制；局限"
+      }
+    ]
   },
   {
     "id": "sh-g8-u1-044",
@@ -2023,122 +2239,45 @@ export const previewWords: PreviewWord[] = [
     ],
     "corePoints": [
       {
-        "phrase": "spread out",
-        "translation": "展开；散开",
-        "note": ""
-      },
-      {
         "phrase": "spread news",
         "translation": "传播消息",
         "note": ""
       },
       {
-        "phrase": "spread quickly",
-        "translation": "快速传播",
+        "phrase": "spread out（展开",
+        "translation": "",
+        "note": ""
+      },
+      {
+        "phrase": "扩散）",
+        "translation": "",
+        "note": ""
+      },
+      {
+        "phrase": "spread from...to...",
+        "translation": "从……传播到……",
         "note": ""
       }
     ],
     "examples": [
       {
-        "sentence": "The news of his success spread quickly in the small town.",
-        "translation": "他成功的消息在这个小镇里快速传播。"
+        "sentence": "The news spread quickly all over the school.",
+        "translation": "这个消息很快传遍了整个学校。"
+      },
+      {
+        "sentence": "We need to spread the cloth out on the table first.",
+        "translation": "我们需要先把桌布铺在桌子上。"
       }
     ],
     "usageTip": "spread 的过去式和过去分词仍是 spread。",
     "quiz": null,
-    "derivedWords": []
-  },
-  {
-    "id": "sh-g8-u1-045",
-    "courseId": "shanghai-grade8-preview",
-    "book": "沪教版八年级上册",
-    "edition": "沪教版",
-    "grade": "八年级",
-    "unit": "Unit 1",
-    "unitId": "unit-1",
-    "order": 45,
-    "word": "clean-up",
-    "phonetic": "/ˈkliːn ʌp/",
-    "partOfSpeech": "n.",
-    "translation": "清理；清扫；整顿",
-    "coreMeaning": "A clean-up is an activity to make a place clean and tidy.",
-    "explanation": "“clean-up”表示“清理；清扫；整顿”。预习时重点看它和“a clean-up campaign”这类表达的搭配方式。",
-    "nearSynonyms": [],
-    "corePoints": [
+    "derivedWords": [
       {
-        "phrase": "a clean-up campaign",
-        "translation": "清理活动",
-        "note": ""
-      },
-      {
-        "phrase": "do a clean-up",
-        "translation": "进行清理",
-        "note": ""
-      },
-      {
-        "phrase": "environmental clean-up",
-        "translation": "环境清理",
-        "note": ""
+        "word": "spreadable",
+        "partOfSpeech": "adj.",
+        "translation": "可涂抹的；可传播的"
       }
-    ],
-    "examples": [
-      {
-        "sentence": "The community organized a clean-up campaign in the park last weekend.",
-        "translation": "上周末社区在公园里组织了一场清理活动。"
-      }
-    ],
-    "usageTip": "常见考点是“a clean-up campaign”，做题时先看空格前后是否和该搭配对应。",
-    "quiz": null,
-    "derivedWords": []
-  },
-  {
-    "id": "sh-g8-u1-046",
-    "courseId": "shanghai-grade8-preview",
-    "book": "沪教版八年级上册",
-    "edition": "沪教版",
-    "grade": "八年级",
-    "unit": "Unit 1",
-    "unitId": "unit-1",
-    "order": 46,
-    "word": "raise",
-    "phonetic": "/reɪz/",
-    "partOfSpeech": "v.",
-    "translation": "提升；举起；筹集",
-    "coreMeaning": "Raise means to lift something up, collect money, or increase awareness.",
-    "explanation": "“raise”表示“提升；举起；筹集”。预习时重点看它和“raise one's hand”这类表达的搭配方式。",
-    "nearSynonyms": [
-      {
-        "word": "lift",
-        "translation": "举起",
-        "difference": "raise 可表示举起、筹集或提高；lift 主要表示抬起。"
-      }
-    ],
-    "corePoints": [
-      {
-        "phrase": "raise one's hand",
-        "translation": "举手",
-        "note": ""
-      },
-      {
-        "phrase": "raise money",
-        "translation": "筹钱",
-        "note": ""
-      },
-      {
-        "phrase": "raise awareness",
-        "translation": "提高意识",
-        "note": ""
-      }
-    ],
-    "examples": [
-      {
-        "sentence": "She raised her hand to ask the teacher a question.",
-        "translation": "她举起手向老师提问。"
-      }
-    ],
-    "usageTip": "raise 是及物动词，常接宾语，如 raise money / raise awareness。",
-    "quiz": null,
-    "derivedWords": []
+    ]
   },
   {
     "id": "sh-g8-u1-047",
@@ -2148,9 +2287,9 @@ export const previewWords: PreviewWord[] = [
     "grade": "八年级",
     "unit": "Unit 1",
     "unitId": "unit-1",
-    "order": 47,
+    "order": 45,
     "word": "awareness",
-    "phonetic": "/əˈweənəs/",
+    "phonetic": "/ə'weənəs/",
     "partOfSpeech": "n.",
     "translation": "意识",
     "coreMeaning": "Awareness means knowing that something exists or understanding it.",
@@ -2163,11 +2302,6 @@ export const previewWords: PreviewWord[] = [
         "note": ""
       },
       {
-        "phrase": "safety awareness",
-        "translation": "安全意识",
-        "note": ""
-      },
-      {
         "phrase": "raise awareness",
         "translation": "提高意识",
         "note": ""
@@ -2175,13 +2309,28 @@ export const previewWords: PreviewWord[] = [
     ],
     "examples": [
       {
-        "sentence": "We need to raise people's environmental awareness to protect the earth.",
-        "translation": "我们需要提高人们的环保意识来保护地球。"
+        "sentence": "We should help students develop environmental awareness.",
+        "translation": "我们应该帮助学生培养环保意识。"
+      },
+      {
+        "sentence": "The activity aims to raise people's awareness of water conservation.",
+        "translation": "这项活动旨在提高人们的节水意识。"
       }
     ],
     "usageTip": "awareness 常和 raise 搭配，表示“提高意识”。",
     "quiz": null,
-    "derivedWords": []
+    "derivedWords": [
+      {
+        "word": "aware",
+        "partOfSpeech": "adj.",
+        "translation": "意识到的；知道的"
+      },
+      {
+        "word": "unaware",
+        "partOfSpeech": "adj.",
+        "translation": "没意识到的"
+      }
+    ]
   },
   {
     "id": "sh-g8-u2-001",

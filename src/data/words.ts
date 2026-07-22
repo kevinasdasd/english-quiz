@@ -5311,44 +5311,44 @@ export const words: Word[] = [
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "litre (AmE liter)",
-    "phonetic": "/ˈliːtə(r)/",
+    "phonetic": "/'li:tə(r)/",
     "partOfSpeech": "n.",
     "translation": "升",
-    "example": "There is a litre of milk in the fridge.",
-    "exampleTranslation": "冰箱里有一升牛奶。"
+    "example": "This bottle can hold one litre of water.",
+    "exampleTranslation": "这个瓶子能装一升水。"
   },
   {
     "id": 483,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "factory",
-    "phonetic": "/ˈfæktri/",
+    "phonetic": "/'fæktri/",
     "partOfSpeech": "n.",
     "translation": "工厂",
-    "example": "My father works in a factory near our home.",
-    "exampleTranslation": "我爸爸在我们家附近的一家工厂工作。"
+    "example": "There is a big factory near our school.",
+    "exampleTranslation": "我们学校附近有一家大工厂。"
   },
   {
     "id": 484,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "billion",
-    "phonetic": "/ˈbɪljən/",
+    "phonetic": "/'bɪljən/",
     "partOfSpeech": "n.",
     "translation": "十亿",
-    "example": "The population of this country is over one billion.",
-    "exampleTranslation": "这个国家的人口超过十亿。"
+    "example": "The earth has a population of over seven billion.",
+    "exampleTranslation": "地球人口超过七十亿。"
   },
   {
     "id": 485,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "salty",
-    "phonetic": "/ˈsɔːlti/",
+    "phonetic": "/'sɔ:lti/",
     "partOfSpeech": "adj.",
     "translation": "含盐的；咸的",
-    "example": "This soup is too salty for me to drink.",
-    "exampleTranslation": "这碗汤对我来说太咸了，没法喝。"
+    "example": "The soup is too salty for me.",
+    "exampleTranslation": "这汤对我来说太咸了。"
   },
   {
     "id": 486,
@@ -5358,8 +5358,8 @@ export const words: Word[] = [
     "phonetic": "/rest/",
     "partOfSpeech": "n.",
     "translation": "剩余部分；休息时间",
-    "example": "You can eat the rest of the cake tomorrow.",
-    "exampleTranslation": "你明天可以吃蛋糕的剩余部分。"
+    "example": "Let's stop to have a rest after walking for an hour.",
+    "exampleTranslation": "走了一个小时后，我们停下来休息一下吧。"
   },
   {
     "id": 487,
@@ -5370,194 +5370,194 @@ export const words: Word[] = [
     "partOfSpeech": "adj.",
     "translation": "稀少的；珍贵的",
     "example": "Pandas are rare animals in the world.",
-    "exampleTranslation": "熊猫是世界上珍稀的动物。"
+    "exampleTranslation": "熊猫是世界上的珍稀动物。"
   },
   {
     "id": 488,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "presentation",
-    "phonetic": "/ˌpreznˈteɪʃn/",
+    "phonetic": "/ˌprezn'teɪʃn/",
     "partOfSpeech": "n.",
     "translation": "展示会；介绍会",
     "example": "She will give a presentation about environmental protection tomorrow.",
-    "exampleTranslation": "她明天将做一个关于环境保护的展示会。"
-  },
-  {
-    "id": 489,
-    "book": "沪教版八年级上册",
-    "unit": "Unit 1",
-    "word": "useful",
-    "phonetic": "/ˈjuːsfl/",
-    "partOfSpeech": "adj.",
-    "translation": "有用的",
-    "example": "This dictionary is very useful for English learners.",
-    "exampleTranslation": "这本词典对英语学习者来说非常有用。"
+    "exampleTranslation": "她明天将做一个关于环境保护的展示。"
   },
   {
     "id": 490,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "boring",
-    "phonetic": "/ˈbɔːrɪŋ/",
+    "phonetic": "/'bɔ:rɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "没趣的",
-    "example": "The boring lecture made many students fall asleep.",
-    "exampleTranslation": "这场没趣的讲座让很多学生睡着了。"
+    "example": "This book is so boring that I can't finish it.",
+    "exampleTranslation": "这本书太无聊了，我读不完。"
   },
   {
     "id": 491,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "chemical",
-    "phonetic": "/ˈkemɪkl/",
+    "phonetic": "/'kemɪkl/",
     "partOfSpeech": "n.",
     "translation": "化学品",
-    "example": "We should keep harmful chemicals away from children.",
-    "exampleTranslation": "我们应该让有害化学品远离儿童。"
+    "example": "We shouldn't pour chemicals into the river.",
+    "exampleTranslation": "我们不应该把化学品倒入河里。"
   },
   {
     "id": 492,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "wastewater",
-    "phonetic": "/ˈweɪstwɔːtə(r)/",
+    "phonetic": "/'weɪstwɔ:tə(r)/",
     "partOfSpeech": "n.",
     "translation": "废水",
-    "example": "The factory has to treat wastewater before releasing it.",
-    "exampleTranslation": "工厂必须先处理废水才能排放。"
+    "example": "The factory has to treat wastewater before pouring it out.",
+    "exampleTranslation": "这家工厂必须先处理废水才能排放。"
   },
   {
     "id": 493,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "treatment",
-    "phonetic": "/ˈtriːtmənt/",
+    "phonetic": "/'tri:tmənt/",
     "partOfSpeech": "n.",
     "translation": "（净化或防治）处理；加工",
-    "example": "The treatment of this kind of disease has made great progress.",
-    "exampleTranslation": "这种疾病的 （防治）处理已经取得了很大进展。"
+    "example": "He needs special medical treatment for his illness.",
+    "exampleTranslation": "他的病需要特殊的医疗。"
   },
   {
     "id": 494,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "include",
-    "phonetic": "/ɪnˈkluːd/",
+    "phonetic": "/ɪn'klu:d/",
     "partOfSpeech": "v.",
     "translation": "使成为…… 的一部分",
-    "example": "The tour package will include breakfast and dinner.",
-    "exampleTranslation": "这个旅游套餐将包含早餐和晚餐。"
+    "example": "The price of the tour includes breakfast and dinner.",
+    "exampleTranslation": "这次旅行的费用包括早餐和晚餐。"
   },
   {
     "id": 495,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "research",
-    "phonetic": "/rɪˈsɜːtʃ/",
+    "phonetic": "/rɪ'sɜ:tʃ/",
     "partOfSpeech": "v. / n.",
     "translation": "研究；探讨；调查 研究；调查；探索",
-    "example": "He spent five years doing research on climate change.",
-    "exampleTranslation": "他花了五年时间对气候变化进行研究。"
+    "example": "She is researching the effects of climate change.",
+    "exampleTranslation": "她正在研究气候变化的影响。"
   },
   {
     "id": 496,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "agree",
-    "phonetic": "/əˈɡriː/",
+    "phonetic": "/ə'gri:/",
     "partOfSpeech": "v.",
     "translation": "同意；赞同",
-    "example": "I agree with you that we should protect the environment.",
-    "exampleTranslation": "我同意你的观点，我们应该保护环境。"
+    "example": "I agree with you that we should save water.",
+    "exampleTranslation": "我同意你的看法，我们应该节约用水。"
   },
   {
     "id": 497,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "beyond",
-    "phonetic": "/bɪˈjɒnd/",
+    "phonetic": "/bɪ'jɒnd/",
     "partOfSpeech": "prep.",
     "translation": "除…… 之外",
-    "example": "This task is beyond my ability to finish alone.",
-    "exampleTranslation": "这项任务超出了我独自完成的能力范围。"
+    "example": "This math problem is beyond my ability.",
+    "exampleTranslation": "这道数学题超出了我的能力范围。"
   },
   {
     "id": 498,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "energy-saving",
-    "phonetic": "/ˈenədʒi seɪvɪŋ/",
+    "phonetic": "/'enədʒi seɪvɪŋ/",
     "partOfSpeech": "adj.",
     "translation": "节能的",
-    "example": "We bought some energy-saving lamps to reduce electricity use.",
-    "exampleTranslation": "我们买了一些节能的灯来减少用电量。"
+    "example": "We should use more energy-saving appliances at home.",
+    "exampleTranslation": "我们家里应该使用更多节能电器。"
   },
   {
     "id": 499,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "dishwasher",
-    "phonetic": "/ˈdɪʃwɒʃə(r)/",
+    "phonetic": "/'dɪʃwɒʃə(r)/",
     "partOfSpeech": "n.",
     "translation": "洗碗碟机",
-    "example": "My mother often uses the dishwasher to clean bowls and plates.",
-    "exampleTranslation": "我妈妈经常用洗碗碟机清洗碗碟。"
+    "example": "My mother bought a new dishwasher last week.",
+    "exampleTranslation": "我妈妈上周买了一台新的洗碗机。"
   },
   {
     "id": 500,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "indirect",
-    "phonetic": "/ˌɪndəˈrekt/, /ˌɪndaɪˈrekt/",
+    "phonetic": "/ˌɪndə'rekt; ˌɪndaɪ'rekt/",
     "partOfSpeech": "adj.",
     "translation": "间接的",
-    "example": "The event had an indirect effect on the local economy.",
-    "exampleTranslation": "这件事对当地经济产生了间接的影响。"
+    "example": "He told me the news in an indirect way.",
+    "exampleTranslation": "他用间接的方式告诉了我这个消息。"
   },
   {
     "id": 501,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "kilo",
-    "phonetic": "/ˈkiːləʊ/",
+    "phonetic": "/'ki:ləʊ/",
     "partOfSpeech": "n.",
     "translation": "（=kilogram）千克；公斤",
-    "example": "I bought one kilo of apples from the supermarket.",
-    "exampleTranslation": "我从超市买了一千克苹果。"
+    "example": "I need to buy a kilo of meat for dinner.",
+    "exampleTranslation": "我需要买一千克肉做晚饭。"
   },
   {
     "id": 502,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "hamburger",
-    "phonetic": "/ˈhæmbɜːɡə(r)/",
+    "phonetic": "/'hæmbɜ:gə(r)/",
     "partOfSpeech": "n.",
     "translation": "汉堡包",
-    "example": "He likes to eat a hamburger for lunch sometimes.",
-    "exampleTranslation": "他有时喜欢午餐吃一个汉堡包。"
+    "example": "He often eats a hamburger for lunch.",
+    "exampleTranslation": "他午餐经常吃一个汉堡包。"
   },
   {
     "id": 503,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "cotton",
-    "phonetic": "/ˈkɒtn/",
+    "phonetic": "/'kɒtn/",
     "partOfSpeech": "n.",
     "translation": "棉织物；棉布",
-    "example": "These cotton clothes are very comfortable to wear.",
-    "exampleTranslation": "这些棉织物做的衣服穿起来很舒服。"
+    "example": "She likes wearing cotton clothes in summer.",
+    "exampleTranslation": "她夏天喜欢穿棉质衣服。"
+  },
+  {
+    "id": 745,
+    "book": "沪教版八年级上册",
+    "unit": "Unit 1",
+    "word": "touching",
+    "phonetic": "/'tʌtʃɪŋ/",
+    "partOfSpeech": "adj.",
+    "translation": "令人同情的；感人的",
+    "example": "The movie tells a touching story about a mother and her son.",
+    "exampleTranslation": "这部电影讲述了一个关于母亲和儿子的感人故事。"
   },
   {
     "id": 504,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "desert",
-    "phonetic": "/ˈdezət/",
+    "phonetic": "/'dezət/",
     "partOfSpeech": "n.",
     "translation": "沙漠",
-    "example": "Few animals can live in the desert because of the lack of water.",
-    "exampleTranslation": "由于缺水，很少有动物能在沙漠里生存。"
+    "example": "The Sahara Desert is the largest hot desert in the world.",
+    "exampleTranslation": "撒哈拉沙漠是世界上最大的热沙漠。"
   },
   {
     "id": 505,
@@ -5567,19 +5567,19 @@ export const words: Word[] = [
     "phonetic": "/səʊp/",
     "partOfSpeech": "n. / v.",
     "translation": "肥皂 抹肥皂；用肥皂擦洗",
-    "example": "You need to wash your hands with soap before eating.",
-    "exampleTranslation": "吃饭前你需要用肥皂洗手。"
+    "example": "Please buy a bar of soap when you go to the supermarket.",
+    "exampleTranslation": "你去超市时请买一块肥皂。"
   },
   {
     "id": 506,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "corner",
-    "phonetic": "/ˈkɔːnə(r)/",
+    "phonetic": "/'kɔ:nə(r)/",
     "partOfSpeech": "n.",
     "translation": "角",
-    "example": "There is a small table in the corner of the room.",
-    "exampleTranslation": "房间的角落里有一张小桌子。"
+    "example": "There is a table in the corner of the room.",
+    "exampleTranslation": "房间的角落里有一张桌子。"
   },
   {
     "id": 507,
@@ -5589,8 +5589,8 @@ export const words: Word[] = [
     "phonetic": "/pɒt/",
     "partOfSpeech": "n.",
     "translation": "（某种用途的）容器",
-    "example": "My grandmother planted a rose in a flower pot.",
-    "exampleTranslation": "我奶奶在一个花盆里种了一朵玫瑰。"
+    "example": "My grandma uses a clay pot to cook soup.",
+    "exampleTranslation": "我奶奶用砂锅煮汤。"
   },
   {
     "id": 508,
@@ -5600,8 +5600,8 @@ export const words: Word[] = [
     "phonetic": "/set ɒf/",
     "partOfSpeech": "v.",
     "translation": "出发；动身；启程",
-    "example": "We will set off early tomorrow morning to avoid traffic jams.",
-    "exampleTranslation": "我们明天早上会早早出发，以避开交通堵塞。"
+    "example": "They will set off for Beijing tomorrow morning.",
+    "exampleTranslation": "他们明天早上将动身去北京。"
   },
   {
     "id": 509,
@@ -5612,7 +5612,7 @@ export const words: Word[] = [
     "partOfSpeech": "n.",
     "translation": "洞；坑",
     "example": "The dog dug a hole in the garden to hide its bone.",
-    "exampleTranslation": "狗在花园里挖了一个坑来藏它的骨头。"
+    "exampleTranslation": "狗在花园里挖了个坑藏骨头。"
   },
   {
     "id": 510,
@@ -5622,8 +5622,8 @@ export const words: Word[] = [
     "phonetic": "/step/",
     "partOfSpeech": "v. / n.",
     "translation": "迈步；踩 脚步；台阶",
-    "example": "Be careful not to step on the wet floor.",
-    "exampleTranslation": "小心别踩到湿地板上。"
+    "example": "Be careful not to step on the grass.",
+    "exampleTranslation": "小心别踩到草地上。"
   },
   {
     "id": 511,
@@ -5633,8 +5633,8 @@ export const words: Word[] = [
     "phonetic": "/mʌd/",
     "partOfSpeech": "n.",
     "translation": "泥；淤泥",
-    "example": "The child's shoes were covered with mud after playing in the rain.",
-    "exampleTranslation": "孩子在雨中玩耍后，鞋子上沾满了泥。"
+    "example": "His shoes were covered with mud after the rain.",
+    "exampleTranslation": "雨后他的鞋子沾满了泥。"
   },
   {
     "id": 512,
@@ -5644,8 +5644,8 @@ export const words: Word[] = [
     "phonetic": "/beɪð/",
     "partOfSpeech": "v.",
     "translation": "用水清洗（尤指身体部位）",
-    "example": "She likes to bathe her face with cold water in the morning.",
-    "exampleTranslation": "她喜欢早上用冷水清洗脸部。"
+    "example": "She bathed her baby's face with warm water.",
+    "exampleTranslation": "她用温水给宝宝洗脸。"
   },
   {
     "id": 513,
@@ -5655,30 +5655,30 @@ export const words: Word[] = [
     "phonetic": "/ʃaɪn/",
     "partOfSpeech": "v.",
     "translation": "照耀",
-    "example": "The sun shines brightly in the sky on a sunny day.",
-    "exampleTranslation": "晴天时，太阳在天空中明亮地照耀着。"
+    "example": "The sun shone brightly in the sky yesterday.",
+    "exampleTranslation": "昨天太阳在天空中明亮地照耀着。"
   },
   {
     "id": 514,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "forward",
-    "phonetic": "/ˈfɔːwəd/",
+    "phonetic": "/'fɔ:wəd/",
     "partOfSpeech": "adv.",
     "translation": "向前",
-    "example": "We are all looking forward to the summer holiday.",
-    "exampleTranslation": "我们都在期待暑假的到来。"
+    "example": "The car moved forward slowly in the heavy traffic.",
+    "exampleTranslation": "在拥挤的交通中，汽车缓慢地向前移动。"
   },
   {
     "id": 515,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "pour",
-    "phonetic": "/pɔː(r)/",
+    "phonetic": "/pɔ:(r)/",
     "partOfSpeech": "v.",
     "translation": "使（液体）连续流出；倒出",
-    "example": "She helped her mother pour milk into the cup.",
-    "exampleTranslation": "她帮妈妈把牛奶倒入杯子里。"
+    "example": "She poured the milk into a glass carefully.",
+    "exampleTranslation": "她小心地把牛奶倒入杯子里。"
   },
   {
     "id": 516,
@@ -5688,19 +5688,8 @@ export const words: Word[] = [
     "phonetic": "/ʃʌt/",
     "partOfSpeech": "adj. / v.",
     "translation": "关闭的；合上的 关闭；合上",
-    "example": "Please shut the door when you leave the room.",
-    "exampleTranslation": "离开房间时请关上门。"
-  },
-  {
-    "id": 517,
-    "book": "沪教版八年级上册",
-    "unit": "Unit 1",
-    "word": "carefully",
-    "phonetic": "/ˈkeəfəli/",
-    "partOfSpeech": "adv.",
-    "translation": "仔细地",
-    "example": "You must read carefully before answering the questions.",
-    "exampleTranslation": "回答问题前，你必须仔细地阅读。"
+    "example": "Please shut the window before you leave the room.",
+    "exampleTranslation": "离开房间前请关上窗户。"
   },
   {
     "id": 518,
@@ -5711,40 +5700,40 @@ export const words: Word[] = [
     "partOfSpeech": "n. / v.",
     "translation": "滴；水珠 落下；掉下",
     "example": "There is a drop of water on the leaf.",
-    "exampleTranslation": "叶子上有一滴水珠。"
+    "exampleTranslation": "叶子上有一滴水。"
   },
   {
     "id": 519,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "fully",
-    "phonetic": "/ˈfʊli/",
+    "phonetic": "/'fʊli/",
     "partOfSpeech": "adv.",
     "translation": "完全地；充分地",
-    "example": "You need to fully understand the rules before the game.",
-    "exampleTranslation": "比赛前你需要完全地理解规则。"
+    "example": "I fully understand your feelings now.",
+    "exampleTranslation": "我现在完全理解你的感受了。"
   },
   {
     "id": 520,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "precious",
-    "phonetic": "/ˈpreʃəs/",
+    "phonetic": "/'preʃəs/",
     "partOfSpeech": "adj.",
     "translation": "宝贵的；珍贵的",
-    "example": "We should cherish every precious moment with our family.",
-    "exampleTranslation": "我们应该珍惜和家人在一起的每一个宝贵的时刻。"
+    "example": "We should cherish every precious minute in our life.",
+    "exampleTranslation": "我们应该珍惜生命中的每一分宝贵时光。"
   },
   {
     "id": 521,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "shoulder",
-    "phonetic": "/ˈʃəʊldə(r)/",
+    "phonetic": "/'ʃəʊldə(r)/",
     "partOfSpeech": "n. / v.",
     "translation": "肩膀 背；扛；挑",
-    "example": "He put his son on his shoulder to see the parade.",
-    "exampleTranslation": "他把儿子放在自己的肩膀上看游行。"
+    "example": "The little girl sat on her father's shoulders to see the show.",
+    "exampleTranslation": "小女孩坐在爸爸的肩上看表演。"
   },
   {
     "id": 522,
@@ -5754,30 +5743,41 @@ export const words: Word[] = [
     "phonetic": "/sneɪk/",
     "partOfSpeech": "n. / v.",
     "translation": "蛇 曲折前行；蛇行；蜿蜒伸展",
-    "example": "A small snake was crawling in the grass.",
-    "exampleTranslation": "一条小蛇正在草丛里爬。"
+    "example": "We saw a small snake in the grass when we were hiking.",
+    "exampleTranslation": "我们徒步旅行时在草丛里看到了一条小蛇。"
   },
   {
     "id": 523,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "thirsty",
-    "phonetic": "/ˈθɜːsti/",
+    "phonetic": "/'θɜ:sti/",
     "partOfSpeech": "adj.",
     "translation": "口渴的",
-    "example": "After running for an hour, I felt very thirsty.",
-    "exampleTranslation": "跑了一个小时后，我感到非常口渴。"
+    "example": "After playing basketball for an hour, I felt very thirsty.",
+    "exampleTranslation": "打了一个小时篮球后，我感到非常口渴。"
+  },
+  {
+    "id": 746,
+    "book": "沪教版八年级上册",
+    "unit": "Unit 1",
+    "word": "nor",
+    "phonetic": "/nɔ:(r)/",
+    "partOfSpeech": "conj.",
+    "translation": "也不",
+    "example": "He can neither speak English nor French.",
+    "exampleTranslation": "他既不会说英语也不会说法语。"
   },
   {
     "id": 524,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "limited",
-    "phonetic": "/ˈlɪmɪtɪd/",
+    "phonetic": "/'lɪmɪtɪd/",
     "partOfSpeech": "adj.",
     "translation": "有限的",
-    "example": "Our limited time requires us to finish the work quickly.",
-    "exampleTranslation": "我们有限的时间要求我们快速完成这项工作。"
+    "example": "We have limited time to finish this work, so we must hurry.",
+    "exampleTranslation": "我们完成这项工作的时间有限，所以必须快点。"
   },
   {
     "id": 525,
@@ -5787,41 +5787,19 @@ export const words: Word[] = [
     "phonetic": "/spred/",
     "partOfSpeech": "v. / n.",
     "translation": "传播；扩散 传播；蔓延",
-    "example": "The news of his success spread quickly in the small town.",
-    "exampleTranslation": "他成功的消息在这个小镇里快速传播。"
-  },
-  {
-    "id": 526,
-    "book": "沪教版八年级上册",
-    "unit": "Unit 1",
-    "word": "clean-up",
-    "phonetic": "/ˈkliːn ʌp/",
-    "partOfSpeech": "n.",
-    "translation": "清理；清扫；整顿",
-    "example": "The community organized a clean-up campaign in the park last weekend.",
-    "exampleTranslation": "上周末社区在公园里组织了一场清理活动。"
-  },
-  {
-    "id": 527,
-    "book": "沪教版八年级上册",
-    "unit": "Unit 1",
-    "word": "raise",
-    "phonetic": "/reɪz/",
-    "partOfSpeech": "v.",
-    "translation": "提升；举起；筹集",
-    "example": "She raised her hand to ask the teacher a question.",
-    "exampleTranslation": "她举起手向老师提问。"
+    "example": "The news spread quickly all over the school.",
+    "exampleTranslation": "这个消息很快传遍了整个学校。"
   },
   {
     "id": 528,
     "book": "沪教版八年级上册",
     "unit": "Unit 1",
     "word": "awareness",
-    "phonetic": "/əˈweənəs/",
+    "phonetic": "/ə'weənəs/",
     "partOfSpeech": "n.",
     "translation": "意识",
-    "example": "We need to raise people's environmental awareness to protect the earth.",
-    "exampleTranslation": "我们需要提高人们的环保意识来保护地球。"
+    "example": "We should help students develop environmental awareness.",
+    "exampleTranslation": "我们应该帮助学生培养环保意识。"
   },
   {
     "id": 529,

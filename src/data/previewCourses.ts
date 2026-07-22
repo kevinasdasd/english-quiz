@@ -14,9 +14,9 @@ export const previewCourses: PreviewCourse[] = [
       {
         "id": "unit-1",
         "label": "Unit 1",
-        "title": "Unit 1",
+        "title": "Unit 1 Water",
         "status": "available",
-        "wordCount": 47
+        "wordCount": 45
       },
       {
         "id": "unit-2",
